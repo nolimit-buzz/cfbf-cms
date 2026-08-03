@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_contact_page_fun_stats_sections",
+  "info": {
+    "displayName": "Fun Stats Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "backgroundImage": { "type": "string" },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-page.fun-stat-item"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_contact_page_eligibility_reminder_sections",
+  "info": {
+    "displayName": "Eligibility Reminder Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "heading": { "type": "string" },
+    "description": { "type": "text" },
+    "ctaLabel": { "type": "string" },
+    "ctaHref": { "type": "string" }
+  }
+}

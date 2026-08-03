@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_contact_page_tech_mapping_items",
+  "info": {
+    "displayName": "Tech Mapping Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "paramValue": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

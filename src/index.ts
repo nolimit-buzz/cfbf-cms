@@ -1,8 +1,10 @@
 import type { Core } from '@strapi/strapi';
 
 import { aboutSections } from './seed/about-page-copy';
+import { contactSections } from './seed/contact-page-copy';
 import { eligibilitySections } from './seed/eligibility-page-copy';
 import { homeSections } from './seed/home-page-copy';
+import { howItWorksSections } from './seed/how-it-works-page-copy';
 import { impactSections } from './seed/impact-page-copy';
 import { newsSections } from './seed/news-page-copy';
 import { projectsSections } from './seed/projects-page-copy';
@@ -134,6 +136,44 @@ export default {
       });
 
       strapi.log.info('[seed] NEWS page seeded with 6 sections.');
+    }
+
+    // Same treatment for the HOW IT WORKS single type.
+    const existingHowItWorks = await strapi
+      .documents('api::how-it-works.how-it-works')
+      .findFirst({
+        populate: ['sections'],
+        status: 'draft',
+      });
+
+    if (!existingHowItWorks?.sections?.length) {
+      await strapi.documents('api::how-it-works.how-it-works').create({
+        data: {
+          sections: howItWorksSections,
+        },
+      });
+
+      strapi.log.info('[seed] HOW IT WORKS page seeded with 6 sections.');
+    }
+
+    // Same treatment for the CONTACT single type. Its dynamic zone owns the
+    // enquiry form chrome too — field labels, select options, and the readiness
+    // prefill templates the /eligibility results page links into.
+    const existingContact = await strapi
+      .documents('api::contact.contact')
+      .findFirst({
+        populate: ['sections'],
+        status: 'draft',
+      });
+
+    if (!existingContact?.sections?.length) {
+      await strapi.documents('api::contact.contact').create({
+        data: {
+          sections: contactSections,
+        },
+      });
+
+      strapi.log.info('[seed] CONTACT page seeded with 9 sections.');
     }
   },
 };

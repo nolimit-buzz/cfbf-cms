@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_contact_page_next_steps_sections",
+  "info": {
+    "displayName": "Next Steps Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingItalic": { "type": "string" },
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-page.portal-link-item"
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_contact_page_submission_success_sections",
+  "info": {
+    "displayName": "Submission Success Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": { "type": "string" },
+    "description": { "type": "text" },
+    "primaryCtaLabel": { "type": "string" },
+    "primaryCtaHref": { "type": "string" },
+    "secondaryCtaLabel": { "type": "string" }
+  }
+}

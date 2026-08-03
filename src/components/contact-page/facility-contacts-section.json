@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_contact_page_facility_contacts_sections",
+  "info": {
+    "displayName": "Facility Contacts Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": { "type": "string" },
+    "officeLocationLabel": { "type": "string" },
+    "officeAddressLineOne": { "type": "string" },
+    "officeAddressLineTwo": { "type": "string" },
+    "emailLabel": { "type": "string" },
+    "emailAddress": { "type": "string" },
+    "emailHref": { "type": "string" },
+    "phoneLabel": { "type": "string" },
+    "phoneNumber": { "type": "string" },
+    "phoneHref": { "type": "string" }
+  }
+}

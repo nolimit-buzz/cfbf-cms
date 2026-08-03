@@ -589,6 +589,47 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiContactContact extends Struct.SingleTypeSchema {
+  collectionName: 'contact';
+  info: {
+    description: 'CONTACT page content';
+    displayName: 'CONTACT';
+    pluralName: 'contacts';
+    singularName: 'contact';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::contact.contact'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'contact-page.structured-data-section',
+        'contact-page.hero-section',
+        'contact-page.facility-contacts-section',
+        'contact-page.eligibility-reminder-section',
+        'contact-page.fun-stats-section',
+        'contact-page.enquiry-form-section',
+        'contact-page.submission-success-section',
+        'contact-page.next-steps-section',
+        'contact-page.download-cta-section',
+      ]
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiEligibilityEligibility extends Struct.SingleTypeSchema {
   collectionName: 'eligibility';
   info: {
@@ -692,6 +733,44 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'home-page.news-section',
         'home-page.net-zero-section',
         'home-page.structured-data-section',
+      ]
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiHowItWorksHowItWorks extends Struct.SingleTypeSchema {
+  collectionName: 'how_it_works';
+  info: {
+    description: 'HOW IT WORKS page content';
+    displayName: 'HOW IT WORKS';
+    pluralName: 'how-it-workses';
+    singularName: 'how-it-works';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::how-it-works.how-it-works'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'how-it-works-page.structured-data-section',
+        'how-it-works-page.hero-section',
+        'how-it-works-page.financing-structure-section',
+        'how-it-works-page.facility-structure-section',
+        'how-it-works-page.process-section',
+        'how-it-works-page.next-steps-section',
       ]
     >;
     updatedAt: Schema.Attribute.DateTime;
@@ -1334,9 +1413,11 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
+      'api::contact.contact': ApiContactContact;
       'api::eligibility.eligibility': ApiEligibilityEligibility;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
+      'api::how-it-works.how-it-works': ApiHowItWorksHowItWorks;
       'api::impact.impact': ApiImpactImpact;
       'api::news.news': ApiNewsNews;
       'api::projects.projects': ApiProjectsProjects;

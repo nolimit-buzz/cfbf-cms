@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_how_it_works_page_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "backgroundImage": { "type": "string" },
+    "breadcrumbRootLabel": { "type": "string" },
+    "breadcrumbLabel": { "type": "string" },
+    "descriptionPrimary": { "type": "text" },
+    "descriptionSecondaryPrefix": { "type": "text" },
+    "descriptionSecondaryLinkLabel": { "type": "string" },
+    "descriptionSecondaryLinkHref": { "type": "string" },
+    "descriptionSecondarySuffix": { "type": "text" },
+    "stepCardAriaSuffix": { "type": "string" },
+    "stepCardHref": { "type": "string" },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "how-it-works-page.hero-step-item"
+    }
+  }
+}

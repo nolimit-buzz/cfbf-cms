@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_contact_page_select_option_items",
+  "info": {
+    "displayName": "Select Option Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" }
+  }
+}

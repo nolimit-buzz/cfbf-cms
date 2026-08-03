@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_contact_page_download_cta_sections",
+  "info": {
+    "displayName": "Download CTA Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "heading": { "type": "string" },
+    "description": { "type": "text" },
+    "ctaLabel": { "type": "string" },
+    "fileHref": { "type": "string" },
+    "downloadFileName": { "type": "string" },
+    "backgroundImage": { "type": "string" }
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_how_it_works_page_bullet_items",
+  "info": {
+    "displayName": "Bullet Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": { "type": "string" }
+  }
+}

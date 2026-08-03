@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "contact",
+  "info": {
+    "singularName": "contact",
+    "pluralName": "contacts",
+    "displayName": "CONTACT",
+    "description": "CONTACT page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "contact-page.structured-data-section",
+        "contact-page.hero-section",
+        "contact-page.facility-contacts-section",
+        "contact-page.eligibility-reminder-section",
+        "contact-page.fun-stats-section",
+        "contact-page.enquiry-form-section",
+        "contact-page.submission-success-section",
+        "contact-page.next-steps-section",
+        "contact-page.download-cta-section"
+      ]
+    }
+  }
+}

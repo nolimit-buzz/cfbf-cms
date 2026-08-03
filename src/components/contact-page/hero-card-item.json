@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_contact_page_hero_card_items",
+  "info": {
+    "displayName": "Hero Card Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "index": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "theme": { "type": "string" }
+  }
+}

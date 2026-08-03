@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_how_it_works_page_process_sections",
+  "info": {
+    "displayName": "Process Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "intro": { "type": "text" },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "how-it-works-page.process-step-item"
+    }
+  }
+}

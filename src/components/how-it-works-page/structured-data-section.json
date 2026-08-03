@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_how_it_works_page_structured_data_sections",
+  "info": {
+    "displayName": "Structured Data Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "schemaName": { "type": "string" },
+    "schemaDescription": { "type": "text" },
+    "publisherName": { "type": "string" },
+    "pageTitle": { "type": "string" },
+    "metaDescription": { "type": "text" },
+    "dcTitle": { "type": "string" },
+    "dcCreator": { "type": "string" },
+    "dcSubject": { "type": "string" },
+    "dcDescription": { "type": "text" },
+    "dcLanguage": { "type": "string" },
+    "dcType": { "type": "string" }
+  }
+}

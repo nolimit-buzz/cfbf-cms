@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_how_it_works_page_co_financing_partners",
+  "info": {
+    "displayName": "Co Financing Partner",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "srcWhite": { "type": "string" },
+    "srcColour": { "type": "string" },
+    "alt": { "type": "string" },
+    "href": { "type": "string" }
+  }
+}

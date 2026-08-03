@@ -1,0 +1,48 @@
+{
+  "collectionName": "components_contact_page_enquiry_form_sections",
+  "info": {
+    "displayName": "Enquiry Form Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": { "type": "string" },
+    "readinessAlertLabelPrefix": { "type": "string" },
+    "readinessAlertLabelSuffix": { "type": "string" },
+    "qualifiedAlertBody": { "type": "text" },
+    "technicalAssistanceAlertBody": { "type": "text" },
+    "roleTabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-page.role-tab-item"
+    },
+    "fullNameLabel": { "type": "string" },
+    "organizationLabel": { "type": "string" },
+    "emailAddressLabel": { "type": "string" },
+    "technologyTypeLabel": { "type": "string" },
+    "capacityLabel": { "type": "string" },
+    "institutionTypeLabel": { "type": "string" },
+    "investmentTrancheLabel": { "type": "string" },
+    "messageLabel": { "type": "string" },
+    "technologyOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-page.select-option-item"
+    },
+    "institutionOptions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-page.select-option-item"
+    },
+    "prefillIntroTemplate": { "type": "text" },
+    "prefillQualifiedBody": { "type": "text" },
+    "prefillTechnicalAssistanceBody": { "type": "text" },
+    "technologyParamMap": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-page.tech-mapping-item"
+    },
+    "defaultTechnologyLabel": { "type": "string" },
+    "submitLabel": { "type": "string" }
+  }
+}

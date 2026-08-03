@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_how_it_works_page_financing_structure_sections",
+  "info": {
+    "displayName": "Financing Structure Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "bodyPrimary": { "type": "text" },
+    "bodySecondary": { "type": "text" },
+    "bullets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "how-it-works-page.bullet-item"
+    },
+    "anchorFundersLabel": { "type": "string" },
+    "anchorFunders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "how-it-works-page.partner-logo-item"
+    },
+    "coFinancingLabel": { "type": "string" },
+    "coFinancingPartner": {
+      "type": "component",
+      "repeatable": false,
+      "component": "how-it-works-page.co-financing-partner"
+    },
+    "taProvidersLabel": { "type": "string" },
+    "taProviders": {
+      "type": "component",
+      "repeatable": true,
+      "component": "how-it-works-page.partner-logo-item"
+    },
+    "taRotationMs": { "type": "string" }
+  }
+}

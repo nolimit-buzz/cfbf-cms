@@ -505,6 +505,254 @@ export interface AboutPageStructuredDataSection extends Struct.ComponentSchema {
   };
 }
 
+export interface ContactPageDownloadCtaSection extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_download_cta_sections';
+  info: {
+    description: '';
+    displayName: 'Download CTA Section';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.String;
+    ctaLabel: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    downloadFileName: Schema.Attribute.String;
+    eyebrow: Schema.Attribute.String;
+    fileHref: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageEligibilityReminderSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_eligibility_reminder_sections';
+  info: {
+    description: '';
+    displayName: 'Eligibility Reminder Section';
+  };
+  attributes: {
+    ctaHref: Schema.Attribute.String;
+    ctaLabel: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
+    eyebrow: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageEnquiryFormSection extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_enquiry_form_sections';
+  info: {
+    description: '';
+    displayName: 'Enquiry Form Section';
+  };
+  attributes: {
+    capacityLabel: Schema.Attribute.String;
+    defaultTechnologyLabel: Schema.Attribute.String;
+    emailAddressLabel: Schema.Attribute.String;
+    fullNameLabel: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    institutionOptions: Schema.Attribute.Component<
+      'contact-page.select-option-item',
+      true
+    >;
+    institutionTypeLabel: Schema.Attribute.String;
+    investmentTrancheLabel: Schema.Attribute.String;
+    messageLabel: Schema.Attribute.String;
+    organizationLabel: Schema.Attribute.String;
+    prefillIntroTemplate: Schema.Attribute.Text;
+    prefillQualifiedBody: Schema.Attribute.Text;
+    prefillTechnicalAssistanceBody: Schema.Attribute.Text;
+    qualifiedAlertBody: Schema.Attribute.Text;
+    readinessAlertLabelPrefix: Schema.Attribute.String;
+    readinessAlertLabelSuffix: Schema.Attribute.String;
+    roleTabs: Schema.Attribute.Component<'contact-page.role-tab-item', true>;
+    submitLabel: Schema.Attribute.String;
+    technicalAssistanceAlertBody: Schema.Attribute.Text;
+    technologyOptions: Schema.Attribute.Component<
+      'contact-page.select-option-item',
+      true
+    >;
+    technologyParamMap: Schema.Attribute.Component<
+      'contact-page.tech-mapping-item',
+      true
+    >;
+    technologyTypeLabel: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageFacilityContactsSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_facility_contacts_sections';
+  info: {
+    description: '';
+    displayName: 'Facility Contacts Section';
+  };
+  attributes: {
+    emailAddress: Schema.Attribute.String;
+    emailHref: Schema.Attribute.String;
+    emailLabel: Schema.Attribute.String;
+    heading: Schema.Attribute.String;
+    officeAddressLineOne: Schema.Attribute.String;
+    officeAddressLineTwo: Schema.Attribute.String;
+    officeLocationLabel: Schema.Attribute.String;
+    phoneHref: Schema.Attribute.String;
+    phoneLabel: Schema.Attribute.String;
+    phoneNumber: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageFunStatItem extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_fun_stat_items';
+  info: {
+    description: '';
+    displayName: 'Fun Stat Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    label: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageFunStatsSection extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_fun_stats_sections';
+  info: {
+    description: '';
+    displayName: 'Fun Stats Section';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.String;
+    eyebrow: Schema.Attribute.String;
+    stats: Schema.Attribute.Component<'contact-page.fun-stat-item', true>;
+  };
+}
+
+export interface ContactPageHeroCardItem extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_hero_card_items';
+  info: {
+    description: '';
+    displayName: 'Hero Card Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    index: Schema.Attribute.String;
+    theme: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_hero_sections';
+  info: {
+    description: '';
+    displayName: 'Hero Section';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.String;
+    breadcrumbLabel: Schema.Attribute.String;
+    cards: Schema.Attribute.Component<'contact-page.hero-card-item', true>;
+    description: Schema.Attribute.Text;
+    eyebrow: Schema.Attribute.String;
+    headingHighlight: Schema.Attribute.String;
+    headingPartOne: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageNextStepsSection extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_next_steps_sections';
+  info: {
+    description: '';
+    displayName: 'Next Steps Section';
+  };
+  attributes: {
+    eyebrow: Schema.Attribute.String;
+    headingItalic: Schema.Attribute.String;
+    headingPartOne: Schema.Attribute.String;
+    links: Schema.Attribute.Component<'contact-page.portal-link-item', true>;
+  };
+}
+
+export interface ContactPagePortalLinkItem extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_portal_link_items';
+  info: {
+    description: '';
+    displayName: 'Portal Link Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    eyebrow: Schema.Attribute.String;
+    href: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageRoleTabItem extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_role_tab_items';
+  info: {
+    description: '';
+    displayName: 'Role Tab Item';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    value: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageSelectOptionItem extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_select_option_items';
+  info: {
+    description: '';
+    displayName: 'Select Option Item';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageStructuredDataSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_structured_data_sections';
+  info: {
+    description: '';
+    displayName: 'Structured Data Section';
+  };
+  attributes: {
+    loadingLabel: Schema.Attribute.String;
+    metaDescription: Schema.Attribute.Text;
+    pageTitle: Schema.Attribute.String;
+    schemaDescription: Schema.Attribute.Text;
+    schemaName: Schema.Attribute.String;
+    schemaPublisherName: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageSubmissionSuccessSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_submission_success_sections';
+  info: {
+    description: '';
+    displayName: 'Submission Success Section';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    heading: Schema.Attribute.String;
+    primaryCtaHref: Schema.Attribute.String;
+    primaryCtaLabel: Schema.Attribute.String;
+    secondaryCtaLabel: Schema.Attribute.String;
+  };
+}
+
+export interface ContactPageTechMappingItem extends Struct.ComponentSchema {
+  collectionName: 'components_contact_page_tech_mapping_items';
+  info: {
+    description: '';
+    displayName: 'Tech Mapping Item';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    paramValue: Schema.Attribute.String;
+  };
+}
+
 export interface EligibilityPageAssessmentChromeSection
   extends Struct.ComponentSchema {
   collectionName: 'components_eligibility_page_assessment_chrome_sections';
@@ -1285,6 +1533,218 @@ export interface HomePageViewTabItem extends Struct.ComponentSchema {
   attributes: {
     label: Schema.Attribute.String;
     tabId: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPageBulletItem extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_bullet_items';
+  info: {
+    description: '';
+    displayName: 'Bullet Item';
+  };
+  attributes: {
+    text: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPageCoFinancingPartner
+  extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_co_financing_partners';
+  info: {
+    description: '';
+    displayName: 'Co Financing Partner';
+  };
+  attributes: {
+    alt: Schema.Attribute.String;
+    href: Schema.Attribute.String;
+    srcColour: Schema.Attribute.String;
+    srcWhite: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPageFacilityStructureSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_facility_structure_sections';
+  info: {
+    description: '';
+    displayName: 'Facility Structure Section';
+  };
+  attributes: {
+    body: Schema.Attribute.Text;
+    diagramAlt: Schema.Attribute.Text;
+    diagramSrc: Schema.Attribute.String;
+    eyebrow: Schema.Attribute.String;
+    headingHighlight: Schema.Attribute.String;
+    headingPartOne: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPageFinancingStructureSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_financing_structure_sections';
+  info: {
+    description: '';
+    displayName: 'Financing Structure Section';
+  };
+  attributes: {
+    anchorFunders: Schema.Attribute.Component<
+      'how-it-works-page.partner-logo-item',
+      true
+    >;
+    anchorFundersLabel: Schema.Attribute.String;
+    bodyPrimary: Schema.Attribute.Text;
+    bodySecondary: Schema.Attribute.Text;
+    bullets: Schema.Attribute.Component<'how-it-works-page.bullet-item', true>;
+    coFinancingLabel: Schema.Attribute.String;
+    coFinancingPartner: Schema.Attribute.Component<
+      'how-it-works-page.co-financing-partner',
+      false
+    >;
+    eyebrow: Schema.Attribute.String;
+    headingHighlight: Schema.Attribute.String;
+    headingPartOne: Schema.Attribute.String;
+    taProviders: Schema.Attribute.Component<
+      'how-it-works-page.partner-logo-item',
+      true
+    >;
+    taProvidersLabel: Schema.Attribute.String;
+    taRotationMs: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPageHeroSection extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_hero_sections';
+  info: {
+    description: '';
+    displayName: 'Hero Section';
+  };
+  attributes: {
+    backgroundImage: Schema.Attribute.String;
+    breadcrumbLabel: Schema.Attribute.String;
+    breadcrumbRootLabel: Schema.Attribute.String;
+    descriptionPrimary: Schema.Attribute.Text;
+    descriptionSecondaryLinkHref: Schema.Attribute.String;
+    descriptionSecondaryLinkLabel: Schema.Attribute.String;
+    descriptionSecondaryPrefix: Schema.Attribute.Text;
+    descriptionSecondarySuffix: Schema.Attribute.Text;
+    eyebrow: Schema.Attribute.String;
+    headingHighlight: Schema.Attribute.String;
+    headingPartOne: Schema.Attribute.String;
+    stepCardAriaSuffix: Schema.Attribute.String;
+    stepCardHref: Schema.Attribute.String;
+    steps: Schema.Attribute.Component<'how-it-works-page.hero-step-item', true>;
+  };
+}
+
+export interface HowItWorksPageHeroStepItem extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_hero_step_items';
+  info: {
+    description: '';
+    displayName: 'Hero Step Item';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    index: Schema.Attribute.String;
+    range: Schema.Attribute.String;
+    theme: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPageNextStepsSection extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_next_steps_sections';
+  info: {
+    description: '';
+    displayName: 'Next Steps Section';
+  };
+  attributes: {
+    eyebrow: Schema.Attribute.String;
+    headingItalic: Schema.Attribute.String;
+    headingPartOne: Schema.Attribute.String;
+    links: Schema.Attribute.Component<
+      'how-it-works-page.portal-link-item',
+      true
+    >;
+  };
+}
+
+export interface HowItWorksPagePartnerLogoItem extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_partner_logo_items';
+  info: {
+    description: '';
+    displayName: 'Partner Logo Item';
+  };
+  attributes: {
+    alt: Schema.Attribute.String;
+    href: Schema.Attribute.String;
+    src: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPagePortalLinkItem extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_portal_link_items';
+  info: {
+    description: '';
+    displayName: 'Portal Link Item';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    eyebrow: Schema.Attribute.String;
+    href: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPageProcessSection extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_process_sections';
+  info: {
+    description: '';
+    displayName: 'Process Section';
+  };
+  attributes: {
+    eyebrow: Schema.Attribute.String;
+    headingHighlight: Schema.Attribute.String;
+    headingPartOne: Schema.Attribute.String;
+    intro: Schema.Attribute.Text;
+    steps: Schema.Attribute.Component<
+      'how-it-works-page.process-step-item',
+      true
+    >;
+  };
+}
+
+export interface HowItWorksPageProcessStepItem extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_process_step_items';
+  info: {
+    description: '';
+    displayName: 'Process Step Item';
+  };
+  attributes: {
+    desc: Schema.Attribute.Text;
+    step: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface HowItWorksPageStructuredDataSection
+  extends Struct.ComponentSchema {
+  collectionName: 'components_how_it_works_page_structured_data_sections';
+  info: {
+    description: '';
+    displayName: 'Structured Data Section';
+  };
+  attributes: {
+    dcCreator: Schema.Attribute.String;
+    dcDescription: Schema.Attribute.Text;
+    dcLanguage: Schema.Attribute.String;
+    dcSubject: Schema.Attribute.String;
+    dcTitle: Schema.Attribute.String;
+    dcType: Schema.Attribute.String;
+    metaDescription: Schema.Attribute.Text;
+    pageTitle: Schema.Attribute.String;
+    publisherName: Schema.Attribute.String;
+    schemaDescription: Schema.Attribute.Text;
+    schemaName: Schema.Attribute.String;
   };
 }
 
@@ -2404,6 +2864,21 @@ declare module '@strapi/strapi' {
       'about-page.stack-segment-item': AboutPageStackSegmentItem;
       'about-page.sticky-nav-section': AboutPageStickyNavSection;
       'about-page.structured-data-section': AboutPageStructuredDataSection;
+      'contact-page.download-cta-section': ContactPageDownloadCtaSection;
+      'contact-page.eligibility-reminder-section': ContactPageEligibilityReminderSection;
+      'contact-page.enquiry-form-section': ContactPageEnquiryFormSection;
+      'contact-page.facility-contacts-section': ContactPageFacilityContactsSection;
+      'contact-page.fun-stat-item': ContactPageFunStatItem;
+      'contact-page.fun-stats-section': ContactPageFunStatsSection;
+      'contact-page.hero-card-item': ContactPageHeroCardItem;
+      'contact-page.hero-section': ContactPageHeroSection;
+      'contact-page.next-steps-section': ContactPageNextStepsSection;
+      'contact-page.portal-link-item': ContactPagePortalLinkItem;
+      'contact-page.role-tab-item': ContactPageRoleTabItem;
+      'contact-page.select-option-item': ContactPageSelectOptionItem;
+      'contact-page.structured-data-section': ContactPageStructuredDataSection;
+      'contact-page.submission-success-section': ContactPageSubmissionSuccessSection;
+      'contact-page.tech-mapping-item': ContactPageTechMappingItem;
       'eligibility-page.assessment-chrome-section': EligibilityPageAssessmentChromeSection;
       'eligibility-page.assessment-log-row-item': EligibilityPageAssessmentLogRowItem;
       'eligibility-page.assessment-option-item': EligibilityPageAssessmentOptionItem;
@@ -2451,6 +2926,18 @@ declare module '@strapi/strapi' {
       'home-page.tab-item': HomePageTabItem;
       'home-page.theory-card-item': HomePageTheoryCardItem;
       'home-page.view-tab-item': HomePageViewTabItem;
+      'how-it-works-page.bullet-item': HowItWorksPageBulletItem;
+      'how-it-works-page.co-financing-partner': HowItWorksPageCoFinancingPartner;
+      'how-it-works-page.facility-structure-section': HowItWorksPageFacilityStructureSection;
+      'how-it-works-page.financing-structure-section': HowItWorksPageFinancingStructureSection;
+      'how-it-works-page.hero-section': HowItWorksPageHeroSection;
+      'how-it-works-page.hero-step-item': HowItWorksPageHeroStepItem;
+      'how-it-works-page.next-steps-section': HowItWorksPageNextStepsSection;
+      'how-it-works-page.partner-logo-item': HowItWorksPagePartnerLogoItem;
+      'how-it-works-page.portal-link-item': HowItWorksPagePortalLinkItem;
+      'how-it-works-page.process-section': HowItWorksPageProcessSection;
+      'how-it-works-page.process-step-item': HowItWorksPageProcessStepItem;
+      'how-it-works-page.structured-data-section': HowItWorksPageStructuredDataSection;
       'impact-page.asset-item': ImpactPageAssetItem;
       'impact-page.assets-tab-section': ImpactPageAssetsTabSection;
       'impact-page.hero-section': ImpactPageHeroSection;

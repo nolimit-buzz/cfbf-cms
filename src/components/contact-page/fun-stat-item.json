@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_contact_page_fun_stat_items",
+  "info": {
+    "displayName": "Fun Stat Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string" },
+    "label": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

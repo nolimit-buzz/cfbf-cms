@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_how_it_works_page_facility_structure_sections",
+  "info": {
+    "displayName": "Facility Structure Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "body": { "type": "text" },
+    "diagramSrc": { "type": "string" },
+    "diagramAlt": { "type": "text" }
+  }
+}

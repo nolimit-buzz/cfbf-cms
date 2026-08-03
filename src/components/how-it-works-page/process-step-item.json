@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_how_it_works_page_process_step_items",
+  "info": {
+    "displayName": "Process Step Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "step": { "type": "string" },
+    "title": { "type": "string" },
+    "desc": { "type": "text" }
+  }
+}

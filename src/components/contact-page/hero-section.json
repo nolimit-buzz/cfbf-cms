@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_contact_page_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "breadcrumbLabel": { "type": "string" },
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "description": { "type": "text" },
+    "backgroundImage": { "type": "string" },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "contact-page.hero-card-item"
+    }
+  }
+}

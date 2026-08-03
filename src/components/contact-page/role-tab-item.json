@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_contact_page_role_tab_items",
+  "info": {
+    "displayName": "Role Tab Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_how_it_works_page_partner_logo_items",
+  "info": {
+    "displayName": "Partner Logo Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "src": { "type": "string" },
+    "alt": { "type": "string" },
+    "href": { "type": "string" }
+  }
+}

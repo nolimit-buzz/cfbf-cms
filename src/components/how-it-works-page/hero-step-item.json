@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_how_it_works_page_hero_step_items",
+  "info": {
+    "displayName": "Hero Step Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "index": { "type": "string" },
+    "range": { "type": "string" },
+    "title": { "type": "string" },
+    "desc": { "type": "text" },
+    "theme": { "type": "string" }
+  }
+}
