@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_projects_page_map_legend_items",
+  "info": {
+    "displayName": "Map Legend Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" },
+    "color": { "type": "string" },
+    "type": { "type": "string" }
+  }
+}

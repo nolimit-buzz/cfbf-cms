@@ -446,18 +446,15 @@ export interface AdminUser extends Struct.CollectionTypeSchema {
 export interface ApiAboutAbout extends Struct.SingleTypeSchema {
   collectionName: 'abouts';
   info: {
-    description: 'Write about yourself and the content you create';
-    displayName: 'About';
+    description: 'ABOUT page content';
+    displayName: 'ABOUT';
     pluralName: 'abouts';
     singularName: 'about';
   };
   options: {
-    draftAndPublish: false;
+    draftAndPublish: true;
   };
   attributes: {
-    blocks: Schema.Attribute.DynamicZone<
-      ['shared.media', 'shared.quote', 'shared.rich-text', 'shared.slider']
-    >;
     createdAt: Schema.Attribute.DateTime;
     createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -465,7 +462,23 @@ export interface ApiAboutAbout extends Struct.SingleTypeSchema {
     localizations: Schema.Attribute.Relation<'oneToMany', 'api::about.about'> &
       Schema.Attribute.Private;
     publishedAt: Schema.Attribute.DateTime;
-    title: Schema.Attribute.String;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'about-page.structured-data-section',
+        'about-page.hero-section',
+        'about-page.sticky-nav-section',
+        'about-page.mandate-section',
+        'about-page.market-section',
+        'about-page.energy-map-section',
+        'about-page.framework-section',
+        'about-page.capital-stack-section',
+        'about-page.partners-section',
+        'about-page.milestones-section',
+        'about-page.audience-section',
+        'about-page.next-steps-section',
+        'about-page.download-cta-section',
+      ]
+    >;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
       Schema.Attribute.Private;
@@ -576,6 +589,47 @@ export interface ApiCategoryCategory extends Struct.CollectionTypeSchema {
   };
 }
 
+export interface ApiEligibilityEligibility extends Struct.SingleTypeSchema {
+  collectionName: 'eligibility';
+  info: {
+    description: 'ELIGIBILITY page content';
+    displayName: 'ELIGIBILITY';
+    pluralName: 'eligibilities';
+    singularName: 'eligibility';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::eligibility.eligibility'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'eligibility-page.structured-data-section',
+        'eligibility-page.hero-section',
+        'eligibility-page.criteria-pillars-section',
+        'eligibility-page.timeline-workflow-section',
+        'eligibility-page.next-steps-section',
+        'eligibility-page.final-cta-section',
+        'eligibility-page.assessment-chrome-section',
+        'eligibility-page.assessment-steps-section',
+        'eligibility-page.assessment-result-section',
+      ]
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiGlobalGlobal extends Struct.SingleTypeSchema {
   collectionName: 'globals';
   info: {
@@ -638,6 +692,125 @@ export interface ApiHomeHome extends Struct.SingleTypeSchema {
         'home-page.news-section',
         'home-page.net-zero-section',
         'home-page.structured-data-section',
+      ]
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiImpactImpact extends Struct.SingleTypeSchema {
+  collectionName: 'impact';
+  info: {
+    description: 'IMPACT page content';
+    displayName: 'IMPACT';
+    pluralName: 'impacts';
+    singularName: 'impact';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::impact.impact'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'impact-page.structured-data-section',
+        'impact-page.hero-section',
+        'impact-page.philosophy-section',
+        'impact-page.impact-console-section',
+        'impact-page.stories-tab-section',
+        'impact-page.numbers-tab-section',
+        'impact-page.investments-tab-section',
+        'impact-page.assets-tab-section',
+        'impact-page.next-steps-section',
+        'impact-page.video-modal-section',
+      ]
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiNewsNews extends Struct.SingleTypeSchema {
+  collectionName: 'news';
+  info: {
+    description: 'NEWS page content';
+    displayName: 'NEWS';
+    pluralName: 'newses';
+    singularName: 'news';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<'oneToMany', 'api::news.news'> &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'news-page.structured-data-section',
+        'news-page.hero-section',
+        'news-page.listing-section',
+        'news-page.articles-section',
+        'news-page.article-detail-section',
+        'news-page.next-steps-section',
+      ]
+    >;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
+export interface ApiProjectsProjects extends Struct.SingleTypeSchema {
+  collectionName: 'projects';
+  info: {
+    description: 'PROJECTS page content';
+    displayName: 'PROJECTS';
+    pluralName: 'projects-list';
+    singularName: 'projects';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::projects.projects'
+    > &
+      Schema.Attribute.Private;
+    publishedAt: Schema.Attribute.DateTime;
+    sections: Schema.Attribute.DynamicZone<
+      [
+        'projects-page.structured-data-section',
+        'projects-page.hero-section',
+        'projects-page.portfolio-tabs-section',
+        'projects-page.analysis-tab-section',
+        'projects-page.pipeline-tab-section',
+        'projects-page.pipeline-console-section',
+        'projects-page.eligibility-cta-section',
+        'projects-page.footprint-map-section',
+        'projects-page.lga-modal-section',
+        'projects-page.next-steps-section',
       ]
     >;
     updatedAt: Schema.Attribute.DateTime;
@@ -1161,8 +1334,12 @@ declare module '@strapi/strapi' {
       'api::article.article': ApiArticleArticle;
       'api::author.author': ApiAuthorAuthor;
       'api::category.category': ApiCategoryCategory;
+      'api::eligibility.eligibility': ApiEligibilityEligibility;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
+      'api::impact.impact': ApiImpactImpact;
+      'api::news.news': ApiNewsNews;
+      'api::projects.projects': ApiProjectsProjects;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;
       'plugin::i18n.locale': PluginI18NLocale;

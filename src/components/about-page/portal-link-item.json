@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_page_portal_link_items",
+  "info": {
+    "displayName": "Portal Link Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "kicker": { "type": "string" },
+    "title": { "type": "string" },
+    "sub": { "type": "text" },
+    "href": { "type": "string" }
+  }
+}

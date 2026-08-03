@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_impact_page_sdg_card_items",
+  "info": {
+    "displayName": "SDG Card Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "number": { "type": "string" },
+    "title": { "type": "string" },
+    "badgeLabel": { "type": "string" },
+    "description": { "type": "text" },
+    "image": { "type": "string" }
+  }
+}

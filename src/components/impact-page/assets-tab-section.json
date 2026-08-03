@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_impact_page_assets_tab_sections",
+  "info": {
+    "displayName": "Assets Tab Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "columns": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.label-item"
+    },
+    "assets": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.asset-item"
+    }
+  }
+}

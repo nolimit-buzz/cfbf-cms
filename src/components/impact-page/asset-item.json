@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_impact_page_asset_items",
+  "info": {
+    "displayName": "Asset Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "assetId": { "type": "string" },
+    "title": { "type": "string" },
+    "location": { "type": "string" },
+    "category": { "type": "string" },
+    "capacity": { "type": "string" },
+    "connections": { "type": "string" },
+    "jobs": { "type": "string" },
+    "ghg": { "type": "string" },
+    "capital": { "type": "string" },
+    "year": { "type": "string" },
+    "status": { "type": "string" }
+  }
+}

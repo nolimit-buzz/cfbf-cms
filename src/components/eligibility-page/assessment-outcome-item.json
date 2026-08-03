@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_eligibility_page_assessment_outcome_items",
+  "info": {
+    "displayName": "Assessment Outcome Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "status": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "ctaLabel": { "type": "string" }
+  }
+}

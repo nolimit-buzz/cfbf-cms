@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_projects_page_map_state_items",
+  "info": {
+    "displayName": "Map State Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mapId": { "type": "string" },
+    "name": { "type": "string" },
+    "hasProjects": { "type": "boolean" },
+    "projectType": { "type": "string" },
+    "lgas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.lga-item"
+    }
+  }
+}

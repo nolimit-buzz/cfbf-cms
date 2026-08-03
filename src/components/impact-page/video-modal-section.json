@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_impact_page_video_modal_sections",
+  "info": {
+    "displayName": "Video Modal Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "nowPlayingLabel": { "type": "string" }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_projects_page_hero_stat_items",
+  "info": {
+    "displayName": "Hero Stat Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" },
+    "value": { "type": "string" },
+    "unit": { "type": "string" },
+    "description": { "type": "text" },
+    "sdgBadge": { "type": "string" }
+  }
+}

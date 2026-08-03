@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_eligibility_page_assessment_log_row_items",
+  "info": {
+    "displayName": "Assessment Log Row Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" },
+    "passLabel": { "type": "string" },
+    "failLabel": { "type": "string" }
+  }
+}

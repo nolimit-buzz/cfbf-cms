@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_projects_page_sdg_items",
+  "info": {
+    "displayName": "SDG Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "number": { "type": "string" },
+    "name": { "type": "string" }
+  }
+}

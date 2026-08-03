@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_about_page_stack_bar_items",
+  "info": {
+    "displayName": "Stack Bar Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "percent": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

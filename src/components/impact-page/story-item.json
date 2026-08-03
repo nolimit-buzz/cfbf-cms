@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_impact_page_story_items",
+  "info": {
+    "displayName": "Story Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "role": { "type": "string" },
+    "location": { "type": "string" },
+    "type": { "type": "string" },
+    "badge": { "type": "string" },
+    "excerpt": { "type": "text" },
+    "duration": { "type": "string" },
+    "image": { "type": "string" },
+    "video": { "type": "string" }
+  }
+}

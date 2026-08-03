@@ -4,20 +4,31 @@
   "info": {
     "singularName": "about",
     "pluralName": "abouts",
-    "displayName": "About",
-    "description": "Write about yourself and the content you create"
+    "displayName": "ABOUT",
+    "description": "ABOUT page content"
   },
   "options": {
-    "draftAndPublish": false
+    "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
-    "title": {
-      "type": "string"
-    },
-    "blocks": {
+    "sections": {
       "type": "dynamiczone",
-      "components": ["shared.media", "shared.quote", "shared.rich-text", "shared.slider"]
+      "components": [
+        "about-page.structured-data-section",
+        "about-page.hero-section",
+        "about-page.sticky-nav-section",
+        "about-page.mandate-section",
+        "about-page.market-section",
+        "about-page.energy-map-section",
+        "about-page.framework-section",
+        "about-page.capital-stack-section",
+        "about-page.partners-section",
+        "about-page.milestones-section",
+        "about-page.audience-section",
+        "about-page.next-steps-section",
+        "about-page.download-cta-section"
+      ]
     }
   }
 }

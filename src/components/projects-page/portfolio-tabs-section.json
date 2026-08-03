@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_projects_page_portfolio_tabs_sections",
+  "info": {
+    "displayName": "Portfolio Tabs Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "body": { "type": "text" },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.tab-item"
+    }
+  }
+}

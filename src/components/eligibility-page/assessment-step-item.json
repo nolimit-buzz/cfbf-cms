@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_eligibility_page_assessment_step_items",
+  "info": {
+    "displayName": "Assessment Step Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stepNumber": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

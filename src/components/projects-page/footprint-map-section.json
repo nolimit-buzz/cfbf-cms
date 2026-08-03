@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_projects_page_footprint_map_sections",
+  "info": {
+    "displayName": "Footprint Map Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "body": { "type": "text" },
+    "statesStatLabel": { "type": "string" },
+    "communitiesStatLabel": { "type": "string" },
+    "statesColumnLabel": { "type": "string" },
+    "searchPlaceholder": { "type": "string" },
+    "mapLabel": { "type": "string" },
+    "mapHint": { "type": "string" },
+    "lgaPanelSuffix": { "type": "string" },
+    "lgaEmptyMessage": { "type": "string" },
+    "clearSelectionLabel": { "type": "string" },
+    "placeholderTitle": { "type": "string" },
+    "placeholderBody": { "type": "text" },
+    "legend": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.map-legend-item"
+    },
+    "states": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.map-state-item"
+    },
+    "lgaProjects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.lga-project-item"
+    }
+  }
+}

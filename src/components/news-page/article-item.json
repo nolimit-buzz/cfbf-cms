@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_news_page_article_items",
+  "info": {
+    "displayName": "Article Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "articleId": { "type": "string" },
+    "tag": { "type": "string" },
+    "date": { "type": "string" },
+    "readTime": { "type": "string" },
+    "title": { "type": "string" },
+    "excerpt": { "type": "text" },
+    "author": { "type": "string" },
+    "authorAvatar": { "type": "string" },
+    "image": { "type": "string" },
+    "keyContext": { "type": "text" },
+    "themes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "news-page.article-theme-item"
+    },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "news-page.article-paragraph-item"
+    }
+  }
+}

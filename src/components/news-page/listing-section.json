@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_news_page_listing_sections",
+  "info": {
+    "displayName": "Listing Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sectionSub": { "type": "string" },
+    "sectionTitle": { "type": "text" },
+    "viewTabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "news-page.view-tab-item"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "news-page.category-item"
+    }
+  }
+}

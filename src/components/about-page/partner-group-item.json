@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_about_page_partner_group_items",
+  "info": {
+    "displayName": "Partner Group Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": { "type": "string" },
+    "description": { "type": "text" },
+    "partners": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.partner-item"
+    }
+  }
+}

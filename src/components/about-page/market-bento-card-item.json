@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_page_market_bento_card_items",
+  "info": {
+    "displayName": "Market Bento Card Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string" },
+    "eyebrow": { "type": "string" },
+    "description": { "type": "text" },
+    "footer": { "type": "text" }
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_about_page_audience_sections",
+  "info": {
+    "displayName": "Audience Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "journeySuffix": { "type": "string" },
+    "questionsHeading": { "type": "string" },
+    "personas": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.persona-item"
+    }
+  }
+}

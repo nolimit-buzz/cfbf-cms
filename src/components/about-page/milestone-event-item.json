@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_about_page_milestone_event_items",
+  "info": {
+    "displayName": "Milestone Event Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "date": { "type": "string" },
+    "text": { "type": "text" }
+  }
+}

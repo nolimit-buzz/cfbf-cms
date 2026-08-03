@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_about_page_mandate_number_items",
+  "info": {
+    "displayName": "Mandate Number Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

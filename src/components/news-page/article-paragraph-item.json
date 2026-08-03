@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_news_page_article_paragraph_items",
+  "info": {
+    "displayName": "Article Paragraph Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blockType": { "type": "string" },
+    "text": { "type": "text" },
+    "caption": { "type": "text" },
+    "url": { "type": "string" }
+  }
+}

@@ -1,0 +1,60 @@
+{
+  "collectionName": "components_projects_page_pipeline_console_sections",
+  "info": {
+    "displayName": "Pipeline Console Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "body": { "type": "text" },
+    "selectStageLabel": { "type": "string" },
+    "usdUnitLabel": { "type": "string" },
+    "sdgFrameworksLabel": { "type": "string" },
+    "toggleTotalLabel": { "type": "string" },
+    "toggleMandatedLabel": { "type": "string" },
+    "metricsHeader": { "type": "string" },
+    "businessModelsHeader": { "type": "string" },
+    "metricsSubcopy": { "type": "text" },
+    "businessModelsSubcopy": { "type": "text" },
+    "tableHeadSector": { "type": "string" },
+    "tableHeadProjects": { "type": "string" },
+    "tableHeadPipelineNgn": { "type": "string" },
+    "tableHeadMandatedNgn": { "type": "string" },
+    "tableHeadDealSize": { "type": "string" },
+    "footerLabel": { "type": "string" },
+    "footerProjects": { "type": "string" },
+    "footerTotalPipeline": { "type": "string" },
+    "footerTotalMandated": { "type": "string" },
+    "footerPercent": { "type": "string" },
+    "businessModelsMandatedUsd": { "type": "string" },
+    "businessModelsMandatedNgn": { "type": "string" },
+    "metricLabels": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.metric-card-item"
+    },
+    "stages": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.pipeline-stage-item"
+    },
+    "sdgFrameworks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.sdg-item"
+    },
+    "totalPipelineRows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.sector-row-item"
+    },
+    "mandatedDealRows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.sector-row-item"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_about_page_partner_items",
+  "info": {
+    "displayName": "Partner Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" },
+    "role": { "type": "string" },
+    "logoText": { "type": "string" }
+  }
+}

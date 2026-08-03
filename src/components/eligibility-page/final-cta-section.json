@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_eligibility_page_final_cta_sections",
+  "info": {
+    "displayName": "Final CTA Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "backgroundImage": { "type": "string" },
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "body": { "type": "text" },
+    "primaryCtaLabel": { "type": "string" },
+    "primaryCtaHref": { "type": "string" },
+    "downloadCtaLabel": { "type": "string" },
+    "downloadCtaHref": { "type": "string" },
+    "downloadFileName": { "type": "string" }
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_about_page_framework_sections",
+  "info": {
+    "displayName": "Framework Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "intro": { "type": "text" },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.framework-card-item"
+    }
+  }
+}

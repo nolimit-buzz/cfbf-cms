@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_about_page_persona_qa_items",
+  "info": {
+    "displayName": "Persona QA Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "question": { "type": "string" },
+    "answer": { "type": "text" }
+  }
+}

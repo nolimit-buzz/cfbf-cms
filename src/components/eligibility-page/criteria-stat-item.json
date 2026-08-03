@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_eligibility_page_criteria_stat_items",
+  "info": {
+    "displayName": "Criteria Stat Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_about_page_mandate_sections",
+  "info": {
+    "displayName": "Mandate Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "heading": { "type": "string" },
+    "body": { "type": "text" },
+    "mandateHeading": { "type": "string" },
+    "numbersLabel": { "type": "string" },
+    "paragraphs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.mandate-paragraph-item"
+    },
+    "numbers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.mandate-number-item"
+    },
+    "captions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.bento-caption-item"
+    }
+  }
+}

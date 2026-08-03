@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_page_framework_card_items",
+  "info": {
+    "displayName": "Framework Card Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cardNumber": { "type": "string" },
+    "title": { "type": "string" },
+    "body": { "type": "text" },
+    "tag": { "type": "string" }
+  }
+}

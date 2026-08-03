@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_eligibility_page_criteria_pillars_sections",
+  "info": {
+    "displayName": "Criteria Pillars Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eligibility-page.criteria-card-item"
+    }
+  }
+}

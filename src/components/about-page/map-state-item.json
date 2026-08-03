@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_about_page_map_state_items",
+  "info": {
+    "displayName": "Map State Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "mapId": { "type": "string" },
+    "name": { "type": "string" },
+    "connections": { "type": "string" },
+    "fundingGap": { "type": "string" },
+    "unservedPct": { "type": "integer" },
+    "grid": { "type": "decimal" },
+    "miniGrid": { "type": "decimal" },
+    "standalone": { "type": "decimal" }
+  }
+}

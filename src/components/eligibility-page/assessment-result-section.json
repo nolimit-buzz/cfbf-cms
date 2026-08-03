@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_eligibility_page_assessment_result_sections",
+  "info": {
+    "displayName": "Assessment Result Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "readinessLabel": { "type": "string" },
+    "logHeading": { "type": "string" },
+    "outcomes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eligibility-page.assessment-outcome-item"
+    },
+    "logRows": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eligibility-page.assessment-log-row-item"
+    },
+    "excludedCtaLabel": { "type": "string" },
+    "restartLabel": { "type": "string" }
+  }
+}

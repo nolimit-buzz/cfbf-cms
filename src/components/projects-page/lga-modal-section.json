@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_projects_page_lga_modal_sections",
+  "info": {
+    "displayName": "LGA Modal Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitlePrefix": { "type": "string" },
+    "subtitleStateSuffix": { "type": "string" },
+    "statLabelDevelopers": { "type": "string" },
+    "statLabelCommunities": { "type": "string" },
+    "statLabelPuePotential": { "type": "string" },
+    "emptyTitle": { "type": "string" },
+    "emptyBody": { "type": "text" },
+    "sourceLabel": { "type": "string" },
+    "closeLabel": { "type": "string" },
+    "fallbackIcon": { "type": "string" },
+    "columnHeads": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.label-item"
+    },
+    "projectTypeIcons": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.project-type-icon-item"
+    }
+  }
+}

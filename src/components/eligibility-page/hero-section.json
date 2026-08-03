@@ -1,0 +1,27 @@
+{
+  "collectionName": "components_eligibility_page_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "breadcrumbLabel": { "type": "string" },
+    "currentPageLabel": { "type": "string" },
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "descriptionPrimary": { "type": "text" },
+    "descriptionSecondaryPrefix": { "type": "text" },
+    "descriptionSecondaryLinkLabel": { "type": "string" },
+    "descriptionSecondaryLinkHref": { "type": "string" },
+    "descriptionSecondarySuffix": { "type": "text" },
+    "backgroundImage": { "type": "string" },
+    "sectorsLabel": { "type": "string" },
+    "sectors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eligibility-page.sector-item"
+    }
+  }
+}

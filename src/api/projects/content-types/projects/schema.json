@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "projects",
+  "info": {
+    "singularName": "projects",
+    "pluralName": "projects-list",
+    "displayName": "PROJECTS",
+    "description": "PROJECTS page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "projects-page.structured-data-section",
+        "projects-page.hero-section",
+        "projects-page.portfolio-tabs-section",
+        "projects-page.analysis-tab-section",
+        "projects-page.pipeline-tab-section",
+        "projects-page.pipeline-console-section",
+        "projects-page.eligibility-cta-section",
+        "projects-page.footprint-map-section",
+        "projects-page.lga-modal-section",
+        "projects-page.next-steps-section"
+      ]
+    }
+  }
+}

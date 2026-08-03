@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_about_page_bento_caption_items",
+  "info": {
+    "displayName": "Bento Caption Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" }
+  }
+}

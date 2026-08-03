@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_impact_page_impact_console_sections",
+  "info": {
+    "displayName": "Impact Console Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.tab-item"
+    }
+  }
+}

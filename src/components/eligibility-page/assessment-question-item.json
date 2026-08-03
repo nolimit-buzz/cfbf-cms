@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_eligibility_page_assessment_question_items",
+  "info": {
+    "displayName": "Assessment Question Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stepNumber": { "type": "string" },
+    "label": { "type": "text" },
+    "requiredMarker": { "type": "string" },
+    "helperText": { "type": "text" },
+    "options": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eligibility-page.assessment-option-item"
+    }
+  }
+}

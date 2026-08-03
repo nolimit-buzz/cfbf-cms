@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_projects_page_pipeline_stage_items",
+  "info": {
+    "displayName": "Pipeline Stage Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stageId": { "type": "string" },
+    "label": { "type": "string" },
+    "title": { "type": "string" },
+    "usdVal": { "type": "string" },
+    "ngnVal": { "type": "string" },
+    "desc": { "type": "text" },
+    "sdgs": { "type": "string" },
+    "metrics": {
+      "type": "component",
+      "repeatable": false,
+      "component": "projects-page.pipeline-stage-metrics"
+    }
+  }
+}

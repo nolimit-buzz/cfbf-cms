@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_about_page_mandate_paragraph_items",
+  "info": {
+    "displayName": "Mandate Paragraph Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": { "type": "text" }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_impact_page_tab_items",
+  "info": {
+    "displayName": "Tab Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tabId": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

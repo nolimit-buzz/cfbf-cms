@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_projects_page_portal_link_items",
+  "info": {
+    "displayName": "Portal Link Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "href": { "type": "string" }
+  }
+}

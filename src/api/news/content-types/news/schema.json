@@ -1,0 +1,25 @@
+{
+  "kind": "singleType",
+  "collectionName": "news",
+  "info": {
+    "singularName": "news",
+    "pluralName": "newses",
+    "displayName": "NEWS",
+    "description": "NEWS page content"
+  },
+  "options": { "draftAndPublish": true },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "news-page.structured-data-section",
+        "news-page.hero-section",
+        "news-page.listing-section",
+        "news-page.articles-section",
+        "news-page.article-detail-section",
+        "news-page.next-steps-section"
+      ]
+    }
+  }
+}

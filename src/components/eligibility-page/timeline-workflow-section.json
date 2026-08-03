@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_eligibility_page_timeline_workflow_sections",
+  "info": {
+    "displayName": "Timeline Workflow Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "stepLabelPrefix": { "type": "string" },
+    "steps": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eligibility-page.timeline-step-item"
+    }
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "kind": "singleType",
+  "collectionName": "impact",
+  "info": {
+    "singularName": "impact",
+    "pluralName": "impacts",
+    "displayName": "IMPACT",
+    "description": "IMPACT page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "impact-page.structured-data-section",
+        "impact-page.hero-section",
+        "impact-page.philosophy-section",
+        "impact-page.impact-console-section",
+        "impact-page.stories-tab-section",
+        "impact-page.numbers-tab-section",
+        "impact-page.investments-tab-section",
+        "impact-page.assets-tab-section",
+        "impact-page.next-steps-section",
+        "impact-page.video-modal-section"
+      ]
+    }
+  }
+}

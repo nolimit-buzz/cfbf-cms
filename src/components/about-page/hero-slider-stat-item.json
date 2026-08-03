@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_about_page_hero_slider_stat_items",
+  "info": {
+    "displayName": "Hero Slider Stat Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string" },
+    "label": { "type": "string" },
+    "sub": { "type": "string" }
+  }
+}

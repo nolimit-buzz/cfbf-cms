@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_projects_page_lga_project_items",
+  "info": {
+    "displayName": "LGA Project Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "developer": { "type": "string" },
+    "community": { "type": "string" },
+    "state": { "type": "string" },
+    "lga": { "type": "string" },
+    "projectType": { "type": "string" },
+    "puePotential": { "type": "integer" },
+    "enumerators": { "type": "integer" }
+  }
+}

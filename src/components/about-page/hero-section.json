@@ -1,0 +1,28 @@
+{
+  "collectionName": "components_about_page_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "breadcrumbLabel": { "type": "string" },
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "headingPartTwo": { "type": "string" },
+    "headingItalic": { "type": "string" },
+    "bodyPartOne": { "type": "text" },
+    "bodyPartTwo": { "type": "text" },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.hero-stat-item"
+    },
+    "sliderStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.hero-slider-stat-item"
+    }
+  }
+}

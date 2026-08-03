@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_impact_page_investments_tab_sections",
+  "info": {
+    "displayName": "Investments Tab Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pillarsHeading": { "type": "string" },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.pillar-item"
+    },
+    "sdgHeading": { "type": "string" },
+    "sdgCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.sdg-card-item"
+    }
+  }
+}

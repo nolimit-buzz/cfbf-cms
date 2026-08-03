@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "eligibility",
+  "info": {
+    "singularName": "eligibility",
+    "pluralName": "eligibilities",
+    "displayName": "ELIGIBILITY",
+    "description": "ELIGIBILITY page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "eligibility-page.structured-data-section",
+        "eligibility-page.hero-section",
+        "eligibility-page.criteria-pillars-section",
+        "eligibility-page.timeline-workflow-section",
+        "eligibility-page.next-steps-section",
+        "eligibility-page.final-cta-section",
+        "eligibility-page.assessment-chrome-section",
+        "eligibility-page.assessment-steps-section",
+        "eligibility-page.assessment-result-section"
+      ]
+    }
+  }
+}

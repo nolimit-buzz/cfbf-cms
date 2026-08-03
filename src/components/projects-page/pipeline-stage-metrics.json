@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_projects_page_pipeline_stage_metrics",
+  "info": {
+    "displayName": "Pipeline Stage Metrics",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "connections": { "type": "string" },
+    "connectionsLabel": { "type": "string" },
+    "capacity": { "type": "string" },
+    "communities": { "type": "string" },
+    "communitiesLabel": { "type": "string" },
+    "jobs": { "type": "string" },
+    "ghg": { "type": "string" },
+    "capital": { "type": "string" },
+    "capitalSub": { "type": "string" }
+  }
+}

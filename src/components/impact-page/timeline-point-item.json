@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_impact_page_timeline_point_items",
+  "info": {
+    "displayName": "Timeline Point Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "year": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_about_page_partners_sections",
+  "info": {
+    "displayName": "Partners Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "ctaLabel": { "type": "string" },
+    "ctaHref": { "type": "string" },
+    "ctaHoverLabel": { "type": "string" },
+    "groups": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.partner-group-item"
+    }
+  }
+}

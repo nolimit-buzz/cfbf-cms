@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_impact_page_philosophy_sections",
+  "info": {
+    "displayName": "Philosophy Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "bodyPartOne": { "type": "text" },
+    "bodyPartTwo": { "type": "text" },
+    "pillars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.pillar-item"
+    }
+  }
+}

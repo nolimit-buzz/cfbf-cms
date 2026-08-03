@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_impact_page_pillar_items",
+  "info": {
+    "displayName": "Pillar Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "number": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

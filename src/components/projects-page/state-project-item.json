@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_projects_page_state_project_items",
+  "info": {
+    "displayName": "State Project Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stateMapId": { "type": "string" },
+    "projectName": { "type": "string" },
+    "capacity": { "type": "string" },
+    "funding": { "type": "string" },
+    "sdgs": { "type": "string" },
+    "category": { "type": "string" },
+    "status": { "type": "string" }
+  }
+}

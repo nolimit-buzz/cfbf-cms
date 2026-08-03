@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_eligibility_page_sector_items",
+  "info": {
+    "displayName": "Sector Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "sdgBadge": { "type": "string" }
+  }
+}

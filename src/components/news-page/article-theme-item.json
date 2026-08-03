@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_news_page_article_theme_items",
+  "info": {
+    "displayName": "Article Theme Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" }
+  }
+}

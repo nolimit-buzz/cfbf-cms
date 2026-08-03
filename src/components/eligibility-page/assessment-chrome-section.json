@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_eligibility_page_assessment_chrome_sections",
+  "info": {
+    "displayName": "Assessment Chrome Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "backLabel": { "type": "string" },
+    "cancelLabel": { "type": "string" },
+    "nextLabel": { "type": "string" },
+    "stepCounterPrefix": { "type": "string" },
+    "stepCounterMiddle": { "type": "string" },
+    "stepCounterTotal": { "type": "string" },
+    "summaryBadge": { "type": "string" }
+  }
+}

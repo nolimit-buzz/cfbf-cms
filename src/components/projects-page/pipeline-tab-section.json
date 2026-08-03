@@ -1,0 +1,39 @@
+{
+  "collectionName": "components_projects_page_pipeline_tab_sections",
+  "info": {
+    "displayName": "Pipeline Tab Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "filterBannerPrefix": { "type": "string" },
+    "stateSuffix": { "type": "string" },
+    "clearFilterLabel": { "type": "string" },
+    "projectIdPrefix": { "type": "string" },
+    "challengeLabel": { "type": "string" },
+    "financialCloseLabel": { "type": "string" },
+    "privateCapitalLabel": { "type": "string" },
+    "sdgGoalsLabel": { "type": "string" },
+    "detailsLinkLabel": { "type": "string" },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.label-item"
+    },
+    "projects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.project-item"
+    },
+    "sdgDefinitions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.sdg-item"
+    },
+    "stateProjects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.state-project-item"
+    }
+  }
+}

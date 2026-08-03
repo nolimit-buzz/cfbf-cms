@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_impact_page_numbers_tab_sections",
+  "info": {
+    "displayName": "Numbers Tab Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "metrics": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.metric-item"
+    },
+    "wheelCenterYear": { "type": "string" },
+    "wheelCenterLabel": { "type": "string" },
+    "wheelProgressLabel": { "type": "string" },
+    "timelinePoints": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.timeline-point-item"
+    },
+    "etpLabel": { "type": "string" },
+    "etpBody": { "type": "text" },
+    "pensionLabel": { "type": "string" },
+    "pensionTargetValue": { "type": "string" },
+    "pensionCurrentLabel": { "type": "string" },
+    "pensionTargetLabel": { "type": "string" }
+  }
+}

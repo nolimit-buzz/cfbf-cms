@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_projects_page_project_type_icon_items",
+  "info": {
+    "displayName": "Project Type Icon Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "projectType": { "type": "string" },
+    "icon": { "type": "string" }
+  }
+}

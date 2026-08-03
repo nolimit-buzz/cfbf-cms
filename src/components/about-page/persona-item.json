@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_about_page_persona_items",
+  "info": {
+    "displayName": "Persona Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tabLabel": { "type": "string" },
+    "title": { "type": "string" },
+    "tagline": { "type": "text" },
+    "intro": { "type": "text" },
+    "ctaLabel": { "type": "string" },
+    "ctaHref": { "type": "string" },
+    "questions": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.persona-qa-item"
+    }
+  }
+}

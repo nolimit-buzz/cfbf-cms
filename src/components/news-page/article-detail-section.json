@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_news_page_article_detail_sections",
+  "info": {
+    "displayName": "Article Detail Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "loadingLabel": { "type": "string" },
+    "notFoundTitle": { "type": "string" },
+    "notFoundBody": { "type": "text" },
+    "notFoundCtaLabel": { "type": "string" },
+    "copyLinkAlert": { "type": "string" },
+    "titleSuffix": { "type": "string" },
+    "publisherName": { "type": "string" },
+    "publisherLogoUrl": { "type": "string" },
+    "dcPublisher": { "type": "string" },
+    "dcLanguage": { "type": "string" },
+    "dcType": { "type": "string" },
+    "breadcrumbParentLabel": { "type": "string" },
+    "breadcrumbPrefix": { "type": "string" },
+    "backLabel": { "type": "string" },
+    "postedByLabel": { "type": "string" },
+    "themesLabel": { "type": "string" },
+    "contextLabel": { "type": "string" },
+    "shareLabel": { "type": "string" },
+    "shareLinkedinAriaLabel": { "type": "string" },
+    "shareTwitterAriaLabel": { "type": "string" },
+    "shareFacebookAriaLabel": { "type": "string" },
+    "copyLinkAriaLabel": { "type": "string" },
+    "publishedInPrefix": { "type": "string" },
+    "previousArticleLabel": { "type": "string" },
+    "firstArticleLabel": { "type": "string" },
+    "nextArticleLabel": { "type": "string" },
+    "latestArticleLabel": { "type": "string" },
+    "relatedHeadingPartOne": { "type": "string" },
+    "relatedHeadingHighlight": { "type": "string" },
+    "relatedCtaLabel": { "type": "string" }
+  }
+}

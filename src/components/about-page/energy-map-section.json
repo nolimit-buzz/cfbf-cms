@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_about_page_energy_map_sections",
+  "info": {
+    "displayName": "Energy Map Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "body": { "type": "text" },
+    "colHeaderRank": { "type": "string" },
+    "colHeaderState": { "type": "string" },
+    "colHeaderConnections": { "type": "string" },
+    "colHeaderGap": { "type": "string" },
+    "sourceNote": { "type": "text" },
+    "tooltipConnectionsLabel": { "type": "string" },
+    "tooltipFundingGapLabel": { "type": "string" },
+    "tooltipUnservedLabel": { "type": "string" },
+    "tooltipNeedIndexLabel": { "type": "string" },
+    "legendLabel": { "type": "string" },
+    "legendScaleLabel": { "type": "string" },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.map-tab-item"
+    },
+    "states": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.map-state-item"
+    }
+  }
+}

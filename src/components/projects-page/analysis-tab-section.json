@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_projects_page_analysis_tab_sections",
+  "info": {
+    "displayName": "Analysis Tab Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tableHeading": { "type": "string" },
+    "downloadLabel": { "type": "string" },
+    "downloadHref": { "type": "string" },
+    "totalsRowLabel": { "type": "string" },
+    "totalsConnectionsSuffix": { "type": "string" },
+    "capacityUnit": { "type": "string" },
+    "ghgUnit": { "type": "string" },
+    "statusOperationalLabel": { "type": "string" },
+    "statusUnderConstructionLabel": { "type": "string" },
+    "statBoxes": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.stat-box-item"
+    },
+    "columnHeads": {
+      "type": "component",
+      "repeatable": true,
+      "component": "projects-page.label-item"
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_impact_page_stories_tab_sections",
+  "info": {
+    "displayName": "Stories Tab Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "countPrefix": { "type": "string" },
+    "countMiddle": { "type": "string" },
+    "countSuffix": { "type": "string" },
+    "viewMoreLabel": { "type": "string" },
+    "roleLabel": { "type": "string" },
+    "locationLabel": { "type": "string" },
+    "typeLabel": { "type": "string" },
+    "stories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.story-item"
+    }
+  }
+}

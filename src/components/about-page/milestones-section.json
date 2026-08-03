@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_about_page_milestones_sections",
+  "info": {
+    "displayName": "Milestones Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "railYears": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.rail-year-item"
+    },
+    "milestones": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.milestone-item"
+    }
+  }
+}

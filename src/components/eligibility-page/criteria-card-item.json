@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_eligibility_page_criteria_card_items",
+  "info": {
+    "displayName": "Criteria Card Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "heading": { "type": "string" },
+    "body": { "type": "text" },
+    "subNote": { "type": "text" },
+    "listItems": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eligibility-page.criteria-list-item"
+    },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "eligibility-page.criteria-stat-item"
+    },
+    "footerTag": { "type": "string" }
+  }
+}

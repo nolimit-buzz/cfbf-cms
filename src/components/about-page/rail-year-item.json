@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_about_page_rail_year_items",
+  "info": {
+    "displayName": "Rail Year Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "label": { "type": "string" }
+  }
+}

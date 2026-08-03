@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_about_page_sticky_nav_sections",
+  "info": {
+    "displayName": "Sticky Nav Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "links": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.nav-link-item"
+    }
+  }
+}

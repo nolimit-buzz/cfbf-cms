@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_about_page_hero_stat_items",
+  "info": {
+    "displayName": "Hero Stat Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cardNumber": { "type": "string" },
+    "value": { "type": "string" },
+    "label": { "type": "string" },
+    "sub": { "type": "string" }
+  }
+}

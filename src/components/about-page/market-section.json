@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_about_page_market_sections",
+  "info": {
+    "displayName": "Market Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "bodyOne": { "type": "text" },
+    "bodyTwo": { "type": "text" },
+    "cards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.market-bento-card-item"
+    }
+  }
+}

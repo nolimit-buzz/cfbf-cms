@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_news_page_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "subtitle": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "bgImage": { "type": "string" },
+    "breadcrumbHomeLabel": { "type": "string" },
+    "breadcrumbCurrentPage": { "type": "string" },
+    "cardCtaLabel": { "type": "string" },
+    "prevAriaLabel": { "type": "string" },
+    "nextAriaLabel": { "type": "string" }
+  }
+}

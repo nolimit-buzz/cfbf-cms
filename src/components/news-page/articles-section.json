@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_news_page_articles_sections",
+  "info": {
+    "displayName": "Articles Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "gridCtaLabel": { "type": "string" },
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "news-page.article-item"
+    }
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_about_page_capital_stack_sections",
+  "info": {
+    "displayName": "Capital Stack Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "collapsedBody": { "type": "text" },
+    "expandedBody": { "type": "text" },
+    "launchLabel": { "type": "string" },
+    "collapseLabel": { "type": "string" },
+    "sliderLabel": { "type": "string" },
+    "sliderUnitLabel": { "type": "string" },
+    "minLabel": { "type": "string" },
+    "maxLabel": { "type": "string" },
+    "wrapBadge": { "type": "string" },
+    "totalLabel": { "type": "string" },
+    "totalSuffix": { "type": "string" },
+    "segments": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.stack-segment-item"
+    },
+    "bars": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.stack-bar-item"
+    }
+  }
+}

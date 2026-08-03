@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_impact_page_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "breadcrumbLabel": { "type": "string" },
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "descriptionPrimary": { "type": "text" },
+    "descriptionSecondary": { "type": "text" },
+    "backgroundImage": { "type": "string" },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "impact-page.hero-stat-item"
+    }
+  }
+}

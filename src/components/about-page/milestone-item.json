@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_about_page_milestone_items",
+  "info": {
+    "displayName": "Milestone Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "period": { "type": "string" },
+    "year": { "type": "string" },
+    "label": { "type": "text" },
+    "events": {
+      "type": "component",
+      "repeatable": true,
+      "component": "about-page.milestone-event-item"
+    }
+  }
+}

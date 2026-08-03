@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_projects_page_sector_row_items",
+  "info": {
+    "displayName": "Sector Row Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sector": { "type": "string" },
+    "projectsCount": { "type": "integer" },
+    "valueNgn": { "type": "decimal" },
+    "percentage": { "type": "string" }
+  }
+}

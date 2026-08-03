@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_eligibility_page_timeline_step_items",
+  "info": {
+    "displayName": "Timeline Step Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stepNumber": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

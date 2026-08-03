@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_impact_page_hero_stat_items",
+  "info": {
+    "displayName": "Hero Stat Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "category": { "type": "string" },
+    "value": { "type": "string" },
+    "label": { "type": "string" },
+    "description": { "type": "text" },
+    "sdgBadge": { "type": "string" }
+  }
+}

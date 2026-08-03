@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_projects_page_lga_items",
+  "info": {
+    "displayName": "LGA Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" }
+  }
+}

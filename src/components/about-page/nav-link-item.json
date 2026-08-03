@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_about_page_nav_link_items",
+  "info": {
+    "displayName": "Nav Link Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "sectionId": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

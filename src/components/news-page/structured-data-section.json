@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_news_page_structured_data_sections",
+  "info": {
+    "displayName": "Structured Data Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "pageTitle": { "type": "string" },
+    "metaDescription": { "type": "text" },
+    "dcTitle": { "type": "string" },
+    "dcCreator": { "type": "string" },
+    "dcSubject": { "type": "string" },
+    "dcDescription": { "type": "text" },
+    "dcPublisher": { "type": "string" },
+    "dcLanguage": { "type": "string" },
+    "dcType": { "type": "string" },
+    "schemaName": { "type": "string" },
+    "schemaDescription": { "type": "text" },
+    "schemaUrl": { "type": "string" },
+    "parentOrganizationName": { "type": "string" }
+  }
+}

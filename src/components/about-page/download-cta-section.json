@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_about_page_download_cta_sections",
+  "info": {
+    "displayName": "Download CTA Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "heading": { "type": "string" },
+    "body": { "type": "text" },
+    "buttonLabel": { "type": "string" },
+    "buttonHref": { "type": "string" },
+    "downloadFileName": { "type": "string" }
+  }
+}

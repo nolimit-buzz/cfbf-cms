@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_projects_page_eligibility_cta_sections",
+  "info": {
+    "displayName": "Eligibility CTA Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPartOne": { "type": "string" },
+    "headingHighlight": { "type": "string" },
+    "headingPartTwo": { "type": "string" },
+    "body": { "type": "text" },
+    "ctaLabel": { "type": "string" },
+    "ctaHref": { "type": "string" },
+    "backgroundImage": { "type": "string" }
+  }
+}

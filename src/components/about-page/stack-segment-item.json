@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_about_page_stack_segment_items",
+  "info": {
+    "displayName": "Stack Segment Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

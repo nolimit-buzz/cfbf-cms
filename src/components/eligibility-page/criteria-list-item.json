@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_eligibility_page_criteria_list_items",
+  "info": {
+    "displayName": "Criteria List Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "text": { "type": "string" }
+  }
+}
