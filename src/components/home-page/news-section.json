@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_page_news_sections",
+  "info": {
+    "displayName": "News Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "heading": { "type": "string" },
+    "readArticleLabel": { "type": "string" },
+    "ctaLabel": { "type": "string" },
+    "ctaHref": { "type": "string" },
+    "viewTabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.view-tab-item"
+    },
+    "articles": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.news-article-item"
+    }
+  }
+}

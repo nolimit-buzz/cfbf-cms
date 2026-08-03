@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_home_page_news_paragraph_items",
+  "info": {
+    "displayName": "News Paragraph Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "blockType": { "type": "string" },
+    "text": { "type": "text" },
+    "caption": { "type": "text" },
+    "url": { "type": "string" }
+  }
+}

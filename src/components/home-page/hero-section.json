@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_page_hero_sections",
+  "info": {
+    "displayName": "Hero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "subheadline": { "type": "text" },
+    "ctaLabel": { "type": "string" },
+    "ctaHref": { "type": "string" },
+    "newsCtaLabel": { "type": "string" },
+    "stats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.stat-item"
+    }
+  }
+}

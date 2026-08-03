@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_home_page_stories_sections",
+  "info": {
+    "displayName": "Stories Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "heading": { "type": "string" },
+    "roleLabel": { "type": "string" },
+    "locationLabel": { "type": "string" },
+    "typeLabel": { "type": "string" },
+    "viewTabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.view-tab-item"
+    },
+    "stories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.story-item"
+    }
+  }
+}

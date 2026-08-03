@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_home_page_feature_card_items",
+  "info": {
+    "displayName": "Feature Card Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

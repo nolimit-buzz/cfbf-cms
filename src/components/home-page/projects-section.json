@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_home_page_projects_sections",
+  "info": {
+    "displayName": "Projects Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "heading": { "type": "string" },
+    "capitalLabel": { "type": "string" },
+    "capacityLabel": { "type": "string" },
+    "challengeLabel": { "type": "string" },
+    "solutionLabel": { "type": "string" },
+    "impactLabel": { "type": "string" },
+    "detailCtaLabel": { "type": "string" },
+    "ctaLabel": { "type": "string" },
+    "ctaHref": { "type": "string" },
+    "viewTabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.view-tab-item"
+    },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.category-item"
+    },
+    "projects": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.project-item"
+    }
+  }
+}

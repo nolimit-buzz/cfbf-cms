@@ -1,0 +1,30 @@
+{
+  "kind": "singleType",
+  "collectionName": "homes",
+  "info": {
+    "singularName": "home",
+    "pluralName": "homes",
+    "displayName": "HOME",
+    "description": "HOME page content"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "sections": {
+      "type": "dynamiczone",
+      "components": [
+        "home-page.hero-section",
+        "home-page.about-section",
+        "home-page.impact-section",
+        "home-page.projects-section",
+        "home-page.map-section",
+        "home-page.stories-section",
+        "home-page.news-section",
+        "home-page.net-zero-section",
+        "home-page.structured-data-section"
+      ]
+    }
+  }
+}

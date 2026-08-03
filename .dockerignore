@@ -1,0 +1,35 @@
+# Dependencies — reinstalled inside the image via npm ci
+node_modules
+**/node_modules
+
+# VCS and CI
+.git
+.gitignore
+.github
+
+# Secrets — must never be baked into an image layer
+.env
+.env.*
+!.env.example
+
+# Build output and local state (regenerated during the image build)
+dist
+build
+.tmp
+.strapi
+.strapi-updater.json
+
+# Local media — uploads are served from Cloudinary
+data/uploads
+
+# Docker's own files
+Dockerfile
+.dockerignore
+docker-compose.yml
+
+# Editor / OS noise
+.vscode
+.idea
+.DS_Store
+Thumbs.db
+*.log

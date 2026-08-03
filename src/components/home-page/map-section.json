@@ -1,0 +1,32 @@
+{
+  "collectionName": "components_home_page_map_sections",
+  "info": {
+    "displayName": "Map Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "statValue": { "type": "string" },
+    "statLabel": { "type": "string" },
+    "body": { "type": "text" },
+    "ctaLabel": { "type": "string" },
+    "categories": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.category-item"
+    },
+    "markers": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.map-marker-item"
+    },
+    "activeStates": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.map-state-item"
+    }
+  }
+}

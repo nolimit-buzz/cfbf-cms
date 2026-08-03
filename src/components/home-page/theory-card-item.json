@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_page_theory_card_items",
+  "info": {
+    "displayName": "Theory Card Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cardId": { "type": "string" },
+    "cardType": { "type": "string" },
+    "subtitle": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" },
+    "image": { "type": "string" },
+    "link": { "type": "string" },
+    "linkLabel": { "type": "string" }
+  }
+}

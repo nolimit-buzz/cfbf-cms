@@ -1,0 +1,56 @@
+{
+  "collectionName": "components_home_page_impact_sections",
+  "info": {
+    "displayName": "Impact Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "eyebrow": { "type": "string" },
+    "headingPrimary": { "type": "string" },
+    "headingSecondary": { "type": "string" },
+    "numbersCtaLabel": { "type": "string" },
+    "reportCtaLabel": { "type": "string" },
+    "reportFileName": { "type": "string" },
+    "reportFileHref": { "type": "string" },
+    "capacityCtaLabel": { "type": "string" },
+    "statsCardEyebrow": { "type": "string" },
+    "galleryCtaLabel": { "type": "string" },
+    "knowledgeHubTitle": { "type": "string" },
+    "knowledgeHubSubtitle": { "type": "text" },
+    "theoryEyebrow": { "type": "string" },
+    "theoryHeadingPrimary": { "type": "string" },
+    "theoryHeadingSecondary": { "type": "string" },
+    "theoryFooterLabel": { "type": "text" },
+    "tabs": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.tab-item"
+    },
+    "metricCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.metric-card-item"
+    },
+    "capacityStats": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.stat-item"
+    },
+    "gallerySlides": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.gallery-slide-item"
+    },
+    "reports": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.report-item"
+    },
+    "theoryCards": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.theory-card-item"
+    }
+  }
+}

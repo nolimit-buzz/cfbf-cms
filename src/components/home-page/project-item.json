@@ -1,0 +1,24 @@
+{
+  "collectionName": "components_home_page_project_items",
+  "info": {
+    "displayName": "Project Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "projectId": { "type": "string" },
+    "title": { "type": "string" },
+    "location": { "type": "string" },
+    "year": { "type": "string" },
+    "capital": { "type": "string" },
+    "capacity": { "type": "string" },
+    "category": { "type": "string" },
+    "image": { "type": "string" },
+    "imageOne": { "type": "string" },
+    "imageTwo": { "type": "string" },
+    "description": { "type": "text" },
+    "problem": { "type": "text" },
+    "solution": { "type": "text" },
+    "impact": { "type": "text" }
+  }
+}

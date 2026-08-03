@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_home_page_net_zero_sections",
+  "info": {
+    "displayName": "Net Zero Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "cardTitle": { "type": "string" },
+    "cardSubtitle": { "type": "string" },
+    "cardBody": { "type": "text" },
+    "eyebrow": { "type": "string" },
+    "heading": { "type": "string" },
+    "body": { "type": "text" },
+    "features": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.feature-card-item"
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_home_page_story_items",
+  "info": {
+    "displayName": "Story Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "title": { "type": "string" },
+    "role": { "type": "string" },
+    "location": { "type": "string" },
+    "storyType": { "type": "string" },
+    "badge": { "type": "string" },
+    "image": { "type": "string" },
+    "excerpt": { "type": "text" },
+    "duration": { "type": "string" }
+  }
+}

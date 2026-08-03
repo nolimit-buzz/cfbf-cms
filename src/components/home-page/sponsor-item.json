@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_home_page_sponsor_items",
+  "info": {
+    "displayName": "Sponsor Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" }
+  }
+}

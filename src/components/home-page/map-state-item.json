@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_home_page_map_state_items",
+  "info": {
+    "displayName": "Map State Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "stateId": { "type": "string" }
+  }
+}

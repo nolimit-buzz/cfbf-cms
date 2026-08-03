@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_home_page_metric_card_items",
+  "info": {
+    "displayName": "Metric Card Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "value": { "type": "string" },
+    "suffix": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_home_page_map_marker_items",
+  "info": {
+    "displayName": "Map Marker Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" },
+    "x": { "type": "string" },
+    "y": { "type": "string" }
+  }
+}

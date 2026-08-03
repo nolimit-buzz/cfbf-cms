@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_home_page_view_tab_items",
+  "info": {
+    "displayName": "View Tab Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tabId": { "type": "string" },
+    "label": { "type": "string" }
+  }
+}

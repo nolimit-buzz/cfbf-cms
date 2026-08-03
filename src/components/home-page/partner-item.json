@@ -1,0 +1,11 @@
+{
+  "collectionName": "components_home_page_partner_items",
+  "info": {
+    "displayName": "Partner Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" }
+  }
+}

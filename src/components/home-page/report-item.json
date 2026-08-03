@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_home_page_report_items",
+  "info": {
+    "displayName": "Report Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "reportId": { "type": "string" },
+    "tag": { "type": "string" },
+    "title": { "type": "string" },
+    "size": { "type": "string" }
+  }
+}

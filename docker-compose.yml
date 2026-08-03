@@ -1,0 +1,52 @@
+services:
+  strapi:
+    image: syntaxdesigner/cfbf-strapi:latest
+    restart: unless-stopped
+
+    environment:
+      # Server
+      HOST: ${HOST}
+      PORT: ${PORT}
+
+      # App Secrets
+      APP_KEYS: ${APP_KEYS}
+      API_TOKEN_SALT: ${API_TOKEN_SALT}
+      ADMIN_JWT_SECRET: ${ADMIN_JWT_SECRET}
+      TRANSFER_TOKEN_SALT: ${TRANSFER_TOKEN_SALT}
+      ENCRYPTION_KEY: ${ENCRYPTION_KEY}
+      JWT_SECRET: ${JWT_SECRET}
+
+      # Database (Postgres only — see config/database.ts)
+      DATABASE_URL: ${DATABASE_URL}
+      DATABASE_HOST: ${DATABASE_HOST}
+      DATABASE_PORT: ${DATABASE_PORT}
+      DATABASE_NAME: ${DATABASE_NAME}
+      DATABASE_USERNAME: ${DATABASE_USERNAME}
+      DATABASE_PASSWORD: ${DATABASE_PASSWORD}
+      DATABASE_SCHEMA: ${DATABASE_SCHEMA}
+      DATABASE_SSL: ${DATABASE_SSL}
+      DATABASE_CONNECTION_TIMEOUT: ${DATABASE_CONNECTION_TIMEOUT}
+
+      # Cloudinary media storage (see config/plugins.ts)
+      CLOUDINARY_NAME: ${CLOUDINARY_NAME}
+      CLOUDINARY_KEY: ${CLOUDINARY_KEY}
+      CLOUDINARY_SECRET: ${CLOUDINARY_SECRET}
+
+    # Traefik labels intentionally omitted until the domain is set up.
+
+    networks:
+      - dokploy-network
+
+    ports:
+      - "1341"
+
+    volumes:
+      - strapi_uploads:/app/public/uploads
+
+volumes:
+  strapi_uploads:
+    name: cef_strapi_uploads
+
+networks:
+  dokploy-network:
+    external: true

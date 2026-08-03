@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_home_page_structured_data_sections",
+  "info": {
+    "displayName": "Structured Data Section",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "organizationName": { "type": "string" },
+    "url": { "type": "string" },
+    "logoUrl": { "type": "string" },
+    "description": { "type": "text" },
+    "siteName": { "type": "string" },
+    "sponsors": {
+      "type": "component",
+      "repeatable": true,
+      "component": "home-page.sponsor-item"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_home_page_tab_items",
+  "info": {
+    "displayName": "Tab Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "tabId": { "type": "string" },
+    "label": { "type": "string" },
+    "title": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}

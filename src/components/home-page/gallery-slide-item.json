@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_home_page_gallery_slide_items",
+  "info": {
+    "displayName": "Gallery Slide Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": { "type": "string" },
+    "description": { "type": "text" }
+  }
+}
