@@ -111,6 +111,10 @@ node_modules
 .pnp.*
 yarn-error.log
 
+# The lockfile is required: the Docker build runs `npm ci`.
+# Overrides a global gitignore that excludes it.
+!package-lock.json
+
 ############################
 # Tests
 ############################

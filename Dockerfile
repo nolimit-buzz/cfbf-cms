@@ -13,7 +13,8 @@ RUN apk update && apk add --no-cache \
 
 WORKDIR /app
 
-COPY package*.json ./
+# Explicit, not a glob: a missing lockfile must fail here, not confusingly in `npm ci`
+COPY package.json package-lock.json ./
 
 RUN --mount=type=cache,target=/root/.npm \
     npm ci --no-audit
