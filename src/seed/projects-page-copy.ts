@@ -26,6 +26,8 @@
  * user-facing copy is left hardcoded.
  */
 
+import { nigeriaMapSvg } from './about-map-svg';
+
 const META_DESCRIPTION =
   'Browse our catalog of local currency de-risked clean energy projects in Nigeria.';
 
@@ -39,6 +41,23 @@ const TELECOM_IMAGE =
   'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop';
 const ACOB_IMAGE =
   'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop';
+
+/** PipelineConsole.tsx:390 / :518 — decorative column backdrops under a colour wash. */
+const CONSOLE_LEFT_IMAGE =
+  'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop';
+const CONSOLE_RIGHT_IMAGE =
+  'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop';
+
+/** PipelineConsole.tsx:111-118 SDG_METADATA bgImage, keyed by SDG number. */
+const SDG_IMAGES: Record<number, string> = {
+  7: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=400&auto=format&fit=crop',
+  // Replaces photo-1521791136368, which Unsplash removed (HTTP 404).
+  8: 'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=400&auto=format&fit=crop',
+  9: 'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=400&auto=format&fit=crop',
+  11: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=400&auto=format&fit=crop',
+  13: 'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=400&auto=format&fit=crop',
+  17: 'https://images.unsplash.com/photo-1517048676732-d65bc937f952?q=80&w=400&auto=format&fit=crop',
+};
 
 /** Hotspot Network telecom footprint — identical across its 22 states. */
 const hotspotState = (stateMapId: string) => ({
@@ -98,6 +117,7 @@ export const projectsSections = [
     description:
       'The Climate Finance Blending Facility (CFBF) deploys strategic first-loss co-financing to de-risk private commercial capital, mobilizing local funding to power clean energy and create sustainable jobs.',
     backgroundImage: HERO_IMAGE,
+    backgroundImage_alt_text: 'Hero banner',
     stats: [
       {
         label: 'Capacity installed',
@@ -233,6 +253,7 @@ export const projectsSections = [
         ghg: '762 Tonnes',
         status: 'Under Construction',
         image: SOLAR_IMAGE,
+        image_alt_text: 'First Electric Nigeria Limited',
         desc: 'Mesh grid networks connecting rural households and SMEs across three states.',
         problem:
           'Lack of grid access in agricultural communities leading to low economic productivity.',
@@ -255,6 +276,7 @@ export const projectsSections = [
         ghg: '737 Tonnes',
         status: 'Under Construction',
         image: SOLAR_IMAGE,
+        image_alt_text: 'CEESOLAR Energy Limited',
         desc: 'Green Finance for Off-Grid Rural Electrification in four communities.',
         problem:
           'Lack of grid infrastructure in remote areas of Cross River, relying heavily on wood fuel and generators.',
@@ -277,6 +299,7 @@ export const projectsSections = [
         ghg: '893 Tonnes',
         status: 'Under Construction',
         image: AGRO_IMAGE,
+        image_alt_text: 'Prado Power Energy Limited',
         desc: 'Solar hybrid mini-grids powering agricultural value chain hubs.',
         problem:
           'Post-harvest agricultural losses and lack of cold storage for rural farming cooperatives.',
@@ -299,6 +322,7 @@ export const projectsSections = [
         ghg: '8.34 Tonnes',
         status: 'Operational',
         image: TELECOM_IMAGE,
+        image_alt_text: 'Hotspot Network Limited',
         desc: 'Green Finance for Sustainable Rural Telephony networks.',
         problem:
           'Off-grid telecommunication towers in rural communities rely on diesel generators, releasing heavy CO2.',
@@ -321,6 +345,7 @@ export const projectsSections = [
         ghg: '4,856 Tonnes',
         status: 'Operational',
         image: SOLAR_IMAGE,
+        image_alt_text: 'Darway Coast Limited',
         desc: 'Isolated solar mini-grids for underserved southern communities.',
         problem:
           'Lack of clean, reliable energy for coastal fish drying and local enterprise in southern Riverine zones.',
@@ -343,6 +368,7 @@ export const projectsSections = [
         ghg: '352 Tonnes',
         status: 'Operational',
         image: ACOB_IMAGE,
+        image_alt_text: 'ACOB Lightning Technology Limited',
         desc: 'Off-grid rural electrification for agricultural hubs.',
         problem:
           'Energy poverty in rural cocoa-farming communities with zero electricity access.',
@@ -647,13 +673,47 @@ export const projectsSections = [
         },
       },
     ],
+    leftBackgroundImage: CONSOLE_LEFT_IMAGE,
+    leftBackgroundImage_alt_text: '',
+    rightBackgroundImage: CONSOLE_RIGHT_IMAGE,
+    rightBackgroundImage_alt_text: '',
     sdgFrameworks: [
-      { number: '7', name: 'Affordable & Clean Energy' },
-      { number: '8', name: 'Decent Work & Growth' },
-      { number: '9', name: 'Industry & Infrastructure' },
-      { number: '11', name: 'Sustainable Cities' },
-      { number: '13', name: 'Climate Action' },
-      { number: '17', name: 'Partnerships for Goals' },
+      {
+        number: '7',
+        name: 'Affordable & Clean Energy',
+        image: SDG_IMAGES[7],
+        image_alt_text: 'Affordable & Clean Energy',
+      },
+      {
+        number: '8',
+        name: 'Decent Work & Growth',
+        image: SDG_IMAGES[8],
+        image_alt_text: 'Decent Work & Growth',
+      },
+      {
+        number: '9',
+        name: 'Industry & Infrastructure',
+        image: SDG_IMAGES[9],
+        image_alt_text: 'Industry & Infrastructure',
+      },
+      {
+        number: '11',
+        name: 'Sustainable Cities',
+        image: SDG_IMAGES[11],
+        image_alt_text: 'Sustainable Cities',
+      },
+      {
+        number: '13',
+        name: 'Climate Action',
+        image: SDG_IMAGES[13],
+        image_alt_text: 'Climate Action',
+      },
+      {
+        number: '17',
+        name: 'Partnerships for Goals',
+        image: SDG_IMAGES[17],
+        image_alt_text: 'Partnerships for Goals',
+      },
     ],
     totalPipelineRows: [
       { sector: 'Isolated Mini-Grid', projectsCount: 37, valueNgn: 381.16, percentage: '40.20%' },
@@ -691,6 +751,7 @@ export const projectsSections = [
     ctaHref: '/eligibility',
     backgroundImage:
       'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop',
+    backgroundImage_alt_text: 'Clean energy installation background',
   },
 
   {
@@ -711,6 +772,9 @@ export const projectsSections = [
     placeholderTitle: 'Select a State',
     placeholderBody:
       'Click a state from the list or on the map to view its Local Government Areas.',
+    // FootprintMap.tsx:257-262 renders the same @svg-maps/nigeria geometry the
+    // About page's energy map does; colours are applied at runtime from states[].
+    mapSvg: nigeriaMapSvg,
     legend: [
       { label: 'Rural Electrification', color: '#c8e6c9', type: 'rural-electrification' },
       { label: 'Rural Telephony', color: '#b3c5e8', type: 'rural-telephony' },
@@ -1699,6 +1763,28 @@ export const projectsSections = [
       { projectType: 'Solar as a Service for Telecom Towers', icon: '📡' },
       { projectType: 'Agro-Processing Solar Hub', icon: '🌾' },
       { projectType: 'Mini Grids - Markets', icon: '🏪' },
+    ],
+    // LGAModal.tsx:26-33 HERO_IMAGES — matched on the first project's type, with
+    // the `default` row used when no type-specific image exists.
+    heroImages: [
+      {
+        projectType: 'Solar as a Service for Telecom Towers',
+        image:
+          'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200&auto=format&fit=crop',
+        image_alt_text: '',
+      },
+      {
+        projectType: 'Agro-Processing Solar Hub',
+        image:
+          'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop',
+        image_alt_text: '',
+      },
+      {
+        projectType: 'default',
+        image:
+          'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop',
+        image_alt_text: '',
+      },
     ],
   },
 

@@ -18,6 +18,7 @@
     "ghg": { "type": "string" },
     "status": { "type": "string" },
     "image": { "type": "string" },
+    "image_alt_text": { "type": "string" },
     "desc": { "type": "text" },
     "problem": { "type": "text" },
     "solution": { "type": "text" },

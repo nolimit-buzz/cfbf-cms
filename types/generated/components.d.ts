@@ -2332,6 +2332,7 @@ export interface ProjectsPageEligibilityCtaSection
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     body: Schema.Attribute.Text;
     ctaHref: Schema.Attribute.String;
     ctaLabel: Schema.Attribute.String;
@@ -2365,6 +2366,7 @@ export interface ProjectsPageFootprintMapSection
     >;
     mapHint: Schema.Attribute.String;
     mapLabel: Schema.Attribute.String;
+    mapSvg: Schema.Attribute.Text;
     placeholderBody: Schema.Attribute.Text;
     placeholderTitle: Schema.Attribute.String;
     searchPlaceholder: Schema.Attribute.String;
@@ -2382,6 +2384,7 @@ export interface ProjectsPageHeroSection extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     breadcrumbLabel: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     eyebrow: Schema.Attribute.String;
@@ -2417,6 +2420,19 @@ export interface ProjectsPageLabelItem extends Struct.ComponentSchema {
   };
 }
 
+export interface ProjectsPageLgaHeroImageItem extends Struct.ComponentSchema {
+  collectionName: 'components_projects_page_lga_hero_image_items';
+  info: {
+    description: '';
+    displayName: 'LGA Hero Image Item';
+  };
+  attributes: {
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
+    projectType: Schema.Attribute.String;
+  };
+}
+
 export interface ProjectsPageLgaItem extends Struct.ComponentSchema {
   collectionName: 'components_projects_page_lga_items';
   info: {
@@ -2440,6 +2456,10 @@ export interface ProjectsPageLgaModalSection extends Struct.ComponentSchema {
     emptyBody: Schema.Attribute.Text;
     emptyTitle: Schema.Attribute.String;
     fallbackIcon: Schema.Attribute.String;
+    heroImages: Schema.Attribute.Component<
+      'projects-page.lga-hero-image-item',
+      true
+    >;
     projectTypeIcons: Schema.Attribute.Component<
       'projects-page.project-type-icon-item',
       true
@@ -2546,6 +2566,8 @@ export interface ProjectsPagePipelineConsoleSection
     footerTotalPipeline: Schema.Attribute.String;
     headingHighlight: Schema.Attribute.String;
     headingPartOne: Schema.Attribute.String;
+    leftBackgroundImage: Schema.Attribute.String;
+    leftBackgroundImage_alt_text: Schema.Attribute.String;
     mandatedDealRows: Schema.Attribute.Component<
       'projects-page.sector-row-item',
       true
@@ -2556,6 +2578,8 @@ export interface ProjectsPagePipelineConsoleSection
     >;
     metricsHeader: Schema.Attribute.String;
     metricsSubcopy: Schema.Attribute.Text;
+    rightBackgroundImage: Schema.Attribute.String;
+    rightBackgroundImage_alt_text: Schema.Attribute.String;
     sdgFrameworks: Schema.Attribute.Component<'projects-page.sdg-item', true>;
     sdgFrameworksLabel: Schema.Attribute.String;
     selectStageLabel: Schema.Attribute.String;
@@ -2689,6 +2713,7 @@ export interface ProjectsPageProjectItem extends Struct.ComponentSchema {
     desc: Schema.Attribute.Text;
     ghg: Schema.Attribute.String;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     impact: Schema.Attribute.Text;
     jobs: Schema.Attribute.String;
     location: Schema.Attribute.String;
@@ -2722,6 +2747,8 @@ export interface ProjectsPageSdgItem extends Struct.ComponentSchema {
     displayName: 'SDG Item';
   };
   attributes: {
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     name: Schema.Attribute.String;
     number: Schema.Attribute.String;
   };
@@ -3019,6 +3046,7 @@ declare module '@strapi/strapi' {
       'projects-page.hero-section': ProjectsPageHeroSection;
       'projects-page.hero-stat-item': ProjectsPageHeroStatItem;
       'projects-page.label-item': ProjectsPageLabelItem;
+      'projects-page.lga-hero-image-item': ProjectsPageLgaHeroImageItem;
       'projects-page.lga-item': ProjectsPageLgaItem;
       'projects-page.lga-modal-section': ProjectsPageLgaModalSection;
       'projects-page.lga-project-item': ProjectsPageLgaProjectItem;

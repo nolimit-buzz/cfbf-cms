@@ -1,0 +1,551 @@
+[
+  {
+    "component": "projects-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "component": "projects-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 0
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 0
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 1
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 1
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 2
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 2
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 3
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 3
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 4
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 4
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 5
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    "component": "projects-page.pipeline-tab-section",
+    "paths": [
+      [
+        {
+          "field": "projects",
+          "index": 5
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "leftBackgroundImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "leftBackgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "rightBackgroundImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "rightBackgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 0
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 0
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 1
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 1
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 2
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 2
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 3
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 3
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 4
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 4
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 5
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.pipeline-console-section",
+    "paths": [
+      [
+        {
+          "field": "sdgFrameworks",
+          "index": 5
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.eligibility-cta-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "component": "projects-page.eligibility-cta-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.lga-modal-section",
+    "paths": [
+      [
+        {
+          "field": "heroImages",
+          "index": 0
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.lga-modal-section",
+    "paths": [
+      [
+        {
+          "field": "heroImages",
+          "index": 0
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.lga-modal-section",
+    "paths": [
+      [
+        {
+          "field": "heroImages",
+          "index": 1
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.lga-modal-section",
+    "paths": [
+      [
+        {
+          "field": "heroImages",
+          "index": 1
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.lga-modal-section",
+    "paths": [
+      [
+        {
+          "field": "heroImages",
+          "index": 2
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.lga-modal-section",
+    "paths": [
+      [
+        {
+          "field": "heroImages",
+          "index": 2
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "projects-page.footprint-map-section",
+    "paths": [
+      [
+        {
+          "field": "mapSvg"
+        }
+      ]
+    ],
+    "previousValue": null
+  }
+]

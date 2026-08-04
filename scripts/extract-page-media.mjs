@@ -37,7 +37,12 @@ const MANIFEST_PATH = path.join(CMS_ROOT, 'seed-manifests', PAGE_NAME, 'manifest
  * `<page>:<localFile>`. Filled in after the interactive broken-link flow.
  * @type {Record<string, string>}
  */
-const REPLACEMENTS = {};
+const REPLACEMENTS = {
+  // SDG 8 "Decent Work & Growth" — the original photo-1521791136368 was removed
+  // from Unsplash (HTTP 404). User picked this same-subject replacement.
+  'projects-page:pipeline-console-sdg-2-image.jpg':
+    'https://images.unsplash.com/photo-1521737711867-e3b97375f902?q=80&w=400&auto=format&fit=crop',
+};
 
 async function fetchToFile(url, destination) {
   const response = await fetch(url, { redirect: 'follow' });

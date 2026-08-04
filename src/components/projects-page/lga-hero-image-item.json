@@ -1,13 +1,12 @@
 {
-  "collectionName": "components_projects_page_sdg_items",
+  "collectionName": "components_projects_page_lga_hero_image_items",
   "info": {
-    "displayName": "SDG Item",
+    "displayName": "LGA Hero Image Item",
     "description": ""
   },
   "options": {},
   "attributes": {
-    "number": { "type": "string" },
-    "name": { "type": "string" },
+    "projectType": { "type": "string" },
     "image": { "type": "string" },
     "image_alt_text": { "type": "string" }
   }

@@ -13,6 +13,7 @@
     "body": { "type": "text" },
     "ctaLabel": { "type": "string" },
     "ctaHref": { "type": "string" },
-    "backgroundImage": { "type": "string" }
+    "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" }
   }
 }

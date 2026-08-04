@@ -31,6 +31,10 @@
     "footerPercent": { "type": "string" },
     "businessModelsMandatedUsd": { "type": "string" },
     "businessModelsMandatedNgn": { "type": "string" },
+    "leftBackgroundImage": { "type": "string" },
+    "leftBackgroundImage_alt_text": { "type": "string" },
+    "rightBackgroundImage": { "type": "string" },
+    "rightBackgroundImage_alt_text": { "type": "string" },
     "metricLabels": {
       "type": "component",
       "repeatable": true,

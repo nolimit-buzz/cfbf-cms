@@ -12,6 +12,7 @@
     "headingHighlight": { "type": "string" },
     "description": { "type": "text" },
     "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" },
     "stats": {
       "type": "component",
       "repeatable": true,

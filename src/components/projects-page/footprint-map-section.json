@@ -21,6 +21,7 @@
     "clearSelectionLabel": { "type": "string" },
     "placeholderTitle": { "type": "string" },
     "placeholderBody": { "type": "text" },
+    "mapSvg": { "type": "text" },
     "legend": {
       "type": "component",
       "repeatable": true,
