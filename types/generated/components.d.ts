@@ -1832,6 +1832,7 @@ export interface ImpactPageHeroSection extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     breadcrumbLabel: Schema.Attribute.String;
     descriptionPrimary: Schema.Attribute.Text;
     descriptionSecondary: Schema.Attribute.Text;
@@ -2002,6 +2003,7 @@ export interface ImpactPageSdgCardItem extends Struct.ComponentSchema {
     badgeLabel: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     number: Schema.Attribute.String;
     title: Schema.Attribute.String;
   };
@@ -2036,6 +2038,7 @@ export interface ImpactPageStoryItem extends Struct.ComponentSchema {
     duration: Schema.Attribute.String;
     excerpt: Schema.Attribute.Text;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     location: Schema.Attribute.String;
     role: Schema.Attribute.String;
     title: Schema.Attribute.String;

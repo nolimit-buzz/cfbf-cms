@@ -36,34 +36,40 @@
 const META_DESCRIPTION =
   "Tracking our contribution to Nigeria's Net Zero targets, SDG goals, and local clean energy community projects.";
 
-const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1600&auto=format&fit=crop';
+/**
+ * Media, served from Cloudinary under `climate facility/impact-page/`.
+ *
+ * These are the URLs produced by the extract → upload pipeline
+ * (scripts/impact-media-sources.mjs → extract-page-media.mjs →
+ * upload-page-media.mjs); the originals they replaced are recorded per row in
+ * seed-manifests/impact-page/manifest.json. They matter only for a fresh
+ * database — once an Impact entry exists, bootstrap()'s seed-once guard skips
+ * this file and scripts/apply-impact-media-to-cms.cjs is what writes the live
+ * entry. Both paths land on the same URLs.
+ */
+const CLOUDINARY = 'https://res.cloudinary.com/diqfojkri';
+const FOLDER = 'climate%20facility/impact-page';
 
-const FELICIA_IMAGE =
-  'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop';
-const ACOB_IMAGE =
-  'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop';
-const PRADO_IMAGE =
-  'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=800&auto=format&fit=crop';
-const FIRST_ELECTRIC_IMAGE =
-  'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop';
-const CEESOLAR_IMAGE =
-  'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop';
-const HOTSPOT_IMAGE =
-  'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=800&auto=format&fit=crop';
+// The `v…` segment is each asset's own upload version, copied verbatim from the
+// manifest so a fresh seed and an applied entry hold byte-identical URLs.
+const HERO_IMAGE = `${CLOUDINARY}/image/upload/v1785838099/${FOLDER}/hero-background-image.jpg`;
 
-const SDG7_IMAGE =
-  'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600&auto=format&fit=crop';
-const SDG8_IMAGE =
-  'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=600&auto=format&fit=crop';
-const SDG9_IMAGE =
-  'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=600&auto=format&fit=crop';
-const SDG13_IMAGE =
-  'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=600&auto=format&fit=crop';
+const FELICIA_IMAGE = `${CLOUDINARY}/image/upload/v1785838100/${FOLDER}/stories-story-1-image.jpg`;
+const ACOB_IMAGE = `${CLOUDINARY}/image/upload/v1785838101/${FOLDER}/stories-story-2-image.jpg`;
+const PRADO_IMAGE = `${CLOUDINARY}/image/upload/v1785838102/${FOLDER}/stories-story-3-image.jpg`;
+const FIRST_ELECTRIC_IMAGE = `${CLOUDINARY}/image/upload/v1785838103/${FOLDER}/stories-story-4-image.jpg`;
+const CEESOLAR_IMAGE = `${CLOUDINARY}/image/upload/v1785838103/${FOLDER}/stories-story-5-image.jpg`;
+const HOTSPOT_IMAGE = `${CLOUDINARY}/image/upload/v1785838104/${FOLDER}/stories-story-6-image.jpg`;
 
-const SOLAR_VIDEO = '/videos/solar-panels.mp4';
-const WIND_VIDEO = '/videos/wind-turbines.mp4';
-const HOTSPOT_VIDEO = '/videos/infracredit-hotspot.mp4';
+const SDG7_IMAGE = `${CLOUDINARY}/image/upload/v1785838126/${FOLDER}/investments-sdg-1-image.jpg`;
+const SDG8_IMAGE = `${CLOUDINARY}/image/upload/v1785838126/${FOLDER}/investments-sdg-2-image.jpg`;
+const SDG9_IMAGE = `${CLOUDINARY}/image/upload/v1785838127/${FOLDER}/investments-sdg-3-image.jpg`;
+const SDG13_IMAGE = `${CLOUDINARY}/image/upload/v1785838128/${FOLDER}/investments-sdg-4-image.jpg`;
+
+/** Three files back the six stories, so two stories share each URL. */
+const SOLAR_VIDEO = `${CLOUDINARY}/video/upload/v1785838111/${FOLDER}/stories-story-video-solar-panels.mp4`;
+const WIND_VIDEO = `${CLOUDINARY}/video/upload/v1785838118/${FOLDER}/stories-story-video-wind-turbines.mp4`;
+const HOTSPOT_VIDEO = `${CLOUDINARY}/video/upload/v1785838124/${FOLDER}/stories-story-video-infracredit-hotspot.mp4`;
 
 /**
  * The four strategic pillars, rendered both in the philosophy section and
@@ -115,6 +121,7 @@ export const impactSections = [
     descriptionSecondary:
       'Discover our localized case study video stories and our long-term Net Zero transition strategy below.',
     backgroundImage: HERO_IMAGE,
+    backgroundImage_alt_text: 'Hero banner',
     stats: [
       {
         category: 'Investment',
@@ -211,6 +218,7 @@ export const impactSections = [
           'In Akpoku, Rivers State, Felicia Adindu once struggled with unreliable energy. Now, clean solar power has transformed her daily life and business.',
         duration: '4:32 mins',
         image: FELICIA_IMAGE,
+        image_alt_text: 'Meet Felicia Adindu-End User, Darway Coast',
         video: SOLAR_VIDEO,
       },
       {
@@ -223,6 +231,7 @@ export const impactSections = [
           'Investing in clean energy means investing in communities. How ACOB Lighting is powering local development in northern regions.',
         duration: '3:15 mins',
         image: ACOB_IMAGE,
+        image_alt_text: 'ACOB Lighting Solar Powered Rural Electrification Project',
         video: WIND_VIDEO,
       },
       {
@@ -235,6 +244,7 @@ export const impactSections = [
           'The project will construct solar-hybrid mini-grid installations to power households and small businesses in off-grid rural areas.',
         duration: '5:40 mins',
         image: PRADO_IMAGE,
+        image_alt_text: 'Prado Power Solar Powered Rural Electrification Project',
         video: HOTSPOT_VIDEO,
       },
       {
@@ -247,6 +257,7 @@ export const impactSections = [
           'Mesh grid networks connect rural households and small agricultural processors in Gombe State, facilitating cold storage and local commerce.',
         duration: '3:45 mins',
         image: FIRST_ELECTRIC_IMAGE,
+        image_alt_text: 'Mesh Grid Networks Powering Agriculture - First Electric',
         video: SOLAR_VIDEO,
       },
       {
@@ -259,6 +270,7 @@ export const impactSections = [
           'CEESOLAR Energy utilizes concessional funding to build high-capacity solar-hybrid grids, powering rural communities in the Niger Delta region.',
         duration: '4:15 mins',
         image: CEESOLAR_IMAGE,
+        image_alt_text: 'Unlocking Local Capital for Off-Grid Power - CEESOLAR',
         video: WIND_VIDEO,
       },
       {
@@ -271,6 +283,7 @@ export const impactSections = [
           'Replacing diesel generators with high-efficiency solar hybrid arrays across 120 base stations, bringing continuous clean connectivity to rural Nigeria.',
         duration: '5:10 mins',
         image: HOTSPOT_IMAGE,
+        image_alt_text: 'Solarizing Rural Telecom Infrastructure - Hotspot Network',
         video: HOTSPOT_VIDEO,
       },
     ],
@@ -334,6 +347,7 @@ export const impactSections = [
         description:
           'Channelling long-term local currency financing to expand distributed renewable energy, building mini-grids and solar systems across underserved communities.',
         image: SDG7_IMAGE,
+        image_alt_text: 'Affordable & Clean Energy background',
       },
       {
         number: '08',
@@ -342,6 +356,7 @@ export const impactSections = [
         description:
           'Promoting sustained economic growth by creating high-paying local jobs across clean energy construction, operation, maintenance, and supply chains.',
         image: SDG8_IMAGE,
+        image_alt_text: 'Decent Work & Growth background',
       },
       {
         number: '09',
@@ -350,6 +365,7 @@ export const impactSections = [
         description:
           'Building resilient clean energy utilities, agro-processing hubs, and green industrial parks powered by sustainable, localized off-grid networks.',
         image: SDG9_IMAGE,
+        image_alt_text: 'Industry & Infrastructure background',
       },
       {
         number: '13',
@@ -358,6 +374,7 @@ export const impactSections = [
         description:
           "Confronting climate change head-on by accelerating private capital into climate-smart technologies to accelerate Nigeria's energy transition.",
         image: SDG13_IMAGE,
+        image_alt_text: 'Climate action background',
       },
     ],
   },

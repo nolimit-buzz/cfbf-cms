@@ -103,14 +103,26 @@ async function main() {
 
   const manifest = JSON.parse(await fs.readFile(MANIFEST_PATH, 'utf8'));
   const failures = [];
+  // Several rows can legitimately share one file (e.g. the Impact page's six
+  // stories are backed by three videos). `public_id` is the file's base name,
+  // so re-uploading would just overwrite itself — upload once, reuse the URL.
+  const uploaded = new Map();
 
   for (const entry of manifest) {
     if (entry.status !== 'ok') {
       console.warn(`skipped ${entry.localFile} (status: ${entry.status})`);
       continue;
     }
+    const cached = uploaded.get(entry.localFile);
+    if (cached) {
+      entry.cloudinaryPublicId = cached.publicId;
+      entry.cloudinaryUrl = cached.url;
+      console.log(`reused   ${entry.localFile}  -> ${cached.url}`);
+      continue;
+    }
     try {
       const { url, publicId, resourceType } = await upload(entry.localFile, env);
+      uploaded.set(entry.localFile, { url, publicId });
       entry.cloudinaryPublicId = publicId;
       entry.cloudinaryUrl = url;
       console.log(`uploaded ${entry.localFile}  [${resourceType}]  -> ${url}`);

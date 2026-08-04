@@ -1,0 +1,332 @@
+[
+  {
+    "component": "impact-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1600&auto=format&fit=crop",
+    "altText": "Hero banner",
+    "localFile": "hero-background-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/hero-background-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838099/climate%20facility/impact-page/hero-background-image.jpg"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 0
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop",
+    "altText": "Meet Felicia Adindu-End User, Darway Coast",
+    "localFile": "stories-story-1-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-1-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838100/climate%20facility/impact-page/stories-story-1-image.jpg"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 1
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop",
+    "altText": "ACOB Lighting Solar Powered Rural Electrification Project",
+    "localFile": "stories-story-2-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-2-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838101/climate%20facility/impact-page/stories-story-2-image.jpg"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 2
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=800&auto=format&fit=crop",
+    "altText": "Prado Power Solar Powered Rural Electrification Project",
+    "localFile": "stories-story-3-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-3-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838102/climate%20facility/impact-page/stories-story-3-image.jpg"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 3
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop",
+    "altText": "Mesh Grid Networks Powering Agriculture - First Electric",
+    "localFile": "stories-story-4-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-4-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838103/climate%20facility/impact-page/stories-story-4-image.jpg"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 4
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop",
+    "altText": "Unlocking Local Capital for Off-Grid Power - CEESOLAR",
+    "localFile": "stories-story-5-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-5-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838103/climate%20facility/impact-page/stories-story-5-image.jpg"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 5
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=800&auto=format&fit=crop",
+    "altText": "Solarizing Rural Telecom Infrastructure - Hotspot Network",
+    "localFile": "stories-story-6-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-6-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838104/climate%20facility/impact-page/stories-story-6-image.jpg"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 0
+        },
+        {
+          "field": "video"
+        }
+      ]
+    ],
+    "altText": "",
+    "localFile": "stories-story-video-solar-panels.mp4",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-video-solar-panels",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/video/upload/v1785838111/climate%20facility/impact-page/stories-story-video-solar-panels.mp4"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 1
+        },
+        {
+          "field": "video"
+        }
+      ]
+    ],
+    "altText": "",
+    "localFile": "stories-story-video-wind-turbines.mp4",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-video-wind-turbines",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/video/upload/v1785838118/climate%20facility/impact-page/stories-story-video-wind-turbines.mp4"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 2
+        },
+        {
+          "field": "video"
+        }
+      ]
+    ],
+    "altText": "",
+    "localFile": "stories-story-video-infracredit-hotspot.mp4",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-video-infracredit-hotspot",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/video/upload/v1785838124/climate%20facility/impact-page/stories-story-video-infracredit-hotspot.mp4"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 3
+        },
+        {
+          "field": "video"
+        }
+      ]
+    ],
+    "altText": "",
+    "localFile": "stories-story-video-solar-panels.mp4",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-video-solar-panels",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/video/upload/v1785838111/climate%20facility/impact-page/stories-story-video-solar-panels.mp4"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 4
+        },
+        {
+          "field": "video"
+        }
+      ]
+    ],
+    "altText": "",
+    "localFile": "stories-story-video-wind-turbines.mp4",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-video-wind-turbines",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/video/upload/v1785838118/climate%20facility/impact-page/stories-story-video-wind-turbines.mp4"
+  },
+  {
+    "component": "impact-page.stories-tab-section",
+    "paths": [
+      [
+        {
+          "field": "stories",
+          "index": 5
+        },
+        {
+          "field": "video"
+        }
+      ]
+    ],
+    "altText": "",
+    "localFile": "stories-story-video-infracredit-hotspot.mp4",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/stories-story-video-infracredit-hotspot",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/video/upload/v1785838124/climate%20facility/impact-page/stories-story-video-infracredit-hotspot.mp4"
+  },
+  {
+    "component": "impact-page.investments-tab-section",
+    "paths": [
+      [
+        {
+          "field": "sdgCards",
+          "index": 0
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600&auto=format&fit=crop",
+    "altText": "Affordable & Clean Energy background",
+    "localFile": "investments-sdg-1-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/investments-sdg-1-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838126/climate%20facility/impact-page/investments-sdg-1-image.jpg"
+  },
+  {
+    "component": "impact-page.investments-tab-section",
+    "paths": [
+      [
+        {
+          "field": "sdgCards",
+          "index": 1
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=600&auto=format&fit=crop",
+    "altText": "Decent Work & Growth background",
+    "localFile": "investments-sdg-2-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/investments-sdg-2-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838126/climate%20facility/impact-page/investments-sdg-2-image.jpg"
+  },
+  {
+    "component": "impact-page.investments-tab-section",
+    "paths": [
+      [
+        {
+          "field": "sdgCards",
+          "index": 2
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=600&auto=format&fit=crop",
+    "altText": "Industry & Infrastructure background",
+    "localFile": "investments-sdg-3-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/investments-sdg-3-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838127/climate%20facility/impact-page/investments-sdg-3-image.jpg"
+  },
+  {
+    "component": "impact-page.investments-tab-section",
+    "paths": [
+      [
+        {
+          "field": "sdgCards",
+          "index": 3
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=600&auto=format&fit=crop",
+    "altText": "Climate action background",
+    "localFile": "investments-sdg-4-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/impact-page/investments-sdg-4-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838128/climate%20facility/impact-page/investments-sdg-4-image.jpg"
+  }
+]

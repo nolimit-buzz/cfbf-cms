@@ -14,6 +14,7 @@
     "excerpt": { "type": "text" },
     "duration": { "type": "string" },
     "image": { "type": "string" },
+    "image_alt_text": { "type": "string" },
     "video": { "type": "string" }
   }
 }

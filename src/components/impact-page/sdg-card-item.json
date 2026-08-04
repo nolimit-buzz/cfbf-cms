@@ -10,6 +10,7 @@
     "title": { "type": "string" },
     "badgeLabel": { "type": "string" },
     "description": { "type": "text" },
-    "image": { "type": "string" }
+    "image": { "type": "string" },
+    "image_alt_text": { "type": "string" }
   }
 }
