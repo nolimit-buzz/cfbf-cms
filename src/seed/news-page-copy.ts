@@ -40,21 +40,34 @@
 const META_DESCRIPTION =
   'Stay updated on the green transition, market insights, and announcements from the Climate Finance Blending Facility.';
 
+/**
+ * Every image below is served from our own Cloudinary account (folder
+ * `climate facility`), not from images.unsplash.com — see
+ * cms/seed-manifests/news-page/manifest.json for the source-to-asset mapping.
+ *
+ * The five articles rendered here are the same five the Home page renders, so
+ * their assets are reused from `climate facility/home-page/news-*` rather than
+ * duplicated. Only the hero backdrop is unique to this page and lives under
+ * `climate facility/news-page`.
+ */
+// The /v<n>/ segment is each asset's own Cloudinary version — kept verbatim from
+// the manifest's secure_url rather than shared across assets.
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1200&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785842211/climate%20facility/news-page/hero-bg-image.jpg';
+const HERO_IMAGE_ALT = 'Hero banner';
 
 const READ_ARTICLE = 'Read Article';
 
 const ARTICLE_1_IMAGE =
-  'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785801886/climate%20facility/home-page/news-1-image.jpg';
 const ARTICLE_2_IMAGE =
-  'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785801888/climate%20facility/home-page/news-2-image.jpg';
 const ARTICLE_3_IMAGE =
-  'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785801891/climate%20facility/home-page/news-3-image.jpg';
 const ARTICLE_4_IMAGE =
-  'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1200&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785801893/climate%20facility/home-page/news-4-image.jpg';
 const ARTICLE_5_IMAGE =
-  'https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1200&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785801895/climate%20facility/home-page/news-5-image.jpg';
 
 export const newsSections = [
   {
@@ -83,6 +96,7 @@ export const newsSections = [
     headingPartOne: 'News &',
     headingHighlight: 'media center',
     bgImage: HERO_IMAGE,
+    bgImage_alt_text: HERO_IMAGE_ALT,
     breadcrumbHomeLabel: 'home',
     breadcrumbCurrentPage: 'news',
     cardCtaLabel: READ_ARTICLE,
@@ -122,8 +136,11 @@ export const newsSections = [
           'How local currency guarantees are de-risking investments and unlocking long-term debt from institutional investors for solar developers.',
         author: 'Chinua Okeke',
         authorAvatar:
-          'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801885/climate%20facility/home-page/news-1-author-avatar.jpg',
+        authorAvatar_alt_text: 'Chinua Okeke',
         image: ARTICLE_1_IMAGE,
+        image_alt_text:
+          "The Future of Local Currency Financing and its Impact on Sub-Saharan Africa's Renewable Energy Transition",
         keyContext:
           'Understanding how local currency guarantees are de-risking solar energy investments.',
         themes: [
@@ -151,7 +168,9 @@ export const newsSections = [
           },
           {
             blockType: 'image',
-            url: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop',
+            url: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785801887/climate%20facility/home-page/news-1-paragraph-image.jpg',
+            url_alt_text:
+              'Solar panels installation matching local currency investments.',
             text: 'Solar panels installation matching local currency investments.',
             caption:
               'Domestic pension funds represent a massive, untapped pool of long-term local capital.',
@@ -175,8 +194,11 @@ export const newsSections = [
           'The facility secures additional commitments from domestic pensions and assurance funds to expand off-grid solar operations.',
         author: 'Folasade Adebayo',
         authorAvatar:
-          'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801888/climate%20facility/home-page/news-2-author-avatar.jpg',
+        authorAvatar_alt_text: 'Folasade Adebayo',
         image: ARTICLE_2_IMAGE,
+        image_alt_text:
+          'Clean Energy Fund Announces the Successful Closure of Series 2 Capital Raise for Institutional Investors',
         keyContext:
           'A breakdown of the successful closure of our Series 2 capital raise from institutional partners.',
         themes: [
@@ -204,7 +226,9 @@ export const newsSections = [
           },
           {
             blockType: 'image',
-            url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop',
+            url: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785801889/climate%20facility/home-page/news-2-paragraph-image.jpg',
+            url_alt_text:
+              'Strategic meeting finalizing the Series 2 capital raise.',
             text: 'Strategic meeting finalizing the Series 2 capital raise.',
             caption:
               'Aligning domestic institutional capital with sustainable energy development targets.',
@@ -228,8 +252,11 @@ export const newsSections = [
           'A close look at how clean energy installations have impacted 2.4 million lives, created 300+ green jobs, and reduced carbon emissions.',
         author: 'Amina Bello',
         authorAvatar:
-          'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801890/climate%20facility/home-page/news-3-author-avatar.jpg',
+        authorAvatar_alt_text: 'Amina Bello',
         image: ARTICLE_3_IMAGE,
+        image_alt_text:
+          'Annual Impact Report: Bridging the Energy Gap and Fostering Sustainable Economic Growth in Nigeria',
         keyContext:
           'A deep dive into our verified environmental and social metrics from the 2025 Impact Report.',
         themes: [
@@ -257,7 +284,8 @@ export const newsSections = [
           },
           {
             blockType: 'image',
-            url: 'https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1200&auto=format&fit=crop',
+            url: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785801891/climate%20facility/home-page/news-3-paragraph-image.jpg',
+            url_alt_text: 'Community members benefited by solar installation.',
             text: 'Community members benefited by solar installation.',
             caption:
               'Access to clean electricity supports local education and healthcare clinics.',
@@ -281,8 +309,11 @@ export const newsSections = [
           'Recent policy updates from the SEC and Central Bank are creating a more robust enabling environment for sustainable investments.',
         author: 'Dr. Emmanuel Nwachukwu',
         authorAvatar:
-          'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801892/climate%20facility/home-page/news-4-author-avatar.jpg',
+        authorAvatar_alt_text: 'Dr. Emmanuel Nwachukwu',
         image: ARTICLE_4_IMAGE,
+        image_alt_text:
+          'Navigating the New Regulatory Frameworks Supporting Green Bonds and Climate Finance in Nigeria',
         keyContext:
           'Understanding the evolving legal landscape that is facilitating the growth of green finance.',
         themes: [
@@ -306,7 +337,8 @@ export const newsSections = [
           },
           {
             blockType: 'image',
-            url: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1200&auto=format&fit=crop',
+            url: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785801893/climate%20facility/home-page/news-4-paragraph-image.jpg',
+            url_alt_text: 'Legal books and document folders.',
             text: 'Legal books and document folders.',
             caption:
               'Clear regulatory frameworks are essential for scaling climate finance.',
@@ -342,8 +374,10 @@ export const newsSections = [
           'FCDO and InfraCredit partnership demonstrates how first-loss capital bridges equity gaps for remote developers.',
         author: 'Tunde Johnson',
         authorAvatar:
-          'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801894/climate%20facility/home-page/news-5-author-avatar.jpg',
+        authorAvatar_alt_text: 'Tunde Johnson',
         image: ARTICLE_5_IMAGE,
+        image_alt_text: 'Unlocking Capital for Mini-Grids in Rural Communities',
         keyContext:
           'How first-loss concessional tranches bridge early-stage developer risk profiles.',
         themes: [
@@ -371,7 +405,8 @@ export const newsSections = [
           },
           {
             blockType: 'image',
-            url: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop',
+            url: ARTICLE_1_IMAGE,
+            url_alt_text: 'Rural solar mini-grid installation site.',
             text: 'Rural solar mini-grid installation site.',
             caption:
               'Financing local infrastructure in local currency removes exchange rate shocks.',

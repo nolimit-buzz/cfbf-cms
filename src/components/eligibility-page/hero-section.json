@@ -17,6 +17,7 @@
     "descriptionSecondaryLinkHref": { "type": "string" },
     "descriptionSecondarySuffix": { "type": "text" },
     "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" },
     "sectorsLabel": { "type": "string" },
     "sectors": {
       "type": "component",

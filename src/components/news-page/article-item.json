@@ -14,7 +14,9 @@
     "excerpt": { "type": "text" },
     "author": { "type": "string" },
     "authorAvatar": { "type": "string" },
+    "authorAvatar_alt_text": { "type": "string" },
     "image": { "type": "string" },
+    "image_alt_text": { "type": "string" },
     "keyContext": { "type": "text" },
     "themes": {
       "type": "component",

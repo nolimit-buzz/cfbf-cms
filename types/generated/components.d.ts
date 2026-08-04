@@ -983,6 +983,7 @@ export interface EligibilityPageFinalCtaSection extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     body: Schema.Attribute.Text;
     downloadCtaHref: Schema.Attribute.String;
     downloadCtaLabel: Schema.Attribute.String;
@@ -1003,6 +1004,7 @@ export interface EligibilityPageHeroSection extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     breadcrumbLabel: Schema.Attribute.String;
     currentPageLabel: Schema.Attribute.String;
     descriptionPrimary: Schema.Attribute.Text;
@@ -2146,9 +2148,11 @@ export interface NewsPageArticleItem extends Struct.ComponentSchema {
     articleId: Schema.Attribute.String;
     author: Schema.Attribute.String;
     authorAvatar: Schema.Attribute.String;
+    authorAvatar_alt_text: Schema.Attribute.String;
     date: Schema.Attribute.String;
     excerpt: Schema.Attribute.Text;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     keyContext: Schema.Attribute.Text;
     paragraphs: Schema.Attribute.Component<
       'news-page.article-paragraph-item',
@@ -2172,6 +2176,7 @@ export interface NewsPageArticleParagraphItem extends Struct.ComponentSchema {
     caption: Schema.Attribute.Text;
     text: Schema.Attribute.Text;
     url: Schema.Attribute.String;
+    url_alt_text: Schema.Attribute.String;
   };
 }
 
@@ -2217,6 +2222,7 @@ export interface NewsPageHeroSection extends Struct.ComponentSchema {
   };
   attributes: {
     bgImage: Schema.Attribute.String;
+    bgImage_alt_text: Schema.Attribute.String;
     breadcrumbCurrentPage: Schema.Attribute.String;
     breadcrumbHomeLabel: Schema.Attribute.String;
     cardCtaLabel: Schema.Attribute.String;

@@ -1,0 +1,34 @@
+[
+  {
+    "component": "eligibility-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop",
+    "altText": "Hero banner",
+    "localFile": "hero-background-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/eligibility-page/hero-background-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785840356/climate%20facility/eligibility-page/hero-background-image.jpg"
+  },
+  {
+    "component": "eligibility-page.final-cta-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop",
+    "altText": "CFBF Factsheet & Assessment Background",
+    "localFile": "final-cta-background-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/eligibility-page/final-cta-background-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785840357/climate%20facility/eligibility-page/final-cta-background-image.jpg"
+  }
+]

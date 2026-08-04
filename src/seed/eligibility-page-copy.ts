@@ -40,11 +40,30 @@
 const META_DESCRIPTION =
   'Pre-qualification standards and timeline workflow for accessing funding from the Climate Finance Blending Facility.';
 
-const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop';
+/**
+ * Media, served from Cloudinary under `climate facility/eligibility-page/`.
+ *
+ * These are the URLs produced by the extract → upload pipeline
+ * (scripts/eligibility-media-sources.mjs → extract-page-media.mjs →
+ * upload-page-media.mjs); the Unsplash originals they replaced are recorded per
+ * row in seed-manifests/eligibility-page/manifest.json. They matter only for a
+ * fresh database — once an Eligibility entry exists, bootstrap()'s seed-once
+ * guard skips this file and scripts/apply-eligibility-media-to-cms.cjs is what
+ * writes the live entry. Both paths land on the same URLs.
+ *
+ * The hero and the final CTA used the same Unsplash photo at two widths, so they
+ * are two separate assets here, one per field.
+ */
+const CLOUDINARY = 'https://res.cloudinary.com/diqfojkri';
+const FOLDER = 'climate%20facility/eligibility-page';
 
-const CTA_IMAGE =
-  'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop';
+// The `v…` segment is each asset's own upload version, copied verbatim from the
+// manifest so a fresh seed and an applied entry hold byte-identical URLs.
+const HERO_IMAGE = `${CLOUDINARY}/image/upload/v1785840356/${FOLDER}/hero-background-image.jpg`;
+const HERO_IMAGE_ALT = 'Hero banner';
+
+const CTA_IMAGE = `${CLOUDINARY}/image/upload/v1785840357/${FOLDER}/final-cta-background-image.jpg`;
+const CTA_IMAGE_ALT = 'CFBF Factsheet & Assessment Background';
 
 export const eligibilitySections = [
   {
@@ -77,6 +96,7 @@ export const eligibilitySections = [
     descriptionSecondaryLinkHref: '#process',
     descriptionSecondarySuffix: 'into four clear phases.',
     backgroundImage: HERO_IMAGE,
+    backgroundImage_alt_text: HERO_IMAGE_ALT,
     sectorsLabel: 'Eligible sectors',
     sectors: [
       {
@@ -272,6 +292,7 @@ export const eligibilitySections = [
   {
     __component: 'eligibility-page.final-cta-section' as const,
     backgroundImage: CTA_IMAGE,
+    backgroundImage_alt_text: CTA_IMAGE_ALT,
     eyebrow: 'Assessment & Factsheet',
     headingPartOne: 'Find out if you are',
     headingHighlight: 'eligible',

@@ -7,6 +7,7 @@
   "options": {},
   "attributes": {
     "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" },
     "eyebrow": { "type": "string" },
     "headingPartOne": { "type": "string" },
     "headingHighlight": { "type": "string" },

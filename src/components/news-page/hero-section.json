@@ -10,6 +10,7 @@
     "headingPartOne": { "type": "string" },
     "headingHighlight": { "type": "string" },
     "bgImage": { "type": "string" },
+    "bgImage_alt_text": { "type": "string" },
     "breadcrumbHomeLabel": { "type": "string" },
     "breadcrumbCurrentPage": { "type": "string" },
     "cardCtaLabel": { "type": "string" },

@@ -22,7 +22,11 @@ import { fileURLToPath } from 'node:url';
 const CMS_ROOT = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 const pageArg = process.argv.find((arg) => arg.startsWith('--page='))?.slice('--page='.length);
-if (!pageArg) throw new Error('usage: node scripts/upload-page-media.mjs --page=<name>');
+if (!pageArg) throw new Error('usage: node scripts/upload-page-media.mjs --page=<name> [--skip-existing]');
+
+// With --skip-existing, rows that already carry a cloudinaryUrl are left alone.
+// Used by pages that reuse assets another page already uploaded (see News).
+const skipExisting = process.argv.includes('--skip-existing');
 
 const { PAGE_NAME, CLOUDINARY_FOLDER } = await import(`./${pageArg}-media-sources.mjs`);
 if (!PAGE_NAME || !CLOUDINARY_FOLDER) {
@@ -111,6 +115,10 @@ async function main() {
   for (const entry of manifest) {
     if (entry.status !== 'ok') {
       console.warn(`skipped ${entry.localFile} (status: ${entry.status})`);
+      continue;
+    }
+    if (skipExisting && entry.cloudinaryUrl) {
+      console.log(`kept     ${entry.localFile}  -> ${entry.cloudinaryUrl}`);
       continue;
     }
     const cached = uploaded.get(entry.localFile);

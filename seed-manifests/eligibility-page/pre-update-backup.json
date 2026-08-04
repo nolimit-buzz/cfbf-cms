@@ -1,0 +1,46 @@
+[
+  {
+    "component": "eligibility-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "component": "eligibility-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "eligibility-page.final-cta-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop"
+  },
+  {
+    "component": "eligibility-page.final-cta-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  }
+]
