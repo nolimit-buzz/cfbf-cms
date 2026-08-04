@@ -7,6 +7,7 @@
   "options": {},
   "attributes": {
     "src": { "type": "string" },
+    "src_alt_text": { "type": "string" },
     "alt": { "type": "string" },
     "href": { "type": "string" }
   }

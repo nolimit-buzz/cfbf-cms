@@ -1,0 +1,186 @@
+[
+  {
+    "component": "how-it-works-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop",
+    "altText": "Hero banner",
+    "localFile": "hero-background-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/eligibility-page/hero-background-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785840356/climate%20facility/eligibility-page/hero-background-image.jpg",
+    "reusedFrom": "eligibility-page",
+    "reusedLocalFile": "hero-background-image.jpg"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "anchorFunders",
+          "index": 0
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "source": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/UK-DEVELOPMENT-WHITE.png",
+    "altText": "FCDO – UK Foreign, Commonwealth & Development Office",
+    "localFile": "anchor-funder-1-src.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-1-partner-1-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785804895/climate%20facility/about-page/partners-group-1-partner-1-logo.png",
+    "reusedFrom": "about-page",
+    "reusedLocalFile": "partners-group-1-partner-1-logo.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "anchorFunders",
+          "index": 1
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "source": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/BII_Logo_All_white_RGB.png",
+    "altText": "British International Investment",
+    "localFile": "anchor-funder-2-src.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-1-partner-2-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785804896/climate%20facility/about-page/partners-group-1-partner-2-logo.png",
+    "reusedFrom": "about-page",
+    "reusedLocalFile": "partners-group-1-partner-2-logo.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "coFinancingPartner"
+        },
+        {
+          "field": "srcWhite"
+        }
+      ]
+    ],
+    "source": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/09/ICAsset-6@4x-8-002-1024x326-1.png",
+    "altText": "InfraCredit",
+    "localFile": "co-financing-partner-src-white.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-1-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785804899/climate%20facility/about-page/partners-group-3-partner-1-logo.png",
+    "reusedFrom": "about-page",
+    "reusedLocalFile": "partners-group-3-partner-1-logo.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "coFinancingPartner"
+        },
+        {
+          "field": "srcColour"
+        }
+      ]
+    ],
+    "source": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/09/InfraCredit-1.svg",
+    "altText": "",
+    "localFile": "co-financing-partner-src-colour.svg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-1-logo-colour",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785804900/climate%20facility/about-page/partners-group-3-partner-1-logo-colour.svg",
+    "reusedFrom": "about-page",
+    "reusedLocalFile": "partners-group-3-partner-1-logo-colour.svg"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 0
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "source": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/FSD-Africa-logo-1.png",
+    "altText": "FSD Africa",
+    "localFile": "ta-provider-1-src.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-2-partner-1-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785804897/climate%20facility/about-page/partners-group-2-partner-1-logo.png",
+    "reusedFrom": "about-page",
+    "reusedLocalFile": "partners-group-2-partner-1-logo.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 1
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "source": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/Shell-foundation-1.png",
+    "altText": "Shell Foundation",
+    "localFile": "ta-provider-2-src.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-2-partner-2-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785804898/climate%20facility/about-page/partners-group-2-partner-2-logo.png",
+    "reusedFrom": "about-page",
+    "reusedLocalFile": "partners-group-2-partner-2-logo.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 2
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "source": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/kfw.png",
+    "altText": "KfW",
+    "localFile": "ta-provider-3-src.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/how-it-works-page/ta-provider-3-src",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785844205/climate%20facility/how-it-works-page/ta-provider-3-src.png"
+  },
+  {
+    "component": "how-it-works-page.facility-structure-section",
+    "paths": [
+      [
+        {
+          "field": "diagramSrc"
+        }
+      ]
+    ],
+    "source": "https://infracredit.ng/climate-facility/wp-content/uploads/2023/02/new-diagram.svg",
+    "altText": "CFBF facility financing structure diagram — showing capital flows from anchor funders through InfraCredit guarantee to developers and communities",
+    "localFile": "facility-structure-diagram-src.svg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/how-it-works-page/facility-structure-diagram-src",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785844207/climate%20facility/how-it-works-page/facility-structure-diagram-src.svg"
+  }
+]

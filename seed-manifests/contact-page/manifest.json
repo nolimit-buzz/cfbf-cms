@@ -1,0 +1,52 @@
+[
+  {
+    "component": "contact-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200&auto=format&fit=crop",
+    "altText": "Hero banner",
+    "localFile": "hero-background-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/contact-page/hero-background-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785845812/climate%20facility/contact-page/hero-background-image.jpg"
+  },
+  {
+    "component": "contact-page.fun-stats-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=1200&auto=format&fit=crop",
+    "altText": "",
+    "localFile": "fun-stats-background-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/contact-page/fun-stats-background-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785845784/climate%20facility/contact-page/fun-stats-background-image.jpg"
+  },
+  {
+    "component": "contact-page.download-cta-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "source": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop",
+    "altText": "CFBF Brochure Background",
+    "localFile": "download-cta-background-image.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/eligibility-page/final-cta-background-image",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785840357/climate%20facility/eligibility-page/final-cta-background-image.jpg",
+    "reusedFrom": "eligibility-page",
+    "reusedLocalFile": "final-cta-background-image.jpg"
+  }
+]

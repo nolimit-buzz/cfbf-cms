@@ -12,6 +12,7 @@
     "ctaLabel": { "type": "string" },
     "fileHref": { "type": "string" },
     "downloadFileName": { "type": "string" },
-    "backgroundImage": { "type": "string" }
+    "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" }
   }
 }

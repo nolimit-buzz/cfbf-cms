@@ -10,6 +10,7 @@
     "headingPartOne": { "type": "string" },
     "headingHighlight": { "type": "string" },
     "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" },
     "breadcrumbRootLabel": { "type": "string" },
     "breadcrumbLabel": { "type": "string" },
     "descriptionPrimary": { "type": "text" },

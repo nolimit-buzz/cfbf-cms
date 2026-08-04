@@ -11,6 +11,7 @@
     "headingHighlight": { "type": "string" },
     "body": { "type": "text" },
     "diagramSrc": { "type": "string" },
+    "diagramSrc_alt_text": { "type": "string" },
     "diagramAlt": { "type": "text" }
   }
 }

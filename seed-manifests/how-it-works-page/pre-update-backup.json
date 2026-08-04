@@ -1,0 +1,252 @@
+[
+  {
+    "component": "how-it-works-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "previousValue": "https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop"
+  },
+  {
+    "component": "how-it-works-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "anchorFunders",
+          "index": 0
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "previousValue": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/UK-DEVELOPMENT-WHITE.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "anchorFunders",
+          "index": 0
+        },
+        {
+          "field": "src_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "anchorFunders",
+          "index": 1
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "previousValue": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/BII_Logo_All_white_RGB.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "anchorFunders",
+          "index": 1
+        },
+        {
+          "field": "src_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "coFinancingPartner"
+        },
+        {
+          "field": "srcWhite"
+        }
+      ]
+    ],
+    "previousValue": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/09/ICAsset-6@4x-8-002-1024x326-1.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "coFinancingPartner"
+        },
+        {
+          "field": "srcWhite_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "coFinancingPartner"
+        },
+        {
+          "field": "srcColour"
+        }
+      ]
+    ],
+    "previousValue": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/09/InfraCredit-1.svg"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "coFinancingPartner"
+        },
+        {
+          "field": "srcColour_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 0
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "previousValue": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/FSD-Africa-logo-1.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 0
+        },
+        {
+          "field": "src_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 1
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "previousValue": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/Shell-foundation-1.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 1
+        },
+        {
+          "field": "src_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 2
+        },
+        {
+          "field": "src"
+        }
+      ]
+    ],
+    "previousValue": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/kfw.png"
+  },
+  {
+    "component": "how-it-works-page.financing-structure-section",
+    "paths": [
+      [
+        {
+          "field": "taProviders",
+          "index": 2
+        },
+        {
+          "field": "src_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "how-it-works-page.facility-structure-section",
+    "paths": [
+      [
+        {
+          "field": "diagramSrc"
+        }
+      ]
+    ],
+    "previousValue": "https://infracredit.ng/climate-facility/wp-content/uploads/2023/02/new-diagram.svg"
+  },
+  {
+    "component": "how-it-works-page.facility-structure-section",
+    "paths": [
+      [
+        {
+          "field": "diagramSrc_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  }
+]

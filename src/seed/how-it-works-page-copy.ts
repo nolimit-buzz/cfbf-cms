@@ -27,26 +27,36 @@
  *     tail (page.tsx:154), becomes stepCardAriaSuffix
  *   - the TaSlider rotation interval, 2800 ms (page.tsx:46), becomes taRotationMs
  *
- * Image and logo URLs are hoisted as consts below, mirroring the BASE +
- * template-literal pattern used in page.tsx:22-40 and in the Footer.
+ * Image and logo URLs are hoisted as consts below. They point at Cloudinary
+ * rather than the wp-content originals page.tsx:22-40 still uses — see the
+ * media block below and cms/seed-manifests/how-it-works-page/manifest.json.
  */
 
-const BASE = 'https://infracredit.ng/climate-facility/wp-content/uploads';
+/**
+ * Media URLs now point at Cloudinary, per IMAGE_EXTRACTOR_PROMPT.md — see
+ * cms/seed-manifests/how-it-works-page/manifest.json for the original sources
+ * and the local extracted copies.
+ *
+ * Seven of the nine assets are reused from folders another page uploaded first
+ * (the six partner logos from about-page, the hero photo from eligibility-page),
+ * which is why their public ids don't read `how-it-works-page`. Only the KfW
+ * logo and the facility diagram are unique to this page.
+ */
+const CDN = 'https://res.cloudinary.com/diqfojkri/image/upload';
 
-const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop';
+const HERO_IMAGE = `${CDN}/v1785840356/climate%20facility/eligibility-page/hero-background-image.jpg`;
 
-const DIAGRAM_IMAGE = `${BASE}/2023/02/new-diagram.svg`;
+const DIAGRAM_IMAGE = `${CDN}/v1785844207/climate%20facility/how-it-works-page/facility-structure-diagram-src.svg`;
 
-const FCDO_LOGO = `${BASE}/2022/10/UK-DEVELOPMENT-WHITE.png`;
-const BII_LOGO = `${BASE}/2022/10/BII_Logo_All_white_RGB.png`;
+const FCDO_LOGO = `${CDN}/v1785804895/climate%20facility/about-page/partners-group-1-partner-1-logo.png`;
+const BII_LOGO = `${CDN}/v1785804896/climate%20facility/about-page/partners-group-1-partner-2-logo.png`;
 
-const INFRACREDIT_LOGO_WHITE = `${BASE}/2022/09/ICAsset-6@4x-8-002-1024x326-1.png`;
-const INFRACREDIT_LOGO_COLOUR = `${BASE}/2022/09/InfraCredit-1.svg`;
+const INFRACREDIT_LOGO_WHITE = `${CDN}/v1785804899/climate%20facility/about-page/partners-group-3-partner-1-logo.png`;
+const INFRACREDIT_LOGO_COLOUR = `${CDN}/v1785804900/climate%20facility/about-page/partners-group-3-partner-1-logo-colour.svg`;
 
-const FSD_AFRICA_LOGO = `${BASE}/2022/10/FSD-Africa-logo-1.png`;
-const SHELL_FOUNDATION_LOGO = `${BASE}/2022/10/Shell-foundation-1.png`;
-const KFW_LOGO = `${BASE}/2022/10/kfw.png`;
+const FSD_AFRICA_LOGO = `${CDN}/v1785804897/climate%20facility/about-page/partners-group-2-partner-1-logo.png`;
+const SHELL_FOUNDATION_LOGO = `${CDN}/v1785804898/climate%20facility/about-page/partners-group-2-partner-2-logo.png`;
+const KFW_LOGO = `${CDN}/v1785844205/climate%20facility/how-it-works-page/ta-provider-3-src.png`;
 
 const META_DESCRIPTION =
   'Understand the financing structure, facility architecture, and step-by-step process for accessing blended climate finance through CFBF and InfraCredit.';
@@ -72,6 +82,8 @@ export const howItWorksSections = [
     headingPartOne: 'How it ',
     headingHighlight: 'works',
     backgroundImage: HERO_IMAGE,
+    // GlassHero falls back to 'Hero banner' because the title is a JSX fragment.
+    backgroundImage_alt_text: 'Hero banner',
     breadcrumbRootLabel: 'home',
     breadcrumbLabel: 'how-it-works',
     descriptionPrimary:
@@ -136,11 +148,13 @@ export const howItWorksSections = [
     anchorFunders: [
       {
         src: FCDO_LOGO,
+        src_alt_text: 'FCDO – UK Foreign, Commonwealth & Development Office',
         alt: 'FCDO – UK Foreign, Commonwealth & Development Office',
         href: 'https://www.gov.uk/government/organisations/foreign-commonwealth-development-office',
       },
       {
         src: BII_LOGO,
+        src_alt_text: 'British International Investment',
         alt: 'British International Investment',
         href: 'https://www.bii.co.uk/',
       },
@@ -148,7 +162,10 @@ export const howItWorksSections = [
     coFinancingLabel: 'Co-Financing Partner',
     coFinancingPartner: {
       srcWhite: INFRACREDIT_LOGO_WHITE,
+      srcWhite_alt_text: 'InfraCredit',
       srcColour: INFRACREDIT_LOGO_COLOUR,
+      // Decorative hover swap of the logo above — alt="" aria-hidden="true".
+      srcColour_alt_text: '',
       alt: 'InfraCredit',
       href: 'https://infracredit.ng/',
     },
@@ -156,15 +173,22 @@ export const howItWorksSections = [
     taProviders: [
       {
         src: FSD_AFRICA_LOGO,
+        src_alt_text: 'FSD Africa',
         alt: 'FSD Africa',
         href: 'https://fsdafrica.org/',
       },
       {
         src: SHELL_FOUNDATION_LOGO,
+        src_alt_text: 'Shell Foundation',
         alt: 'Shell Foundation',
         href: 'https://shellfoundation.org/',
       },
-      { src: KFW_LOGO, alt: 'KfW', href: 'https://www.kfw.de/' },
+      {
+        src: KFW_LOGO,
+        src_alt_text: 'KfW',
+        alt: 'KfW',
+        href: 'https://www.kfw.de/',
+      },
     ],
     taRotationMs: '2800',
   },
@@ -175,6 +199,8 @@ export const howItWorksSections = [
     headingHighlight: 'structure',
     body: "Capital flows from anchor funders through the Facility and InfraCredit's guarantee mechanism into domestic capital markets, reaching developers and ultimately the communities they serve.",
     diagramSrc: DIAGRAM_IMAGE,
+    diagramSrc_alt_text:
+      'CFBF facility financing structure diagram — showing capital flows from anchor funders through InfraCredit guarantee to developers and communities',
     diagramAlt:
       'CFBF facility financing structure diagram — showing capital flows from anchor funders through InfraCredit guarantee to developers and communities',
   },

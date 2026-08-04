@@ -7,7 +7,9 @@
   "options": {},
   "attributes": {
     "srcWhite": { "type": "string" },
+    "srcWhite_alt_text": { "type": "string" },
     "srcColour": { "type": "string" },
+    "srcColour_alt_text": { "type": "string" },
     "alt": { "type": "string" },
     "href": { "type": "string" }
   }

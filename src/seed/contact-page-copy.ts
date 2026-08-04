@@ -31,14 +31,31 @@
  *   - the <select> option lists become repeatable select-option-items
  */
 
+/**
+ * Cloudinary-hosted media (IMAGE_EXTRACTOR_PROMPT.md, extracted → uploaded via
+ * scripts/contact-media-sources.mjs). The brochure CTA points at the
+ * eligibility-page asset on purpose: it is the same source URL, resolved by
+ * scripts/resolve-contact-cloudinary.mjs rather than uploaded twice.
+ */
 const HERO_IMAGE =
-  'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785845812/climate%20facility/contact-page/hero-background-image.jpg';
 
 const FUN_STATS_IMAGE =
-  'https://images.unsplash.com/photo-1548550023-2bdb3c5beed7?q=80&w=1200&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785845784/climate%20facility/contact-page/fun-stats-background-image.jpg';
 
 const BROCHURE_IMAGE =
-  'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1400&auto=format&fit=crop';
+  'https://res.cloudinary.com/diqfojkri/image/upload/v1785840357/climate%20facility/eligibility-page/final-cta-background-image.jpg';
+
+/**
+ * The custom TrendingUp glyph inside the fun-stats carousel card
+ * (frontend/app/contact/page.tsx:79-82) — inline markup, so it is seeded
+ * verbatim rather than uploaded as a file.
+ */
+const STAT_ICON_SVG =
+  '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
+  '  <path d="M3 17L9 11L13 15L21 7" stroke="#00A788" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+  '  <path d="M15 7H21V13" stroke="#00A788" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>\n' +
+  '</svg>';
 
 const META_DESCRIPTION =
   'Get in touch with the Climate Finance Blending Facility for developer intake, investor relations, or donor partnerships.';
@@ -63,6 +80,8 @@ export const contactSections = [
     description:
       'Whether you are a clean energy developer looking for blended financing, or an institutional investor/donor looking to co-finance green transitions, reach out to our team.',
     backgroundImage: HERO_IMAGE,
+    // GlassHero falls back to 'Hero banner' because the title is a JSX fragment.
+    backgroundImage_alt_text: 'Hero banner',
     cards: [
       {
         index: '01',
@@ -113,6 +132,9 @@ export const contactSections = [
     __component: 'contact-page.fun-stats-section' as const,
     eyebrow: 'Fun Stats & Impact',
     backgroundImage: FUN_STATS_IMAGE,
+    // Decorative CSS background behind the carousel card — no alt on the source.
+    backgroundImage_alt_text: '',
+    statIconSvg: STAT_ICON_SVG,
     stats: [
       {
         value: '₦7.86B+',
@@ -237,5 +259,6 @@ export const contactSections = [
     fileHref: '/download.pdf',
     downloadFileName: 'CFBF_Brochure.pdf',
     backgroundImage: BROCHURE_IMAGE,
+    backgroundImage_alt_text: 'CFBF Brochure Background',
   },
 ];

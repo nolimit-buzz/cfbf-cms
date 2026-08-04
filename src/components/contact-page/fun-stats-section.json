@@ -8,6 +8,8 @@
   "attributes": {
     "eyebrow": { "type": "string" },
     "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" },
+    "statIconSvg": { "type": "text" },
     "stats": {
       "type": "component",
       "repeatable": true,

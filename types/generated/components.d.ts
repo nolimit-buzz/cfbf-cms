@@ -533,6 +533,7 @@ export interface ContactPageDownloadCtaSection extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     ctaLabel: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     downloadFileName: Schema.Attribute.String;
@@ -641,7 +642,9 @@ export interface ContactPageFunStatsSection extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     eyebrow: Schema.Attribute.String;
+    statIconSvg: Schema.Attribute.Text;
     stats: Schema.Attribute.Component<'contact-page.fun-stat-item', true>;
   };
 }
@@ -668,6 +671,7 @@ export interface ContactPageHeroSection extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     breadcrumbLabel: Schema.Attribute.String;
     cards: Schema.Attribute.Component<'contact-page.hero-card-item', true>;
     description: Schema.Attribute.Text;
@@ -1603,7 +1607,9 @@ export interface HowItWorksPageCoFinancingPartner
     alt: Schema.Attribute.String;
     href: Schema.Attribute.String;
     srcColour: Schema.Attribute.String;
+    srcColour_alt_text: Schema.Attribute.String;
     srcWhite: Schema.Attribute.String;
+    srcWhite_alt_text: Schema.Attribute.String;
   };
 }
 
@@ -1618,6 +1624,7 @@ export interface HowItWorksPageFacilityStructureSection
     body: Schema.Attribute.Text;
     diagramAlt: Schema.Attribute.Text;
     diagramSrc: Schema.Attribute.String;
+    diagramSrc_alt_text: Schema.Attribute.String;
     eyebrow: Schema.Attribute.String;
     headingHighlight: Schema.Attribute.String;
     headingPartOne: Schema.Attribute.String;
@@ -1665,6 +1672,7 @@ export interface HowItWorksPageHeroSection extends Struct.ComponentSchema {
   };
   attributes: {
     backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     breadcrumbLabel: Schema.Attribute.String;
     breadcrumbRootLabel: Schema.Attribute.String;
     descriptionPrimary: Schema.Attribute.Text;
@@ -1723,6 +1731,7 @@ export interface HowItWorksPagePartnerLogoItem extends Struct.ComponentSchema {
     alt: Schema.Attribute.String;
     href: Schema.Attribute.String;
     src: Schema.Attribute.String;
+    src_alt_text: Schema.Attribute.String;
   };
 }
 
