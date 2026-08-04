@@ -13,6 +13,7 @@
     "statLabel": { "type": "string" },
     "body": { "type": "text" },
     "ctaLabel": { "type": "string" },
+    "fsdAfricaLogoSvg": { "type": "text" },
     "categories": {
       "type": "component",
       "repeatable": true,

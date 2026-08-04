@@ -14,6 +14,10 @@
     "headingItalic": { "type": "string" },
     "bodyPartOne": { "type": "text" },
     "bodyPartTwo": { "type": "text" },
+    "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" },
+    "statImage": { "type": "string" },
+    "statImage_alt_text": { "type": "string" },
     "stats": {
       "type": "component",
       "repeatable": true,

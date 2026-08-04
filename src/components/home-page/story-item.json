@@ -12,6 +12,7 @@
     "storyType": { "type": "string" },
     "badge": { "type": "string" },
     "image": { "type": "string" },
+    "image_alt_text": { "type": "string" },
     "excerpt": { "type": "text" },
     "duration": { "type": "string" }
   }

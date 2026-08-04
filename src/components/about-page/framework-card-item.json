@@ -9,6 +9,8 @@
     "cardNumber": { "type": "string" },
     "title": { "type": "string" },
     "body": { "type": "text" },
-    "tag": { "type": "string" }
+    "tag": { "type": "string" },
+    "bgImage": { "type": "string" },
+    "bgImage_alt_text": { "type": "string" }
   }
 }

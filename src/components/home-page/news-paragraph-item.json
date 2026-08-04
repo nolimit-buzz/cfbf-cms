@@ -9,6 +9,7 @@
     "blockType": { "type": "string" },
     "text": { "type": "text" },
     "caption": { "type": "text" },
-    "url": { "type": "string" }
+    "url": { "type": "string" },
+    "url_alt_text": { "type": "string" }
   }
 }

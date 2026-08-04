@@ -15,6 +15,8 @@
     "partnersHeading": { "type": "string" },
     "statValue": { "type": "string" },
     "statDescription": { "type": "text" },
+    "image": { "type": "string" },
+    "image_alt_text": { "type": "string" },
     "partners": {
       "type": "component",
       "repeatable": true,

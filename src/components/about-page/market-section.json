@@ -11,6 +11,8 @@
     "headingSecondary": { "type": "string" },
     "bodyOne": { "type": "text" },
     "bodyTwo": { "type": "text" },
+    "bentoImage": { "type": "string" },
+    "bentoImage_alt_text": { "type": "string" },
     "cards": {
       "type": "component",
       "repeatable": true,

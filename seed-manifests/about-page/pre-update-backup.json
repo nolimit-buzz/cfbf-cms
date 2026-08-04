@@ -1,0 +1,610 @@
+[
+  {
+    "component": "about-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "statImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.hero-section",
+    "paths": [
+      [
+        {
+          "field": "statImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.mandate-section",
+    "paths": [
+      [
+        {
+          "field": "bentoVideo"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.mandate-section",
+    "paths": [
+      [
+        {
+          "field": "captions",
+          "index": 1
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.mandate-section",
+    "paths": [
+      [
+        {
+          "field": "captions",
+          "index": 1
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.mandate-section",
+    "paths": [
+      [
+        {
+          "field": "captions",
+          "index": 2
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.mandate-section",
+    "paths": [
+      [
+        {
+          "field": "captions",
+          "index": 2
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.market-section",
+    "paths": [
+      [
+        {
+          "field": "bentoImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.market-section",
+    "paths": [
+      [
+        {
+          "field": "bentoImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.framework-section",
+    "paths": [
+      [
+        {
+          "field": "cards",
+          "index": 0
+        },
+        {
+          "field": "bgImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.framework-section",
+    "paths": [
+      [
+        {
+          "field": "cards",
+          "index": 0
+        },
+        {
+          "field": "bgImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.framework-section",
+    "paths": [
+      [
+        {
+          "field": "cards",
+          "index": 1
+        },
+        {
+          "field": "bgImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.framework-section",
+    "paths": [
+      [
+        {
+          "field": "cards",
+          "index": 1
+        },
+        {
+          "field": "bgImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.framework-section",
+    "paths": [
+      [
+        {
+          "field": "cards",
+          "index": 2
+        },
+        {
+          "field": "bgImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.framework-section",
+    "paths": [
+      [
+        {
+          "field": "cards",
+          "index": 2
+        },
+        {
+          "field": "bgImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 0
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 0
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logo_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 0
+        },
+        {
+          "field": "partners",
+          "index": 1
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 0
+        },
+        {
+          "field": "partners",
+          "index": 1
+        },
+        {
+          "field": "logo_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 1
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 1
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logo_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 1
+        },
+        {
+          "field": "partners",
+          "index": 1
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 1
+        },
+        {
+          "field": "partners",
+          "index": 1
+        },
+        {
+          "field": "logo_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 2
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 2
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logo_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 2
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logoColour"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 2
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logoColour_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.milestones-section",
+    "paths": [
+      [
+        {
+          "field": "milestones",
+          "index": 0
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.milestones-section",
+    "paths": [
+      [
+        {
+          "field": "milestones",
+          "index": 0
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.milestones-section",
+    "paths": [
+      [
+        {
+          "field": "milestones",
+          "index": 1
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.milestones-section",
+    "paths": [
+      [
+        {
+          "field": "milestones",
+          "index": 1
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.milestones-section",
+    "paths": [
+      [
+        {
+          "field": "milestones",
+          "index": 2
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.milestones-section",
+    "paths": [
+      [
+        {
+          "field": "milestones",
+          "index": 2
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.milestones-section",
+    "paths": [
+      [
+        {
+          "field": "milestones",
+          "index": 3
+        },
+        {
+          "field": "image"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.milestones-section",
+    "paths": [
+      [
+        {
+          "field": "milestones",
+          "index": 3
+        },
+        {
+          "field": "image_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.download-cta-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.download-cta-section",
+    "paths": [
+      [
+        {
+          "field": "backgroundImage_alt_text"
+        }
+      ]
+    ],
+    "previousValue": null
+  },
+  {
+    "component": "about-page.energy-map-section",
+    "paths": [
+      [
+        {
+          "field": "mapSvg"
+        }
+      ]
+    ],
+    "previousValue": null
+  }
+]

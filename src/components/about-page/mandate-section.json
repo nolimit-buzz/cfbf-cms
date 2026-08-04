@@ -11,6 +11,7 @@
     "body": { "type": "text" },
     "mandateHeading": { "type": "string" },
     "numbersLabel": { "type": "string" },
+    "bentoVideo": { "type": "string" },
     "paragraphs": {
       "type": "component",
       "repeatable": true,

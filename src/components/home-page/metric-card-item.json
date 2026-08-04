@@ -8,6 +8,8 @@
   "attributes": {
     "value": { "type": "string" },
     "suffix": { "type": "string" },
-    "label": { "type": "string" }
+    "label": { "type": "string" },
+    "image": { "type": "string" },
+    "image_alt_text": { "type": "string" }
   }
 }

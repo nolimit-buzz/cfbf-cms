@@ -21,6 +21,7 @@
     "tooltipNeedIndexLabel": { "type": "string" },
     "legendLabel": { "type": "string" },
     "legendScaleLabel": { "type": "string" },
+    "mapSvg": { "type": "text" },
     "tabs": {
       "type": "component",
       "repeatable": true,

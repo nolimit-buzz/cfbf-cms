@@ -9,6 +9,8 @@
     "eyebrow": { "type": "string" },
     "heading": { "type": "string" },
     "body": { "type": "text" },
+    "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" },
     "buttonLabel": { "type": "string" },
     "buttonHref": { "type": "string" },
     "downloadFileName": { "type": "string" }

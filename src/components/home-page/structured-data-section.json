@@ -9,6 +9,7 @@
     "organizationName": { "type": "string" },
     "url": { "type": "string" },
     "logoUrl": { "type": "string" },
+    "logoUrl_alt_text": { "type": "string" },
     "description": { "type": "text" },
     "siteName": { "type": "string" },
     "sponsors": {

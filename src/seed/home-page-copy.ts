@@ -29,6 +29,14 @@ export const homeSections = [
     ctaLabel: 'Explore Our Impact',
     ctaHref: '/projects',
     newsCtaLabel: 'Read Article',
+    backgroundImage:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785801857/climate%20facility/home-page/hero-background-image.jpg',
+    backgroundImage_alt_text: 'Solar Panels',
+    backgroundVideo:
+      'https://res.cloudinary.com/diqfojkri/video/upload/v1785801866/climate%20facility/home-page/hero-background-video.mp4',
+    certificationBadge:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785801868/climate%20facility/home-page/hero-certification-badge.svg',
+    certificationBadge_alt_text: 'Climate Bonds Certified',
     stats: [
       { value: '$21.3m', label: 'Total Funding' },
       { value: '35+', label: 'States' },
@@ -48,6 +56,9 @@ export const homeSections = [
     statValue: '$21.3m',
     statDescription:
       'Concessional capital committed by FCDO and BII to de-risk green investments in Nigeria.',
+    image:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785801870/climate%20facility/home-page/about-image.jpg',
+    image_alt_text: 'Solar Panels Cloudy Sky',
     partners: [
       { name: 'UKaid' },
       { name: 'InfraCredit' },
@@ -99,9 +110,23 @@ export const homeSections = [
     ],
     metricCards: [
       { value: '47.2', suffix: 'b', label: 'Total Project Investment Committed' },
-      { value: '1310', suffix: '', label: 'Communities Served' },
+      {
+        value: '1310',
+        suffix: '',
+        label: 'Communities Served',
+        image:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801874/climate%20facility/home-page/impact-metric-card-2-image.jpg',
+        image_alt_text: 'Communities Served',
+      },
       { value: '232', suffix: 'm', label: 'People with access to new infrastructure' },
-      { value: '32', suffix: ' MW', label: 'Capacity Installed' },
+      {
+        value: '32',
+        suffix: ' MW',
+        label: 'Capacity Installed',
+        image:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801875/climate%20facility/home-page/impact-metric-card-4-image.jpg',
+        image_alt_text: 'Capacity Installed',
+      },
       { value: '258', suffix: '', label: 'Projects Reached Financial Close' },
       { value: '611', suffix: 'k', label: 'Tonnes CO2 Reduced' },
     ],
@@ -114,17 +139,23 @@ export const homeSections = [
     gallerySlides: [
       {
         image:
-          'https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801870/climate%20facility/home-page/impact-gallery-slide-1-image.jpg',
+        image_alt_text:
+          'Cross section of participants representing various institutions.',
         description: 'Cross section of participants representing various institutions.',
       },
       {
         image:
-          'https://images.unsplash.com/photo-1556761175-5973dc0f32e7?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801871/climate%20facility/home-page/impact-gallery-slide-2-image.jpg',
+        image_alt_text:
+          'Technical workshop session on solar mini-grid maintenance.',
         description: 'Technical workshop session on solar mini-grid maintenance.',
       },
       {
         image:
-          'https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801872/climate%20facility/home-page/impact-gallery-slide-3-image.jpg',
+        image_alt_text:
+          'Site inspection and field training with local engineers.',
         description: 'Site inspection and field training with local engineers.',
       },
     ],
@@ -163,7 +194,9 @@ export const homeSections = [
         description:
           'Unlock affordable financing for private sector enterprises providing off-grid energy solutions such as solar mini grids, solar home systems, solar lanterns, fridges, pumps, driers and clean cooking products.',
         image:
-          'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801873/climate%20facility/home-page/impact-theory-card-1-image.jpg',
+        image_alt_text:
+          'Clean Energy Access',
         link: '/impact',
         linkLabel: 'Learn More',
       },
@@ -186,7 +219,9 @@ export const homeSections = [
         description:
           'Innovative blended finance approach for donors and concessional financiers, to make smart use of impact-seeking capital to de-risk and mobilise private sector financing.',
         image:
-          'https://images.unsplash.com/photo-1441974231531-c6227db76b6e?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801874/climate%20facility/home-page/impact-theory-card-3-image.jpg',
+        image_alt_text:
+          'Development Assistance',
         link: '/impact',
         linkLabel: 'Learn More',
       },
@@ -236,11 +271,17 @@ export const homeSections = [
         capacity: '526KW',
         category: 'Solar Grid',
         image:
-          'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801876/climate%20facility/home-page/project-1-image.jpg',
+        image_alt_text:
+          'Darway Coast, Nigeria',
         imageOne:
-          'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801877/climate%20facility/home-page/project-1-image-one.jpg',
+        imageOne_alt_text:
+          'Project detail',
         imageTwo:
-          'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801878/climate%20facility/home-page/project-1-image-two.jpg',
+        imageTwo_alt_text:
+          'Project detail',
         description:
           'Providing clean energy to over 2,000 households and businesses in coastal communities.',
         problem:
@@ -259,11 +300,17 @@ export const homeSections = [
         capacity: '324KW',
         category: 'Telecoms',
         image:
-          'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801878/climate%20facility/home-page/project-2-image.jpg',
+        image_alt_text:
+          'Hotspot Network',
         imageOne:
-          'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801879/climate%20facility/home-page/project-2-image-one.jpg',
+        imageOne_alt_text:
+          'Project detail',
         imageTwo:
-          'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801879/climate%20facility/home-page/project-2-image-two.jpg',
+        imageTwo_alt_text:
+          'Project detail',
         description:
           'Expanding rural telephony and energy access through innovative solar-powered base stations.',
         problem:
@@ -282,11 +329,17 @@ export const homeSections = [
         capacity: '850kW',
         category: 'Agro-Processing',
         image:
-          'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801880/climate%20facility/home-page/project-3-image.jpg',
+        image_alt_text:
+          'Prado Power Energy',
         imageOne:
-          'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801881/climate%20facility/home-page/project-3-image-one.jpg',
+        imageOne_alt_text:
+          'Project detail',
         imageTwo:
-          'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801881/climate%20facility/home-page/project-3-image-two.jpg',
+        imageTwo_alt_text:
+          'Project detail',
         description:
           'Agro-processing solar hybrid solution powering industrial growth in the northern region.',
         problem:
@@ -307,6 +360,10 @@ export const homeSections = [
     statLabel: 'States',
     body: 'Collectively, renewable energy projects located in 35 states across the six geo-political zones in Nigeria have been approved for co-financing by the Facility.',
     ctaLabel: 'View Locations',
+    // Inline SVG (FSD Africa mark) lifted verbatim from
+    // frontend/components/ui/MapLogos.tsx — markup, not an uploaded asset.
+    fsdAfricaLogoSvg:
+      '<svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg"><path d="M50,15 C50,15 25,35 25,55 C25,75 50,90 50,90 C50,90 75,75 75,55 C75,35 50,15 50,15 Z M50,78 C38,78 33,68 33,55 C33,40 50,26 50,26 C50,26 67,40 67,55 C67,68 62,78 50,78 Z" /><path d="M50,35 C50,35 37,47 37,58 C37,68 50,76 50,76 C50,76 63,68 63,58 C63,47 50,35 50,35 Z" fill="#00A788" opacity="0.8" /></svg>',
     categories: [
       { label: 'All' },
       { label: 'Solar Grid' },
@@ -379,7 +436,9 @@ export const homeSections = [
         storyType: 'Video Testimonial',
         badge: 'Case Study',
         image:
-          'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801882/climate%20facility/home-page/story-1-image.jpg',
+        image_alt_text:
+          'Meet Felicia Adindu-End User, Darway Coast',
         excerpt:
           'In Akpoku, Rivers State, Felicia Adindu once struggled with unreliable energy. Now, clean solar power has transformed her daily life and business.',
         duration: '4:32 mins',
@@ -391,7 +450,9 @@ export const homeSections = [
         storyType: 'Video Testimonial',
         badge: 'Tech Showcase',
         image:
-          'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801884/climate%20facility/home-page/story-2-image.jpg',
+        image_alt_text:
+          'ACOB Lighting Solar Powered Rural Electrification Project',
         excerpt:
           'Investing in clean energy means investing in communities. How ACOB Lighting is powering local development in northern regions.',
         duration: '3:15 mins',
@@ -403,7 +464,9 @@ export const homeSections = [
         storyType: 'Video Testimonial',
         badge: 'Milestone Focus',
         image:
-          'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=800&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801884/climate%20facility/home-page/story-3-image.jpg',
+        image_alt_text:
+          'Prado Power Solar Powered Rural Electrification Project',
         excerpt:
           'The project will construct solar-hybrid mini-grid installations to power households and small businesses in off-grid rural areas.',
         duration: '5:40 mins',
@@ -434,9 +497,13 @@ export const homeSections = [
           'How local currency guarantees are de-risking investments and unlocking long-term debt from institutional investors for solar developers.',
         author: 'Chinua Okeke',
         authorAvatar:
-          'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801885/climate%20facility/home-page/news-1-author-avatar.jpg',
+        authorAvatar_alt_text:
+          'Chinua Okeke',
         image:
-          'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801886/climate%20facility/home-page/news-1-image.jpg',
+        image_alt_text:
+          "The Future of Local Currency Financing and its Impact on Sub-Saharan Africa's Renewable Energy Transition",
         keyContext:
           'Understanding how local currency guarantees are de-risking solar energy investments.',
         themes: [{ label: 'FINANCE' }, { label: 'LOCAL CURRENCY' }, { label: 'SOLAR' }],
@@ -471,7 +538,10 @@ export const homeSections = [
             text: 'Solar panels installation matching local currency investments.',
             caption:
               'Domestic pension funds represent a massive, untapped pool of long-term local capital.',
-            url: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=1200&auto=format&fit=crop',
+            url:
+              'https://res.cloudinary.com/diqfojkri/image/upload/v1785801887/climate%20facility/home-page/news-1-paragraph-image.jpg',
+            url_alt_text:
+              'Solar panels installation matching local currency investments.',
           },
           { blockType: 'h2', text: 'Expanding Beyond Solar', caption: '', url: '' },
           {
@@ -493,9 +563,13 @@ export const homeSections = [
           'The facility secures additional commitments from domestic pensions and assurance funds to expand off-grid solar operations.',
         author: 'Folasade Adebayo',
         authorAvatar:
-          'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801888/climate%20facility/home-page/news-2-author-avatar.jpg',
+        authorAvatar_alt_text:
+          'Folasade Adebayo',
         image:
-          'https://images.unsplash.com/photo-1466611653911-95081537e5b7?q=80&w=1200&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801888/climate%20facility/home-page/news-2-image.jpg',
+        image_alt_text:
+          'Clean Energy Fund Announces the Successful Closure of Series 2 Capital Raise for Institutional Investors',
         keyContext:
           'A breakdown of the successful closure of our Series 2 capital raise from institutional partners.',
         themes: [{ label: 'FUNDRAISING' }, { label: 'INVESTORS' }, { label: 'GROWTH' }],
@@ -530,7 +604,10 @@ export const homeSections = [
             text: 'Strategic meeting finalizing the Series 2 capital raise.',
             caption:
               'Aligning domestic institutional capital with sustainable energy development targets.',
-            url: 'https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1200&auto=format&fit=crop',
+            url:
+              'https://res.cloudinary.com/diqfojkri/image/upload/v1785801889/climate%20facility/home-page/news-2-paragraph-image.jpg',
+            url_alt_text:
+              'Strategic meeting finalizing the Series 2 capital raise.',
           },
           { blockType: 'h2', text: 'Next Milestones', caption: '', url: '' },
           {
@@ -552,9 +629,13 @@ export const homeSections = [
           'A close look at how clean energy installations have impacted 2.4 million lives, created 300+ green jobs, and reduced carbon emissions.',
         author: 'Amina Bello',
         authorAvatar:
-          'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801890/climate%20facility/home-page/news-3-author-avatar.jpg',
+        authorAvatar_alt_text:
+          'Amina Bello',
         image:
-          'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=1200&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801891/climate%20facility/home-page/news-3-image.jpg',
+        image_alt_text:
+          'Annual Impact Report: Bridging the Energy Gap and Fostering Sustainable Economic Growth in Nigeria',
         keyContext:
           'A deep dive into our verified environmental and social metrics from the 2025 Impact Report.',
         themes: [{ label: 'ESG' }, { label: 'SDGS' }, { label: 'COMMUNITIES' }],
@@ -588,7 +669,10 @@ export const homeSections = [
             blockType: 'image',
             text: 'Community members benefited by solar installation.',
             caption: 'Access to clean electricity supports local education and healthcare clinics.',
-            url: 'https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1200&auto=format&fit=crop',
+            url:
+              'https://res.cloudinary.com/diqfojkri/image/upload/v1785801891/climate%20facility/home-page/news-3-paragraph-image.jpg',
+            url_alt_text:
+              'Community members benefited by solar installation.',
           },
           { blockType: 'h2', text: 'Verifiable Environmental Outcomes', caption: '', url: '' },
           {
@@ -610,9 +694,13 @@ export const homeSections = [
           'Recent policy updates from the SEC and Central Bank are creating a more robust enabling environment for sustainable investments.',
         author: 'Dr. Emmanuel Nwachukwu',
         authorAvatar:
-          'https://images.unsplash.com/photo-1560250097-0b93528c311a?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801892/climate%20facility/home-page/news-4-author-avatar.jpg',
+        authorAvatar_alt_text:
+          'Dr. Emmanuel Nwachukwu',
         image:
-          'https://images.unsplash.com/photo-1532601224476-15c79f2f7a51?q=80&w=1200&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801893/climate%20facility/home-page/news-4-image.jpg',
+        image_alt_text:
+          'Navigating the New Regulatory Frameworks Supporting Green Bonds and Climate Finance in Nigeria',
         keyContext:
           'Understanding the evolving legal landscape that is facilitating the growth of green finance.',
         themes: [{ label: 'POLICY' }, { label: 'REGULATION' }, { label: 'GREEN BONDS' }],
@@ -640,7 +728,10 @@ export const homeSections = [
             blockType: 'image',
             text: 'Legal books and document folders.',
             caption: 'Clear regulatory frameworks are essential for scaling climate finance.',
-            url: 'https://images.unsplash.com/photo-1589829085413-56de8ae18c73?q=80&w=1200&auto=format&fit=crop',
+            url:
+              'https://res.cloudinary.com/diqfojkri/image/upload/v1785801893/climate%20facility/home-page/news-4-paragraph-image.jpg',
+            url_alt_text:
+              'Legal books and document folders.',
           },
           { blockType: 'h2', text: 'Incentivizing Green Capital', caption: '', url: '' },
           {
@@ -680,9 +771,13 @@ export const homeSections = [
           'FCDO and InfraCredit partnership demonstrates how first-loss capital bridges equity gaps for remote developers.',
         author: 'Tunde Johnson',
         authorAvatar:
-          'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?q=80&w=100&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801894/climate%20facility/home-page/news-5-author-avatar.jpg',
+        authorAvatar_alt_text:
+          'Tunde Johnson',
         image:
-          'https://images.unsplash.com/photo-1513828583688-c52646db42da?q=80&w=1200&auto=format&fit=crop',
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785801895/climate%20facility/home-page/news-5-image.jpg',
+        image_alt_text:
+          'Unlocking Capital for Mini-Grids in Rural Communities',
         keyContext:
           'How first-loss concessional tranches bridge early-stage developer risk profiles.',
         themes: [{ label: 'CAPITAL' }, { label: 'MINI-GRIDS' }, { label: 'PARTNERSHIP' }],
@@ -716,7 +811,10 @@ export const homeSections = [
             blockType: 'image',
             text: 'Rural solar mini-grid installation site.',
             caption: 'Financing local infrastructure in local currency removes exchange rate shocks.',
-            url: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop',
+            url:
+              'https://res.cloudinary.com/diqfojkri/image/upload/v1785801895/climate%20facility/home-page/news-5-paragraph-image.jpg',
+            url_alt_text:
+              'Rural solar mini-grid installation site.',
           },
           { blockType: 'h2', text: 'Creating Investment-Grade Assets', caption: '', url: '' },
           {
@@ -739,6 +837,9 @@ export const homeSections = [
     eyebrow: 'Our Goal',
     heading: 'Aiming For Net Zero',
     body: 'The Facility will use its impact seeking capital to blend the cost of Eligible Green Projects aimed at fulfilling two main environmental objectives: climate change mitigation and energy transition to a low-carbon economy.',
+    image:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785801896/climate%20facility/home-page/net-zero-image.jpg',
+    image_alt_text: 'Nature and Energy',
     features: [
       {
         title: 'Energy Efficiency',
@@ -757,7 +858,10 @@ export const homeSections = [
     __component: 'home-page.structured-data-section' as const,
     organizationName: 'Climate Finance Blending Facility (CFBF)',
     url: 'https://climatesupportfacility.org',
-    logoUrl: 'https://climatesupportfacility.org/logo.png',
+    logoUrl:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785801897/climate%20facility/home-page/structured-data-logo.svg',
+    logoUrl_alt_text:
+      'Climate Finance Blending Facility (CFBF)',
     description:
       'A catalytic facility managed by InfraCredit and capitalized with UK FCDO concessional capital and British International Investment (BII) funding to de-risk green investments in local currency.',
     siteName: 'Climate Finance Blending Facility | CFBF',

@@ -19,6 +19,8 @@
  * the array order matches the render order in frontend/app/about/page.tsx.
  */
 
+import { nigeriaMapSvg } from './about-map-svg';
+
 const META_DESCRIPTION =
   'Capitalised with USD 21.3M concessional funding by FCDO & BII to de-risk green investments and mobilise private capital in Nigeria.';
 
@@ -53,6 +55,12 @@ export const aboutSections = [
       'The Climate Finance Blending Facility (CFBF) is capitalised with seed funding by the UK Foreign, Commonwealth & Development Office (FCDO) and co-invested alongside British International Investment (BII).',
     bodyPartTwo:
       'Administered by InfraCredit, the facility deploys subordinated debt and AAA guarantees to elevate green assets to investment-grade profiles — unlocking domestic pension capital at institutional scale.',
+    backgroundImage:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785804881/climate%20facility/about-page/hero-background-image.jpg',
+    backgroundImage_alt_text: 'Hero banner',
+    statImage:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785804882/climate%20facility/about-page/hero-stat-image.jpg',
+    statImage_alt_text: 'Wind turbines',
     stats: [
       {
         cardNumber: '01',
@@ -93,6 +101,8 @@ export const aboutSections = [
     body: 'CFBF structures capital investments by providing subordinated debt products and guarantees that elevate green assets to investment-grade profiles. This directly meets the strict compliance and safety guidelines of local pension funds and insurance providers.',
     mandateHeading: 'Our mandate',
     numbersLabel: 'The numbers',
+    bentoVideo:
+      'https://res.cloudinary.com/diqfojkri/video/upload/v1785804887/climate%20facility/about-page/mandate-bento-video.mp4',
     paragraphs: [
       {
         text: 'We deploy specialized concessional capital to cover the first-loss layers of high-impact energy access projects, converting higher-risk clean infrastructure ventures into viable, institutional-grade opportunities.',
@@ -108,9 +118,20 @@ export const aboutSections = [
       { value: 'AAA', label: 'Credit Enhancement Rating' },
     ],
     captions: [
-      { label: 'Community Empowerment' },
-      { label: 'Solar Installation' },
-      { label: 'Local Clean Power' },
+      // The first caption sits over `bentoVideo`, so it carries no image of its own.
+      { label: 'Community Empowerment', image: '', image_alt_text: '' },
+      {
+        label: 'Solar Installation',
+        image:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804890/climate%20facility/about-page/mandate-caption-2-image.jpg',
+        image_alt_text: 'Solar panels installer',
+      },
+      {
+        label: 'Local Clean Power',
+        image:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804890/climate%20facility/about-page/mandate-caption-3-image.jpg',
+        image_alt_text: 'Rural shop solar powered business',
+      },
     ],
   },
 
@@ -123,6 +144,11 @@ export const aboutSections = [
       'In Nigeria, MSMEs contribute 48% of national GDP, account for 96% of businesses and 84% of employment. Despite this significant contribution, access to traditional financing is limited, short-term and expensive — with persisting infrastructure challenges that hinder sector growth.',
     bodyTwo:
       'We believe sustainable and inclusive finance, local capital markets, and blended finance can join forces to play an especially important role in enabling stable access to innovative finance for climate-smart infrastructure — from clean energy and better storage, to faster connectivity.',
+    // Bento "Card 2" in app/about/page.tsx is image-only and has no matching
+    // entry in `cards[]`, so it lives on the section rather than a card item.
+    bentoImage:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785804892/climate%20facility/about-page/market-bento-image.jpg',
+    bentoImage_alt_text: 'Modern office building representing commercial growth',
     cards: [
       {
         value: '48%',
@@ -184,6 +210,9 @@ export const aboutSections = [
     tooltipNeedIndexLabel: 'Need index',
     legendLabel: 'Need intensity',
     legendScaleLabel: 'Low → High',
+    // 37 state outlines from @svg-maps/nigeria, geometry only — EnergyAccessMap
+    // fills each path at runtime from `states[]`.
+    mapSvg: nigeriaMapSvg,
     tabs: [
       { tabId: 'grid', label: 'Grid Extension' },
       { tabId: 'mini-grid', label: 'Mini-grid' },
@@ -243,18 +272,27 @@ export const aboutSections = [
         title: 'Risk sharing',
         body: 'First-loss absorption for developer default risk via structural co-financing, reducing the risk premium demanded by commercial lenders and making green infrastructure financeable for the first time.',
         tag: 'First-loss facility',
+        bgImage:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804893/climate%20facility/about-page/framework-card-1-bg-image.jpg',
+        bgImage_alt_text: 'Risk sharing',
       },
       {
         cardNumber: '02',
         title: 'Local currency funding',
         body: 'InfraCredit guarantees elevate green assets to AAA credit ratings, unlocking domestic pension fund capital held in PFAs and insurance companies — the largest untapped pool of patient capital in Nigeria.',
         tag: 'AAA credit enhancement',
+        bgImage:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804894/climate%20facility/about-page/framework-card-2-bg-image.jpg',
+        bgImage_alt_text: 'Local currency funding',
       },
       {
         cardNumber: '03',
         title: 'Blended finance',
         body: "Concessional and commercial capital layered at project level to achieve investment-grade profiles — the only sustainable path to closing Nigeria's green infrastructure financing gap at scale.",
         tag: 'CBI-certified',
+        bgImage:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804894/climate%20facility/about-page/framework-card-3-bg-image.jpg',
+        bgImage_alt_text: 'Blended finance',
       },
     ],
   },
@@ -318,11 +356,15 @@ export const aboutSections = [
             name: 'Foreign, Commonwealth & Development Office',
             role: 'UK FCDO — Anchor Funder (USD 21.3M)',
             logoText: '',
+            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804895/climate%20facility/about-page/partners-group-1-partner-1-logo.png',
+            logo_alt_text: 'UK International Development',
           },
           {
             name: 'British International Investment',
             role: 'BII — Co-Investment Partner',
             logoText: '',
+            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804896/climate%20facility/about-page/partners-group-1-partner-2-logo.png',
+            logo_alt_text: 'British International Investment',
           },
         ],
       },
@@ -330,8 +372,20 @@ export const aboutSections = [
         category: 'Technical Assistance Providers',
         description: 'Transactional capacity building and ESG project preparation.',
         partners: [
-          { name: 'FSD Africa', role: 'Technical Assistance Partner', logoText: '' },
-          { name: 'Shell Foundation', role: 'Capacity Support & Advisory', logoText: '' },
+          {
+            name: 'FSD Africa',
+            role: 'Technical Assistance Partner',
+            logoText: '',
+            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804897/climate%20facility/about-page/partners-group-2-partner-1-logo.png',
+            logo_alt_text: 'FSD Africa',
+          },
+          {
+            name: 'Shell Foundation',
+            role: 'Capacity Support & Advisory',
+            logoText: '',
+            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804898/climate%20facility/about-page/partners-group-2-partner-2-logo.png',
+            logo_alt_text: 'Shell Foundation',
+          },
         ],
       },
       {
@@ -342,6 +396,12 @@ export const aboutSections = [
             name: 'InfraCredit',
             role: 'Facility Administrator & AAA Guarantor',
             logoText: '',
+            // White PNG by default, coloured SVG swapped in on hover.
+            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804899/climate%20facility/about-page/partners-group-3-partner-1-logo.png',
+            logo_alt_text: 'InfraCredit',
+            logoColour:
+              'https://res.cloudinary.com/diqfojkri/image/upload/v1785804900/climate%20facility/about-page/partners-group-3-partner-1-logo-colour.svg',
+            logoColour_alt_text: 'InfraCredit',
           },
         ],
       },
@@ -376,6 +436,9 @@ export const aboutSections = [
         period: 'Q4 2022',
         year: '2022',
         label: 'Fund seeded & framework certified',
+        image:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804902/climate%20facility/about-page/milestones-milestone-1-image.jpg',
+        image_alt_text: 'Fund seeded & framework certified',
         events: [
           {
             date: '10.22',
@@ -396,6 +459,9 @@ export const aboutSections = [
         period: 'Q4 2023',
         year: '2023',
         label: 'Deployment phase — first portfolio closed',
+        image:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804903/climate%20facility/about-page/milestones-milestone-2-image.jpg',
+        image_alt_text: 'Deployment phase — first portfolio closed',
         events: [
           {
             date: '03.23',
@@ -416,6 +482,9 @@ export const aboutSections = [
         period: 'Q4 2024',
         year: '2024',
         label: 'Portfolio consolidation — institutional co-financing expanded',
+        image:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804904/climate%20facility/about-page/milestones-milestone-3-image.jpg',
+        image_alt_text: 'Portfolio consolidation — institutional co-financing expanded',
         events: [
           {
             date: 'Q1.24',
@@ -439,6 +508,9 @@ export const aboutSections = [
         period: 'Q4 2025',
         year: '2025',
         label: 'Scale-out — ₦7.86B+ pipeline mobilised',
+        image:
+          'https://res.cloudinary.com/diqfojkri/image/upload/v1785804905/climate%20facility/about-page/milestones-milestone-4-image.jpg',
+        image_alt_text: 'Scale-out — ₦7.86B+ pipeline mobilised',
         events: [
           {
             date: 'Q1.25',
@@ -591,6 +663,9 @@ export const aboutSections = [
     eyebrow: 'Factsheet & prospectus',
     heading: 'Get the technical specifications of the facility',
     body: 'Download our comprehensive factsheet outlining fund structure, eligibility guidelines, co-financing terms, and regional deployment targets.',
+    backgroundImage:
+      'https://res.cloudinary.com/diqfojkri/image/upload/v1785804905/climate%20facility/about-page/download-cta-background-image.jpg',
+    backgroundImage_alt_text: 'CFBF Factsheet & Prospectus Background',
     buttonLabel: 'Download Factsheet',
     buttonHref: '/wp-content/uploads/2026/05/CFBF-Factsheet-compressed.pdf',
     downloadFileName: 'CFBF_Factsheet.pdf',

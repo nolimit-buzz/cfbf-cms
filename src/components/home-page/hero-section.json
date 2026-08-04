@@ -12,6 +12,11 @@
     "ctaLabel": { "type": "string" },
     "ctaHref": { "type": "string" },
     "newsCtaLabel": { "type": "string" },
+    "backgroundImage": { "type": "string" },
+    "backgroundImage_alt_text": { "type": "string" },
+    "backgroundVideo": { "type": "string" },
+    "certificationBadge": { "type": "string" },
+    "certificationBadge_alt_text": { "type": "string" },
     "stats": {
       "type": "component",
       "repeatable": true,

@@ -23,6 +23,8 @@ export interface AboutPageBentoCaptionItem extends Struct.ComponentSchema {
     displayName: 'Bento Caption Item';
   };
   attributes: {
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     label: Schema.Attribute.String;
   };
 }
@@ -60,6 +62,8 @@ export interface AboutPageDownloadCtaSection extends Struct.ComponentSchema {
     displayName: 'Download CTA Section';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     body: Schema.Attribute.Text;
     buttonHref: Schema.Attribute.String;
     buttonLabel: Schema.Attribute.String;
@@ -86,6 +90,7 @@ export interface AboutPageEnergyMapSection extends Struct.ComponentSchema {
     headingSecondary: Schema.Attribute.String;
     legendLabel: Schema.Attribute.String;
     legendScaleLabel: Schema.Attribute.String;
+    mapSvg: Schema.Attribute.Text;
     sourceNote: Schema.Attribute.Text;
     states: Schema.Attribute.Component<'about-page.map-state-item', true>;
     tabs: Schema.Attribute.Component<'about-page.map-tab-item', true>;
@@ -103,6 +108,8 @@ export interface AboutPageFrameworkCardItem extends Struct.ComponentSchema {
     displayName: 'Framework Card Item';
   };
   attributes: {
+    bgImage: Schema.Attribute.String;
+    bgImage_alt_text: Schema.Attribute.String;
     body: Schema.Attribute.Text;
     cardNumber: Schema.Attribute.String;
     tag: Schema.Attribute.String;
@@ -132,6 +139,8 @@ export interface AboutPageHeroSection extends Struct.ComponentSchema {
     displayName: 'Hero Section';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
     bodyPartOne: Schema.Attribute.Text;
     bodyPartTwo: Schema.Attribute.Text;
     breadcrumbLabel: Schema.Attribute.String;
@@ -144,6 +153,8 @@ export interface AboutPageHeroSection extends Struct.ComponentSchema {
       'about-page.hero-slider-stat-item',
       true
     >;
+    statImage: Schema.Attribute.String;
+    statImage_alt_text: Schema.Attribute.String;
     stats: Schema.Attribute.Component<'about-page.hero-stat-item', true>;
   };
 }
@@ -205,6 +216,7 @@ export interface AboutPageMandateSection extends Struct.ComponentSchema {
     displayName: 'Mandate Section';
   };
   attributes: {
+    bentoVideo: Schema.Attribute.String;
     body: Schema.Attribute.Text;
     captions: Schema.Attribute.Component<'about-page.bento-caption-item', true>;
     eyebrow: Schema.Attribute.String;
@@ -270,6 +282,8 @@ export interface AboutPageMarketSection extends Struct.ComponentSchema {
     displayName: 'Market Section';
   };
   attributes: {
+    bentoImage: Schema.Attribute.String;
+    bentoImage_alt_text: Schema.Attribute.String;
     bodyOne: Schema.Attribute.Text;
     bodyTwo: Schema.Attribute.Text;
     cards: Schema.Attribute.Component<
@@ -302,6 +316,8 @@ export interface AboutPageMilestoneItem extends Struct.ComponentSchema {
   };
   attributes: {
     events: Schema.Attribute.Component<'about-page.milestone-event-item', true>;
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     label: Schema.Attribute.Text;
     period: Schema.Attribute.String;
     year: Schema.Attribute.String;
@@ -369,6 +385,10 @@ export interface AboutPagePartnerItem extends Struct.ComponentSchema {
     displayName: 'Partner Item';
   };
   attributes: {
+    logo: Schema.Attribute.String;
+    logo_alt_text: Schema.Attribute.String;
+    logoColour: Schema.Attribute.String;
+    logoColour_alt_text: Schema.Attribute.String;
     logoText: Schema.Attribute.String;
     name: Schema.Attribute.String;
     role: Schema.Attribute.String;
@@ -716,12 +736,13 @@ export interface ContactPageStructuredDataSection
     displayName: 'Structured Data Section';
   };
   attributes: {
+    jsonLdDescription: Schema.Attribute.Text;
+    jsonLdName: Schema.Attribute.String;
+    jsonLdPublisherName: Schema.Attribute.String;
+    jsonLdType: Schema.Attribute.String;
     loadingLabel: Schema.Attribute.String;
     metaDescription: Schema.Attribute.Text;
     pageTitle: Schema.Attribute.String;
-    schemaDescription: Schema.Attribute.Text;
-    schemaName: Schema.Attribute.String;
-    schemaPublisherName: Schema.Attribute.String;
   };
 }
 
@@ -1111,6 +1132,8 @@ export interface HomePageAboutSection extends Struct.ComponentSchema {
     eyebrow: Schema.Attribute.String;
     headingPrimary: Schema.Attribute.String;
     headingSecondary: Schema.Attribute.String;
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     partners: Schema.Attribute.Component<'home-page.partner-item', true>;
     partnersHeading: Schema.Attribute.String;
     statDescription: Schema.Attribute.Text;
@@ -1150,6 +1173,7 @@ export interface HomePageGallerySlideItem extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
   };
 }
 
@@ -1160,6 +1184,11 @@ export interface HomePageHeroSection extends Struct.ComponentSchema {
     displayName: 'Hero Section';
   };
   attributes: {
+    backgroundImage: Schema.Attribute.String;
+    backgroundImage_alt_text: Schema.Attribute.String;
+    backgroundVideo: Schema.Attribute.String;
+    certificationBadge: Schema.Attribute.String;
+    certificationBadge_alt_text: Schema.Attribute.String;
     ctaHref: Schema.Attribute.String;
     ctaLabel: Schema.Attribute.String;
     headingPrimary: Schema.Attribute.String;
@@ -1230,6 +1259,7 @@ export interface HomePageMapSection extends Struct.ComponentSchema {
     categories: Schema.Attribute.Component<'home-page.category-item', true>;
     ctaLabel: Schema.Attribute.String;
     eyebrow: Schema.Attribute.String;
+    fsdAfricaLogoSvg: Schema.Attribute.Text;
     headingPrimary: Schema.Attribute.String;
     headingSecondary: Schema.Attribute.String;
     markers: Schema.Attribute.Component<'home-page.map-marker-item', true>;
@@ -1256,6 +1286,8 @@ export interface HomePageMetricCardItem extends Struct.ComponentSchema {
     displayName: 'Metric Card Item';
   };
   attributes: {
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     label: Schema.Attribute.String;
     suffix: Schema.Attribute.String;
     value: Schema.Attribute.String;
@@ -1276,6 +1308,8 @@ export interface HomePageNetZeroSection extends Struct.ComponentSchema {
     eyebrow: Schema.Attribute.String;
     features: Schema.Attribute.Component<'home-page.feature-card-item', true>;
     heading: Schema.Attribute.String;
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
   };
 }
 
@@ -1289,9 +1323,11 @@ export interface HomePageNewsArticleItem extends Struct.ComponentSchema {
     articleId: Schema.Attribute.String;
     author: Schema.Attribute.String;
     authorAvatar: Schema.Attribute.String;
+    authorAvatar_alt_text: Schema.Attribute.String;
     date: Schema.Attribute.String;
     excerpt: Schema.Attribute.Text;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     keyContext: Schema.Attribute.Text;
     paragraphs: Schema.Attribute.Component<
       'home-page.news-paragraph-item',
@@ -1315,6 +1351,7 @@ export interface HomePageNewsParagraphItem extends Struct.ComponentSchema {
     caption: Schema.Attribute.Text;
     text: Schema.Attribute.Text;
     url: Schema.Attribute.String;
+    url_alt_text: Schema.Attribute.String;
   };
 }
 
@@ -1369,8 +1406,11 @@ export interface HomePageProjectItem extends Struct.ComponentSchema {
     category: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     imageOne: Schema.Attribute.String;
+    imageOne_alt_text: Schema.Attribute.String;
     imageTwo: Schema.Attribute.String;
+    imageTwo_alt_text: Schema.Attribute.String;
     impact: Schema.Attribute.Text;
     location: Schema.Attribute.String;
     problem: Schema.Attribute.Text;
@@ -1469,6 +1509,7 @@ export interface HomePageStoryItem extends Struct.ComponentSchema {
     duration: Schema.Attribute.String;
     excerpt: Schema.Attribute.Text;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     location: Schema.Attribute.String;
     role: Schema.Attribute.String;
     storyType: Schema.Attribute.String;
@@ -1485,6 +1526,7 @@ export interface HomePageStructuredDataSection extends Struct.ComponentSchema {
   attributes: {
     description: Schema.Attribute.Text;
     logoUrl: Schema.Attribute.String;
+    logoUrl_alt_text: Schema.Attribute.String;
     organizationName: Schema.Attribute.String;
     siteName: Schema.Attribute.String;
     sponsors: Schema.Attribute.Component<'home-page.sponsor-item', true>;
@@ -1517,6 +1559,7 @@ export interface HomePageTheoryCardItem extends Struct.ComponentSchema {
     cardType: Schema.Attribute.String;
     description: Schema.Attribute.Text;
     image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
     link: Schema.Attribute.String;
     linkLabel: Schema.Attribute.String;
     subtitle: Schema.Attribute.String;
