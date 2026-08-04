@@ -32,7 +32,22 @@ services:
       CLOUDINARY_KEY: ${CLOUDINARY_KEY}
       CLOUDINARY_SECRET: ${CLOUDINARY_SECRET}
 
-    # Traefik labels intentionally omitted until the domain is set up.
+    labels:
+      - traefik.enable=true
+
+      # HTTP
+      - traefik.http.routers.cef-cms.rule=Host(`climatefacilitycms.infracredit.ng`)
+      - traefik.http.routers.cef-cms.entrypoints=web
+      - traefik.http.routers.cef-cms.middlewares=redirect-to-https
+
+      # HTTPS
+      - traefik.http.routers.cef-cms-secure.rule=Host(`climatefacilitycms.infracredit.ng`)
+      - traefik.http.routers.cef-cms-secure.entrypoints=websecure
+      - traefik.http.routers.cef-cms-secure.tls=true
+      - traefik.http.routers.cef-cms-secure.tls.certresolver=letsencrypt
+
+      # Service Port
+      - traefik.http.services.cef-cms.loadbalancer.server.port=1341
 
     networks:
       - dokploy-network
