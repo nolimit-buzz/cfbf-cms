@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_project_detail_gallery_items",
+  "info": {
+    "displayName": "Gallery Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": { "type": "string" },
+    "image_alt_text": { "type": "string" },
+    "caption": { "type": "text" }
+  }
+}

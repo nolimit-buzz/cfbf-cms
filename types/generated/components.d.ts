@@ -2320,6 +2320,33 @@ export interface NewsPageViewTabItem extends Struct.ComponentSchema {
   };
 }
 
+export interface ProjectDetailGalleryItem extends Struct.ComponentSchema {
+  collectionName: 'components_project_detail_gallery_items';
+  info: {
+    description: '';
+    displayName: 'Gallery Item';
+  };
+  attributes: {
+    caption: Schema.Attribute.Text;
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
+  };
+}
+
+export interface ProjectDetailVideoItem extends Struct.ComponentSchema {
+  collectionName: 'components_project_detail_video_items';
+  info: {
+    description: '';
+    displayName: 'Video Item';
+  };
+  attributes: {
+    category: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    videoId: Schema.Attribute.String;
+    youtubeId: Schema.Attribute.String;
+  };
+}
+
 export interface ProjectsPageAnalysisTabSection extends Struct.ComponentSchema {
   collectionName: 'components_projects_page_analysis_tab_sections';
   info: {
@@ -3058,6 +3085,8 @@ declare module '@strapi/strapi' {
       'news-page.portal-link-item': NewsPagePortalLinkItem;
       'news-page.structured-data-section': NewsPageStructuredDataSection;
       'news-page.view-tab-item': NewsPageViewTabItem;
+      'project-detail.gallery-item': ProjectDetailGalleryItem;
+      'project-detail.video-item': ProjectDetailVideoItem;
       'projects-page.analysis-tab-section': ProjectsPageAnalysisTabSection;
       'projects-page.eligibility-cta-section': ProjectsPageEligibilityCtaSection;
       'projects-page.footprint-map-section': ProjectsPageFootprintMapSection;

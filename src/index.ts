@@ -7,6 +7,7 @@ import { homeSections } from './seed/home-page-copy';
 import { howItWorksSections } from './seed/how-it-works-page-copy';
 import { impactSections } from './seed/impact-page-copy';
 import { newsSections } from './seed/news-page-copy';
+import { projectRecords } from './seed/projects-collection';
 import { projectsSections } from './seed/projects-page-copy';
 
 type SingleTypeSeed = {
@@ -68,16 +69,74 @@ async function seedSingleType(
 }
 
 /**
- * Grants the Public role read access to each single type.
+ * Seeds the `project` collection — one entry per case study at /projects/[id].
+ *
+ * Same two subtleties as seedSingleType: look the entry up as a *draft* (a fresh
+ * instance has no published version, so a published-only lookup would reseed on
+ * every boot), and publish explicitly so the public REST API serves it.
+ *
+ * Idempotency is per record, keyed on `projectId`, so adding a seventh entry to
+ * the seed file backfills it without disturbing the six already in the database
+ * — and edits made in the admin UI are never overwritten.
+ *
+ * The dedupe step is not belt-and-braces: `unique: true` in Strapi 5 is scoped
+ * per document, so it does not stop two *different* documents from sharing a
+ * projectId. If bootstrap ever runs twice concurrently (as `strapi develop` can
+ * do around a rebuild), both passes see no existing draft and both create one.
+ * Collapsing extras here means the next boot repairs the database instead of
+ * serving /projects/01 twice.
+ */
+async function seedProjectRecords(strapi: Core.Strapi) {
+  const documents = strapi.documents('api::project.project' as any);
+
+  for (const record of projectRecords) {
+    const existingDrafts = (await documents.findMany({
+      filters: { projectId: record.projectId },
+      status: 'draft',
+    } as any)) as any[];
+
+    let draft = existingDrafts?.[0];
+
+    for (const duplicate of existingDrafts?.slice(1) ?? []) {
+      await documents.delete({ documentId: duplicate.documentId } as any);
+      strapi.log.warn(
+        `[seed] PROJECT ${record.projectId}: removed duplicate ${duplicate.documentId}.`
+      );
+    }
+
+    if (!draft) {
+      draft = await documents.create({ data: record } as any);
+      strapi.log.info(`[seed] PROJECT ${record.projectId} (${record.title}) seeded.`);
+    }
+
+    const published = await documents.findFirst({
+      filters: { projectId: record.projectId },
+      documentId: (draft as any)?.documentId,
+      status: 'published',
+    } as any);
+
+    if (!published && (draft as any)?.documentId) {
+      await documents.publish({ documentId: (draft as any).documentId } as any);
+      strapi.log.info(`[seed] PROJECT ${record.projectId} published.`);
+    }
+  }
+}
+
+/**
+ * Grants the Public role each of the given permission actions.
  *
  * Without this a fresh database rejects anonymous reads, so the frontend gets
  * nothing back and every page renders empty. Doing it here means a new clone or
  * a dropped database works without anyone clicking through the admin UI.
  *
+ * Callers pass whole action strings because the set differs by kind: a single
+ * type only exposes `find`, while a collection needs `find` *and* `findOne` —
+ * /projects/[id] fetches one record at a time.
+ *
  * In Strapi 5 the permission model is just `{ action, role }` — there is no
  * `enabled` column, so a row's presence *is* the grant.
  */
-async function grantPublicFind(strapi: Core.Strapi, uids: string[]) {
+async function grantPublicRead(strapi: Core.Strapi, actions: string[]) {
   const publicRole = await strapi.db
     .query('plugin::users-permissions.role')
     .findOne({ where: { type: 'public' } });
@@ -89,10 +148,7 @@ async function grantPublicFind(strapi: Core.Strapi, uids: string[]) {
 
   const granted: string[] = [];
 
-  for (const uid of uids) {
-    // Single types expose `find` (there is no `findOne` on a single type).
-    const action = `${uid}.find`;
-
+  for (const action of actions) {
     const existing = await strapi.db
       .query('plugin::users-permissions.permission')
       .findOne({ where: { action, role: publicRole.id } });
@@ -138,9 +194,13 @@ export default {
       await seedSingleType(strapi, singleType);
     }
 
-    await grantPublicFind(
-      strapi,
-      SINGLE_TYPES.map((s) => s.uid)
-    );
+    await seedProjectRecords(strapi);
+
+    await grantPublicRead(strapi, [
+      // Single types expose `find` only — there is no `findOne` on a single type.
+      ...SINGLE_TYPES.map((s) => `${s.uid}.find`),
+      'api::project.project.find',
+      'api::project.project.findOne',
+    ]);
   },
 };

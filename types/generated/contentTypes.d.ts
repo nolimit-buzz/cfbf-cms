@@ -856,6 +856,62 @@ export interface ApiNewsNews extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiProjectProject extends Struct.CollectionTypeSchema {
+  collectionName: 'project_records';
+  info: {
+    description: 'One per case-study page at /projects/[id]. The /projects listing page lives in the Projects single type.';
+    displayName: 'Project Record';
+    pluralName: 'project-records';
+    singularName: 'project';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  attributes: {
+    capacity: Schema.Attribute.String;
+    capital: Schema.Attribute.String;
+    category: Schema.Attribute.String;
+    connections: Schema.Attribute.String;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    desc: Schema.Attribute.Text;
+    financing: Schema.Attribute.Text;
+    financingInstrument: Schema.Attribute.String;
+    gallery: Schema.Attribute.Component<'project-detail.gallery-item', true>;
+    ghg: Schema.Attribute.String;
+    image: Schema.Attribute.String;
+    image_alt_text: Schema.Attribute.String;
+    impact: Schema.Attribute.Text;
+    impact_desc: Schema.Attribute.Text;
+    introTitle: Schema.Attribute.String;
+    jobs: Schema.Attribute.String;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::project.project'
+    > &
+      Schema.Attribute.Private;
+    location: Schema.Attribute.String;
+    problem: Schema.Attribute.Text;
+    projectId: Schema.Attribute.String &
+      Schema.Attribute.Required &
+      Schema.Attribute.Unique;
+    publishedAt: Schema.Attribute.DateTime;
+    sdgs: Schema.Attribute.String;
+    slug: Schema.Attribute.UID<'title'>;
+    solution: Schema.Attribute.Text;
+    states: Schema.Attribute.String;
+    status: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    videos: Schema.Attribute.Component<'project-detail.video-item', true>;
+    year: Schema.Attribute.String;
+  };
+}
+
 export interface ApiProjectsProjects extends Struct.SingleTypeSchema {
   collectionName: 'projects';
   info: {
@@ -1420,6 +1476,7 @@ declare module '@strapi/strapi' {
       'api::how-it-works.how-it-works': ApiHowItWorksHowItWorks;
       'api::impact.impact': ApiImpactImpact;
       'api::news.news': ApiNewsNews;
+      'api::project.project': ApiProjectProject;
       'api::projects.projects': ApiProjectsProjects;
       'plugin::content-releases.release': PluginContentReleasesRelease;
       'plugin::content-releases.release-action': PluginContentReleasesReleaseAction;

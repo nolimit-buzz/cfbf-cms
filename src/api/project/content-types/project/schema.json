@@ -1,0 +1,50 @@
+{
+  "kind": "collectionType",
+  "collectionName": "project_records",
+  "info": {
+    "singularName": "project",
+    "pluralName": "project-records",
+    "displayName": "Project Record",
+    "description": "One per case-study page at /projects/[id]. The /projects listing page lives in the Projects single type."
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "projectId": { "type": "string", "required": true, "unique": true },
+    "slug": { "type": "uid", "targetField": "title" },
+    "title": { "type": "string" },
+    "location": { "type": "string" },
+    "year": { "type": "string" },
+    "capital": { "type": "string" },
+    "capacity": { "type": "string" },
+    "category": { "type": "string" },
+    "connections": { "type": "string" },
+    "jobs": { "type": "string" },
+    "ghg": { "type": "string" },
+    "status": { "type": "string" },
+    "image": { "type": "string" },
+    "image_alt_text": { "type": "string" },
+    "desc": { "type": "text" },
+    "problem": { "type": "text" },
+    "solution": { "type": "text" },
+    "impact": { "type": "text" },
+    "financing": { "type": "text" },
+    "impact_desc": { "type": "text" },
+    "financingInstrument": { "type": "string" },
+    "introTitle": { "type": "string" },
+    "sdgs": { "type": "string" },
+    "states": { "type": "string" },
+    "gallery": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project-detail.gallery-item"
+    },
+    "videos": {
+      "type": "component",
+      "repeatable": true,
+      "component": "project-detail.video-item"
+    }
+  }
+}

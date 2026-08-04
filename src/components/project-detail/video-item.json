@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_project_detail_video_items",
+  "info": {
+    "displayName": "Video Item",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "videoId": { "type": "string" },
+    "title": { "type": "string" },
+    "category": { "type": "string" },
+    "youtubeId": { "type": "string" }
+  }
+}
