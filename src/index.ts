@@ -16,6 +16,9 @@ type SingleTypeSeed = {
   sections: unknown[];
 };
 
+/** A dynamic-zone entry as it arrives from, or is sent to, the document service. */
+type ZoneEntry = { __component: string; id?: number } & Record<string, unknown>;
+
 /**
  * Every page single type, with the copy used to pre-fill it on a fresh boot.
  * Order is cosmetic — it only affects the log output.
@@ -32,7 +35,98 @@ const SINGLE_TYPES: SingleTypeSeed[] = [
 ];
 
 /**
- * Seeds a single type if it is empty, then makes sure it is published.
+ * Builds the populate tree for one component, recursing through nested
+ * components.
+ *
+ * `populate: '*'` only reaches one level down, which is not enough here: a
+ * milestones section nests section -> milestone -> event, three levels deep.
+ * Anything left unpopulated comes back `undefined`, and since the backfill
+ * below rewrites the whole `sections` array, an under-populated read would
+ * write those nested lists back as nothing. So the tree is derived from the
+ * schema registry rather than guessed.
+ *
+ * Only `component` attributes need recursion — every "image" on these page
+ * components is a plain URL string, not a media relation.
+ */
+function buildComponentPopulate(
+  strapi: Core.Strapi,
+  componentUid: string,
+  depth = 0
+): Record<string, unknown> | null {
+  const schema = (strapi.components as any)?.[componentUid];
+
+  // `null` means "nothing deeper to populate" — callers omit the `populate` key
+  // entirely for these. A nested `populate: true` is rejected by Strapi: inside
+  // a populate object the value must be a string, array of strings, or object.
+  if (!schema || depth > 6) return null;
+
+  const populate: Record<string, unknown> = {};
+
+  for (const [name, attribute] of Object.entries<any>(schema.attributes ?? {})) {
+    if (attribute?.type === 'component' && attribute.component) {
+      const child = buildComponentPopulate(strapi, attribute.component, depth + 1);
+      populate[name] = child ? { populate: child } : {};
+    }
+  }
+
+  return Object.keys(populate).length > 0 ? populate : null;
+}
+
+/**
+ * Builds the `populate` argument that reads a page's dynamic zone in full.
+ *
+ * Dynamic zones need the `on` form: each component in the zone has different
+ * attribute names, so they cannot share one populate object.
+ */
+function buildSectionsPopulate(strapi: Core.Strapi, uid: string): any {
+  const zone = (strapi.contentType(uid as any) as any)?.attributes?.sections;
+  const components: string[] = zone?.components ?? [];
+
+  if (zone?.type !== 'dynamiczone' || components.length === 0) return ['sections'];
+
+  const on: Record<string, unknown> = {};
+
+  for (const componentUid of components) {
+    const child = buildComponentPopulate(strapi, componentUid);
+    on[componentUid] = child ? { populate: child } : {};
+  }
+
+  return { sections: { on } };
+}
+
+/**
+ * Confirms a section read back from the database carries every nested list its
+ * schema declares.
+ *
+ * This is the guard that makes the backfill safe to write. A populated but
+ * genuinely empty repeatable comes back as `[]`; one that was never populated
+ * comes back `undefined`. Only the latter would silently discard content on
+ * write, and it is exactly what this rejects.
+ */
+function isFullyPopulated(strapi: Core.Strapi, entry: ZoneEntry): boolean {
+  const schema = (strapi.components as any)?.[entry.__component];
+  if (!schema) return false;
+
+  for (const [name, attribute] of Object.entries<any>(schema.attributes ?? {})) {
+    if (attribute?.type !== 'component') continue;
+
+    const value = (entry as any)[name];
+    if (value === undefined) return false;
+
+    const children = Array.isArray(value) ? value : [value];
+    for (const child of children) {
+      if (child && !isFullyPopulated(strapi, { ...child, __component: attribute.component })) {
+        return false;
+      }
+    }
+  }
+
+  return true;
+}
+
+/**
+ * Seeds a single type if it is empty, backfills any section the seed has gained
+ * since the entry was created, then makes sure it is published.
  *
  * `status: 'draft'` on the lookup matters: entries are created as unpublished
  * drafts, and findFirst defaults to looking for the *published* version — which
@@ -47,17 +141,17 @@ async function seedSingleType(
   { uid, label, sections }: SingleTypeSeed
 ) {
   const documents = strapi.documents(uid as any);
+  const populate = buildSectionsPopulate(strapi, uid);
 
-  const existingDraft = await documents.findFirst({
-    populate: ['sections'],
-    status: 'draft',
-  });
+  const existingDraft = await documents.findFirst({ populate, status: 'draft' } as any);
 
   let draft = existingDraft;
 
   if (!(draft as any)?.sections?.length) {
     draft = await documents.create({ data: { sections } } as any);
     strapi.log.info(`[seed] ${label} page seeded with ${sections.length} sections.`);
+  } else {
+    draft = await backfillMissingSections(strapi, { uid, label, sections }, draft as any, populate);
   }
 
   const published = await documents.findFirst({ status: 'published' });
@@ -65,6 +159,76 @@ async function seedSingleType(
   if (!published && (draft as any)?.documentId) {
     await documents.publish({ documentId: (draft as any).documentId } as any);
     strapi.log.info(`[seed] ${label} page published.`);
+  }
+}
+
+/**
+ * Appends sections the seed file has but the stored entry does not.
+ *
+ * Entries created from an older seed are missing whatever was added since, and
+ * the "only seed when empty" rule above means they never catch up. Appending —
+ * rather than replacing — means copy edited in the admin is never overwritten;
+ * only genuinely absent sections are added. Matching is by `__component`, which
+ * is also how the frontend picks sections, so append order is cosmetic.
+ *
+ * A dynamic zone can only be written as a whole array, so this rewrites the
+ * existing sections alongside the new ones. That is safe only if they were read
+ * back complete, hence the `isFullyPopulated` check — and if anything looks
+ * partial this bails out rather than risk truncating live content. Likewise the
+ * whole thing is wrapped in a try/catch: a failed backfill must never take the
+ * rest of the boot down with it.
+ */
+async function backfillMissingSections(
+  strapi: Core.Strapi,
+  { uid, label, sections }: SingleTypeSeed,
+  draft: { documentId: string; sections: ZoneEntry[] },
+  populate: any
+) {
+  const documents = strapi.documents(uid as any);
+
+  try {
+    const existing = draft.sections ?? [];
+    const present = new Set(existing.map((section) => section.__component));
+    const missing = (sections as ZoneEntry[]).filter((section) => !present.has(section.__component));
+
+    if (missing.length === 0) return draft;
+
+    const partial = existing.filter((section) => !isFullyPopulated(strapi, section));
+
+    if (partial.length > 0) {
+      strapi.log.warn(
+        `[seed] ${label} page is missing ${missing.map((s) => s.__component).join(', ')}, ` +
+          `but ${partial.map((s) => s.__component).join(', ')} read back incomplete — ` +
+          'skipping backfill rather than risk overwriting stored content. Add the ' +
+          'missing sections in the admin instead.'
+      );
+      return draft;
+    }
+
+    const updated = await documents.update({
+      documentId: draft.documentId,
+      data: { sections: [...existing, ...missing] },
+      populate,
+    } as any);
+
+    strapi.log.info(
+      `[seed] ${label} page backfilled with ${missing.length} section(s): ` +
+        missing.map((s) => s.__component).join(', ')
+    );
+
+    // The public API serves the published version, so an unpublished backfill
+    // would be invisible. Publishing here also carries across any draft edits
+    // an editor had not published yet.
+    await documents.publish({ documentId: draft.documentId } as any);
+    strapi.log.info(`[seed] ${label} page republished after backfill.`);
+
+    return (updated as any) ?? draft;
+  } catch (error) {
+    strapi.log.error(
+      `[seed] ${label} page backfill failed — leaving the entry untouched. ` +
+        (error instanceof Error ? error.message : String(error))
+    );
+    return draft;
   }
 }
 

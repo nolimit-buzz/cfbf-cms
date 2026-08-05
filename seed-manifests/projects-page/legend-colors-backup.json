@@ -1,19 +1,19 @@
 [
   {
     "type": "rural-electrification",
-    "previousColor": "#c8e6c9"
+    "previousColor": "#48C0A3"
   },
   {
     "type": "rural-telephony",
-    "previousColor": "#b3c5e8"
+    "previousColor": "#648CDC"
   },
   {
     "type": "both",
-    "previousColor": "#fff9c4"
+    "previousColor": "#FDB713"
   },
   {
     "type": "mini-grids",
-    "previousColor": "#c8b9a4"
+    "previousColor": "#B4A082"
   },
   {
     "type": "default",
