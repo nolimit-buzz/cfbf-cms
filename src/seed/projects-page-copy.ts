@@ -776,10 +776,10 @@ export const projectsSections = [
     // About page's energy map does; colours are applied at runtime from states[].
     mapSvg: nigeriaMapSvg,
     legend: [
-      { label: 'Rural Electrification', color: '#c8e6c9', type: 'rural-electrification' },
-      { label: 'Rural Telephony', color: '#b3c5e8', type: 'rural-telephony' },
-      { label: 'Rural Electrification & Telephony', color: '#fff9c4', type: 'both' },
-      { label: 'Mini Grids – Markets', color: '#c8b9a4', type: 'mini-grids' },
+      { label: 'Rural Electrification', color: '#48C0A3', type: 'rural-electrification' },
+      { label: 'Rural Telephony', color: '#648CDC', type: 'rural-telephony' },
+      { label: 'Rural Electrification & Telephony', color: '#FDB713', type: 'both' },
+      { label: 'Mini Grids – Markets', color: '#B4A082', type: 'mini-grids' },
       { label: 'Default', color: '#2d6a4f', type: 'default' },
       { label: 'PUE', color: '#69b44b', type: 'pue' },
       { label: 'Rural Electrification & PUE', color: '#f4845f', type: 'rural-elec-pue' },
