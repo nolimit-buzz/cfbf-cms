@@ -365,6 +365,10 @@ export default {
       ...SINGLE_TYPES.map((s) => `${s.uid}.find`),
       'api::project.project.find',
       'api::project.project.findOne',
+      // Not in SINGLE_TYPES: `global` holds site-wide settings rather than a
+      // page's `sections` zone, so it is not seeded — but the footer reads its
+      // `socialLinks`, which needs the same public grant.
+      'api::global.global.find',
     ]);
   },
 };

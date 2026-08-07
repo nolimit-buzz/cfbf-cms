@@ -30,6 +30,11 @@
       "type": "component",
       "repeatable": false,
       "component": "shared.seo"
+    },
+    "socialLinks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.social-link"
     }
   }
 }

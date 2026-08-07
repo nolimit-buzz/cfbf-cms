@@ -2943,6 +2943,22 @@ export interface SharedSlider extends Struct.ComponentSchema {
   };
 }
 
+export interface SharedSocialLink extends Struct.ComponentSchema {
+  collectionName: 'components_shared_social_links';
+  info: {
+    description: 'One social media profile shown in the site-wide footer. A blank url hides the icon.';
+    displayName: 'Social Link';
+  };
+  attributes: {
+    label: Schema.Attribute.String;
+    platform: Schema.Attribute.Enumeration<
+      ['facebook', 'twitter', 'linkedin', 'instagram', 'youtube']
+    > &
+      Schema.Attribute.Required;
+    url: Schema.Attribute.String;
+  };
+}
+
 declare module '@strapi/strapi' {
   export namespace Public {
     export interface ComponentSchemas {
@@ -3120,6 +3136,7 @@ declare module '@strapi/strapi' {
       'shared.rich-text': SharedRichText;
       'shared.seo': SharedSeo;
       'shared.slider': SharedSlider;
+      'shared.social-link': SharedSocialLink;
     }
   }
 }
