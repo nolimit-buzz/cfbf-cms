@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_shared_social_links",
+  "info": {
+    "displayName": "Social Link",
+    "description": "One social media profile shown in the site-wide footer. A blank url hides the icon."
+  },
+  "options": {},
+  "attributes": {
+    "platform": {
+      "type": "enumeration",
+      "enum": [
+        "facebook",
+        "twitter",
+        "linkedin",
+        "instagram",
+        "youtube"
+      ],
+      "required": true
+    },
+    "url": {
+      "type": "string",
+      "required": false
+    },
+    "label": {
+      "type": "string",
+      "required": false
+    }
+  }
+}
