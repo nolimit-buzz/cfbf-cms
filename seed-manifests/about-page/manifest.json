@@ -308,6 +308,174 @@
     "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1785804900/climate%20facility/about-page/partners-group-3-partner-1-logo-colour.svg"
   },
   {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 3
+        },
+        {
+          "field": "partners",
+          "index": 0
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://www.aiicoplc.com/images/AIICO_Insurance_PLC_.png",
+    "altText": "AIICO Insurance",
+    "localFile": "partners-group-3-partner-2-logo.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-2-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786962991/climate%20facility/about-page/partners-group-3-partner-2-logo.png"
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 3
+        },
+        {
+          "field": "partners",
+          "index": 1
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://nem-insurance.com/assets/uploads/logo.jpg",
+    "altText": "NEM Insurance",
+    "localFile": "partners-group-3-partner-3-logo.jpg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-3-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786962992/climate%20facility/about-page/partners-group-3-partner-3-logo.jpg"
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 3
+        },
+        {
+          "field": "partners",
+          "index": 2
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://www.linkageassurance.com/wp-content/uploads/2021/05/logo-01.png",
+    "altText": "Linkage Assurance",
+    "localFile": "partners-group-3-partner-4-logo.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-4-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786962993/climate%20facility/about-page/partners-group-3-partner-4-logo.png"
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 3
+        },
+        {
+          "field": "partners",
+          "index": 3
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://www.leadway.com/wp-content/uploads/2025/03/leadway_logo.webp",
+    "altText": "Leadway Assurance",
+    "localFile": "partners-group-3-partner-5-logo.webp",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-5-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786962994/climate%20facility/about-page/partners-group-3-partner-5-logo.webp"
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 3
+        },
+        {
+          "field": "partners",
+          "index": 4
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://life.tangerine.africa/images/life/logo.svg",
+    "altText": "Tangerine Life",
+    "localFile": "partners-group-3-partner-6-logo.svg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-6-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786962995/climate%20facility/about-page/partners-group-3-partner-6-logo.svg"
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 3
+        },
+        {
+          "field": "partners",
+          "index": 5
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://cleanenergyfund.ng/assets/logo-DWwNtwmQ.png",
+    "altText": "CELCF",
+    "localFile": "partners-group-3-partner-7-logo.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-7-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786962998/climate%20facility/about-page/partners-group-3-partner-7-logo.png"
+  },
+  {
+    "component": "about-page.partners-section",
+    "paths": [
+      [
+        {
+          "field": "groups",
+          "index": 3
+        },
+        {
+          "field": "partners",
+          "index": 6
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://firstpensioncustodian.com/wp-content/uploads/2021/06/newlogo.png",
+    "altText": "First Pension Custodian",
+    "localFile": "partners-group-3-partner-8-logo.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/about-page/partners-group-3-partner-8-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786962999/climate%20facility/about-page/partners-group-3-partner-8-logo.png"
+  },
+  {
     "component": "about-page.milestones-section",
     "paths": [
       [
