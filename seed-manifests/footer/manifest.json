@@ -1,0 +1,103 @@
+[
+  {
+    "component": "footer.partner-logo",
+    "paths": [
+      [
+        {
+          "field": "partnerLogos",
+          "index": 4
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://unitedcapitalplcgroup.com/wp-content/uploads/2021/08/United-Capital-logo-websites.png",
+    "altText": "United Capital Plc",
+    "localFile": "footer-partner-united-capital-logo.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/footer/footer-partner-united-capital-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786983650/climate%20facility/footer/footer-partner-united-capital-logo.png"
+  },
+  {
+    "component": "footer.partner-logo",
+    "paths": [
+      [
+        {
+          "field": "partnerLogos",
+          "index": 5
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://meristemng.com/_next/static/media/meristem%20logos%202.a03e6543.png",
+    "altText": "Meristem",
+    "localFile": "footer-partner-meristem-logo.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/footer/footer-partner-meristem-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786983651/climate%20facility/footer/footer-partner-meristem-logo.png"
+  },
+  {
+    "component": "footer.partner-logo",
+    "paths": [
+      [
+        {
+          "field": "partnerLogos",
+          "index": 8
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://upload.wikimedia.org/wikipedia/commons/3/34/AFDB_Logo.png",
+    "altText": "African Development Bank",
+    "localFile": "footer-partner-afdb-logo.png",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/footer/footer-partner-afdb-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786983652/climate%20facility/footer/footer-partner-afdb-logo.png"
+  },
+  {
+    "component": "footer.partner-logo",
+    "paths": [
+      [
+        {
+          "field": "partnerLogos",
+          "index": 9
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://upload.wikimedia.org/wikipedia/commons/1/17/USAID-Identity.svg",
+    "altText": "USAID",
+    "localFile": "footer-partner-usaid-logo.svg",
+    "status": "ok",
+    "cloudinaryPublicId": "climate facility/footer/footer-partner-usaid-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786983653/climate%20facility/footer/footer-partner-usaid-logo.svg"
+  },
+  {
+    "component": "footer.partner-logo",
+    "paths": [
+      [
+        {
+          "field": "partnerLogos",
+          "index": 10
+        },
+        {
+          "field": "logo"
+        }
+      ]
+    ],
+    "source": "https://images.seeklogo.com/logo-png/39/1/power-africa-logo-png_seeklogo-392758.png",
+    "altText": "Power Africa",
+    "localFile": "footer-partner-power-africa-logo.png",
+    "status": "ok",
+    "note": "seeklogo blocks hotlinked fetches (HTTP 403 from this script); file was verified and saved manually via an authenticated fetch, byte-identical to what extract-page-media.mjs would have written.",
+    "cloudinaryPublicId": "climate facility/footer/footer-partner-power-africa-logo",
+    "cloudinaryUrl": "https://res.cloudinary.com/diqfojkri/image/upload/v1786983656/climate%20facility/footer/footer-partner-power-africa-logo.png"
+  }
+]

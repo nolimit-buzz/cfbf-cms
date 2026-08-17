@@ -1125,6 +1125,19 @@ export interface EligibilityPageTimelineWorkflowSection
   };
 }
 
+export interface FooterPartnerLogo extends Struct.ComponentSchema {
+  collectionName: 'components_footer_partner_logos';
+  info: {
+    description: 'One partner mark shown in the site-wide footer marquee.';
+    displayName: 'Partner Logo';
+  };
+  attributes: {
+    logo: Schema.Attribute.String;
+    logo_alt_text: Schema.Attribute.String;
+    name: Schema.Attribute.String;
+  };
+}
+
 export interface HomePageAboutSection extends Struct.ComponentSchema {
   collectionName: 'components_home_page_about_sections';
   info: {
@@ -3030,6 +3043,7 @@ declare module '@strapi/strapi' {
       'eligibility-page.structured-data-section': EligibilityPageStructuredDataSection;
       'eligibility-page.timeline-step-item': EligibilityPageTimelineStepItem;
       'eligibility-page.timeline-workflow-section': EligibilityPageTimelineWorkflowSection;
+      'footer.partner-logo': FooterPartnerLogo;
       'home-page.about-section': HomePageAboutSection;
       'home-page.category-item': HomePageCategoryItem;
       'home-page.feature-card-item': HomePageFeatureCardItem;

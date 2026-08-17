@@ -3,6 +3,7 @@ import type { Core } from '@strapi/strapi';
 import { aboutSections } from './seed/about-page-copy';
 import { contactSections } from './seed/contact-page-copy';
 import { eligibilitySections } from './seed/eligibility-page-copy';
+import { footerPartnerLogos } from './seed/footer-copy';
 import { homeSections } from './seed/home-page-copy';
 import { howItWorksSections } from './seed/how-it-works-page-copy';
 import { impactSections } from './seed/impact-page-copy';
@@ -233,6 +234,26 @@ async function backfillMissingSections(
 }
 
 /**
+ * Seeds the `footer` single type if it is empty.
+ *
+ * `footer` is flat (a `partnerLogos` component list, no `sections` dynamic
+ * zone), so it uses the same "seed once, never overwrite" guard as
+ * `seedSingleType` above but skips that function's zone-populate and
+ * backfill machinery, which assume a `sections` attribute. Not published —
+ * `draftAndPublish: false` on the schema (like `global`) means every write
+ * is already the live version.
+ */
+async function seedFooterSingleType(strapi: Core.Strapi) {
+  const documents = strapi.documents('api::footer.footer' as any);
+  const existing = await documents.findFirst({ populate: { partnerLogos: true } } as any);
+
+  if ((existing as any)?.partnerLogos?.length) return;
+
+  await documents.create({ data: { partnerLogos: footerPartnerLogos } } as any);
+  strapi.log.info(`[seed] FOOTER seeded with ${footerPartnerLogos.length} partner logo(s).`);
+}
+
+/**
  * Seeds the `project` collection — one entry per case study at /projects/[id].
  *
  * Same two subtleties as seedSingleType: look the entry up as a *draft* (a fresh
@@ -359,6 +380,7 @@ export default {
     }
 
     await seedProjectRecords(strapi);
+    await seedFooterSingleType(strapi);
 
     await grantPublicRead(strapi, [
       // Single types expose `find` only — there is no `findOne` on a single type.
@@ -369,6 +391,9 @@ export default {
       // page's `sections` zone, so it is not seeded — but the footer reads its
       // `socialLinks`, which needs the same public grant.
       'api::global.global.find',
+      // Not in SINGLE_TYPES either: `footer` is flat like `global` and seeded
+      // separately above via seedFooterSingleType.
+      'api::footer.footer.find',
     ]);
   },
 };

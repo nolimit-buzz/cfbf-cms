@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_footer_partner_logos",
+  "info": {
+    "displayName": "Partner Logo",
+    "description": "One partner mark shown in the site-wide footer marquee."
+  },
+  "options": {},
+  "attributes": {
+    "name": { "type": "string" },
+    "logo": { "type": "string" },
+    "logo_alt_text": { "type": "string" }
+  }
+}
