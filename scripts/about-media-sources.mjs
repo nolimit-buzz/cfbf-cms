@@ -154,6 +154,56 @@ export const aboutMediaRows = [
     altText: 'InfraCredit',
     localFile: 'partners-group-3-partner-1-logo-colour.svg',
   },
+  {
+    // PartnerShowcase.tsx — Domestic Institutional Investors group, was text-only
+    component: 'about-page.partners-section',
+    paths: [[{ field: 'groups', index: 3 }, { field: 'partners', index: 0 }, { field: 'logo' }]],
+    source: 'https://www.aiicoplc.com/images/AIICO_Insurance_PLC_.png',
+    altText: 'AIICO Insurance',
+    localFile: 'partners-group-3-partner-2-logo.png',
+  },
+  {
+    component: 'about-page.partners-section',
+    paths: [[{ field: 'groups', index: 3 }, { field: 'partners', index: 1 }, { field: 'logo' }]],
+    source: 'https://nem-insurance.com/assets/uploads/logo.jpg',
+    altText: 'NEM Insurance',
+    localFile: 'partners-group-3-partner-3-logo.jpg',
+  },
+  {
+    component: 'about-page.partners-section',
+    paths: [[{ field: 'groups', index: 3 }, { field: 'partners', index: 2 }, { field: 'logo' }]],
+    source: 'https://www.linkageassurance.com/wp-content/uploads/2021/05/logo-01.png',
+    altText: 'Linkage Assurance',
+    localFile: 'partners-group-3-partner-4-logo.png',
+  },
+  {
+    component: 'about-page.partners-section',
+    paths: [[{ field: 'groups', index: 3 }, { field: 'partners', index: 3 }, { field: 'logo' }]],
+    source: 'https://www.leadway.com/wp-content/uploads/2025/03/leadway_logo.webp',
+    altText: 'Leadway Assurance',
+    localFile: 'partners-group-3-partner-5-logo.webp',
+  },
+  {
+    component: 'about-page.partners-section',
+    paths: [[{ field: 'groups', index: 3 }, { field: 'partners', index: 4 }, { field: 'logo' }]],
+    source: 'https://life.tangerine.africa/images/life/logo.svg',
+    altText: 'Tangerine Life',
+    localFile: 'partners-group-3-partner-6-logo.svg',
+  },
+  {
+    component: 'about-page.partners-section',
+    paths: [[{ field: 'groups', index: 3 }, { field: 'partners', index: 5 }, { field: 'logo' }]],
+    source: 'https://cleanenergyfund.ng/assets/logo-DWwNtwmQ.png',
+    altText: 'CELCF',
+    localFile: 'partners-group-3-partner-7-logo.png',
+  },
+  {
+    component: 'about-page.partners-section',
+    paths: [[{ field: 'groups', index: 3 }, { field: 'partners', index: 6 }, { field: 'logo' }]],
+    source: 'https://firstpensioncustodian.com/wp-content/uploads/2021/06/newlogo.png',
+    altText: 'First Pension Custodian',
+    localFile: 'partners-group-3-partner-8-logo.png',
+  },
 
   // ── milestones-section ────────────────────────────────────────────────────
   {
