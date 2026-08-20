@@ -192,7 +192,7 @@ export const homeSections = [
         subtitle: 'CLEAN ENERGY ACCESS',
         title: 'Clean Energy Access',
         description:
-          'Unlock affordable financing for private sector enterprises providing off-grid energy solutions such as solar mini grids, solar home systems, solar lanterns, fridges, pumps, driers and clean cooking products.',
+          'Unlock affordable financing for private sector enterprises providing renewable energy solutions such as solar mini grids, solar home systems, solar lanterns, fridges, pumps, driers and clean cooking products, small medium enterprise coolhubs for unserved and underserved markets.',
         image:
           'https://res.cloudinary.com/diqfojkri/image/upload/v1785801873/climate%20facility/home-page/impact-theory-card-1-image.jpg',
         image_alt_text:
@@ -206,7 +206,7 @@ export const homeSections = [
         subtitle: 'DOMESTIC INSTITUTIONAL INVESTORS',
         title: 'Domestic Institutional Investors',
         description:
-          'Catalyse green investments in local currency from domestic private institutional investors such as insurance companies, local pension funds, and asset managers.',
+          'Catalyse green investments in local currency from domestic private institutional investors such as insurance companies, local pension funds, and other asset managers including low carbon energy focused funds from the domestic debt capital markets.',
         image: '',
         link: '/impact',
         linkLabel: 'Learn More',
@@ -217,7 +217,7 @@ export const homeSections = [
         subtitle: 'DEVELOPMENT ASSISTANCE',
         title: 'Development Assistance',
         description:
-          'Innovative blended finance approach for donors and concessional financiers, to make smart use of impact-seeking capital to de-risk and mobilise private sector financing.',
+          "Innovative blended finance approach for donors and concessional financiers, to make smart use of impact-seeking capital to de-risk, reduce the capital cost and mobilise private sector financing towards increasing clean energy access in Nigeria in line with Nigeria's Nationally Determined Contributions.",
         image:
           'https://res.cloudinary.com/diqfojkri/image/upload/v1785801874/climate%20facility/home-page/impact-theory-card-3-image.jpg',
         image_alt_text:
@@ -231,7 +231,7 @@ export const homeSections = [
         subtitle: 'GREEN ECONOMY',
         title: 'Green Economy',
         description:
-          'Promote green growth and climate resilient development by enhancing access to renewable energy for productive uses and boosting agricultural development.',
+          'Promote green growth and climate resilient development by enhancing access to renewable energy for productive uses and boosting agricultural development whilst transitioning to a low-carbon economy that will create jobs, reduce poverty, promote gender diversity and stimulate local economic growth.',
         image: '',
         link: '/impact',
         linkLabel: 'Learn More',

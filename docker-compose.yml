@@ -1,12 +1,15 @@
-services:
-  strapi:
-    image: syntaxdesigner/cfbf-strapi:latest
-    restart: unless-stopped
+version: "3.9"
 
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: cfbf-strapi
     environment:
       # Server
-      HOST: ${HOST}
-      PORT: ${PORT}
+      HOST: "${HOST:-0.0.0.0}"
+      PORT: "${PORT:-1341}"
 
       # App Secrets
       APP_KEYS: ${APP_KEYS}
@@ -24,8 +27,8 @@ services:
       DATABASE_USERNAME: ${DATABASE_USERNAME}
       DATABASE_PASSWORD: ${DATABASE_PASSWORD}
       DATABASE_SCHEMA: ${DATABASE_SCHEMA}
-      DATABASE_SSL: ${DATABASE_SSL}
-      DATABASE_CONNECTION_TIMEOUT: ${DATABASE_CONNECTION_TIMEOUT}
+      DATABASE_SSL: "${DATABASE_SSL:-false}"
+      DATABASE_CONNECTION_TIMEOUT: "${DATABASE_CONNECTION_TIMEOUT:-60000}"
 
       # Cloudinary media storage (see config/plugins.ts)
       CLOUDINARY_NAME: ${CLOUDINARY_NAME}
@@ -39,7 +42,7 @@ services:
       - dokploy-network
 
     ports:
-      - "1341"
+      - "${PORT:-1341}:1341"
 
     volumes:
       - strapi_uploads:/app/public/uploads
