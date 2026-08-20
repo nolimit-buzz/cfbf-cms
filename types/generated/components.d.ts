@@ -1533,6 +1533,7 @@ export interface HomePageStoryItem extends Struct.ComponentSchema {
     role: Schema.Attribute.String;
     storyType: Schema.Attribute.String;
     title: Schema.Attribute.String;
+    youtubeUrl: Schema.Attribute.String;
   };
 }
 

@@ -166,7 +166,7 @@ export const projectsSections = [
     eyebrow: 'Portfolio',
     headingPartOne: 'Our footprint ',
     headingHighlight: 'in Nigeria',
-    body: 'Collectively, renewable energy projects located in 35 states across the six geo-political zones in Nigeria have been approved for co-financing by the Facility.',
+    body: 'Collectively, renewable energy projects located in 36 states across the six geo-political zones in Nigeria have been approved for co-financing by the Facility.',
     tabs: [
       { label: 'Project Pipeline' },
       { label: 'Project Analysis' },
@@ -357,7 +357,7 @@ export const projectsSections = [
       },
       {
         projectId: '06',
-        title: 'ACOB Lightning Technology Limited',
+        title: 'ACOB Lighting Technology Limited',
         location: 'Edo & Ondo States',
         year: '2023',
         capital: '₦755m',
@@ -368,7 +368,7 @@ export const projectsSections = [
         ghg: '352 Tonnes',
         status: 'Operational',
         image: ACOB_IMAGE,
-        image_alt_text: 'ACOB Lightning Technology Limited',
+        image_alt_text: 'ACOB Lighting Technology Limited',
         desc: 'Off-grid rural electrification for agricultural hubs.',
         problem:
           'Energy poverty in rural cocoa-farming communities with zero electricity access.',
@@ -406,7 +406,7 @@ export const projectsSections = [
       },
       {
         stateMapId: 'edo',
-        projectName: 'ACOB Lightning',
+        projectName: 'ACOB Lighting',
         capacity: '165kW (Regional Share)',
         funding: '₦370m',
         sdgs: '7, 8, 13',
@@ -424,7 +424,7 @@ export const projectsSections = [
       },
       {
         stateMapId: 'ondo',
-        projectName: 'ACOB Lightning',
+        projectName: 'ACOB Lighting',
         capacity: '170kW (Regional Share)',
         funding: '₦385m',
         sdgs: '7, 8, 13',
@@ -1563,9 +1563,9 @@ export const projectsSections = [
         puePotential: 12,
         enumerators: 3,
       },
-      // Edo - ACOB Lightning
+      // Edo - ACOB Lighting
       {
-        developer: 'ACOB Lightning Technology',
+        developer: 'ACOB Lighting Technology',
         community: 'Egor Township',
         state: 'Edo',
         lga: 'Egor',
@@ -1574,7 +1574,7 @@ export const projectsSections = [
         enumerators: 5,
       },
       {
-        developer: 'ACOB Lightning Technology',
+        developer: 'ACOB Lighting Technology',
         community: 'Ugbowo',
         state: 'Edo',
         lga: 'Egor',
@@ -1583,7 +1583,7 @@ export const projectsSections = [
         enumerators: 4,
       },
       {
-        developer: 'ACOB Lightning Technology',
+        developer: 'ACOB Lighting Technology',
         community: 'Igueben',
         state: 'Edo',
         lga: 'Ovia South West',
@@ -1592,7 +1592,7 @@ export const projectsSections = [
         enumerators: 3,
       },
       {
-        developer: 'ACOB Lightning Technology',
+        developer: 'ACOB Lighting Technology',
         community: 'Ekpon',
         state: 'Edo',
         lga: 'Ovia South West',
@@ -1611,7 +1611,7 @@ export const projectsSections = [
         enumerators: 6,
       },
       {
-        developer: 'ACOB Lightning Technology',
+        developer: 'ACOB Lighting Technology',
         community: 'Ondo City North',
         state: 'Ondo',
         lga: 'Ondo',
@@ -1629,7 +1629,7 @@ export const projectsSections = [
         enumerators: 5,
       },
       {
-        developer: 'ACOB Lightning Technology',
+        developer: 'ACOB Lighting Technology',
         community: 'Odigbo Township',
         state: 'Ondo',
         lga: 'Odigbo',

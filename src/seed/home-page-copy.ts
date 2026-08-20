@@ -442,6 +442,7 @@ export const homeSections = [
         excerpt:
           'In Akpoku, Rivers State, Felicia Adindu once struggled with unreliable energy. Now, clean solar power has transformed her daily life and business.',
         duration: '4:32 mins',
+        youtubeUrl: 'https://youtu.be/kBGxtT3dd0s',
       },
       {
         title: 'ACOB Lighting Solar Powered Rural Electrification Project',
@@ -456,6 +457,7 @@ export const homeSections = [
         excerpt:
           'Investing in clean energy means investing in communities. How ACOB Lighting is powering local development in northern regions.',
         duration: '3:15 mins',
+        youtubeUrl: 'https://youtu.be/E2Dfe3QuZds',
       },
       {
         title: 'Prado Power Solar Powered Rural Electrification Project',
@@ -470,6 +472,7 @@ export const homeSections = [
         excerpt:
           'The project will construct solar-hybrid mini-grid installations to power households and small businesses in off-grid rural areas.',
         duration: '5:40 mins',
+        youtubeUrl: 'https://youtu.be/81ULxF30F4A',
       },
     ],
   },

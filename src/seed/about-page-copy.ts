@@ -52,7 +52,7 @@ export const aboutSections = [
     headingPartTwo: " for Nigeria's ",
     headingItalic: 'green energy transition',
     bodyPartOne:
-      'The Climate Finance Blending Facility (CFBF) is capitalised with seed funding by the UK Foreign, Commonwealth & Development Office (FCDO) and co-invested alongside British International Investment (BII).',
+      'The Climate Finance Blending Facility (CFBF) is capitalised with USD 21.3M total concessional funding by the UK Foreign, Commonwealth & Development Office (FCDO) and co-invested alongside British International Investment (BII).',
     bodyPartTwo:
       'Administered by InfraCredit, the facility deploys subordinated debt and AAA guarantees to elevate green assets to investment-grade profiles — unlocking domestic pension capital at institutional scale.',
     backgroundImage:
@@ -386,6 +386,13 @@ export const aboutSections = [
             logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804898/climate%20facility/about-page/partners-group-2-partner-2-logo.png',
             logo_alt_text: 'Shell Foundation',
           },
+          {
+            name: 'KfW',
+            role: 'Technical Assistance Partner',
+            logoText: '',
+            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1787232940/climate%20facility/about-page/partners-group-2-partner-3-logo.png',
+            logo_alt_text: 'KfW',
+          },
         ],
       },
       {
@@ -473,10 +480,10 @@ export const aboutSections = [
       {
         period: 'Q4 2022',
         year: '2022',
-        label: 'Fund seeded & framework certified',
+        label: 'Facility capitalised & framework certified',
         image:
           'https://res.cloudinary.com/diqfojkri/image/upload/v1785804902/climate%20facility/about-page/milestones-milestone-1-image.jpg',
-        image_alt_text: 'Fund seeded & framework certified',
+        image_alt_text: 'Facility capitalised & framework certified',
         events: [
           {
             date: '10.22',
