@@ -43,7 +43,13 @@ ENV HOST=0.0.0.0
 ENV PORT=1341
 ENV STRAPI_TELEMETRY_DISABLED=true
 
-COPY --from=build /app ./
+# Only the compiled output and runtime deps are needed — src/, config/, types/,
+# scripts/ etc. are TS/tooling already baked into dist/ by `strapi build`.
+# Copying just these keeps the pushed image (and the VPS pull) smaller.
+COPY --from=build /app/dist ./dist
+COPY --from=build /app/node_modules ./node_modules
+COPY --from=build /app/package.json /app/package-lock.json ./
+COPY --from=build /app/public ./public
 
 # Uploads go to Cloudinary (config/plugins.ts); this stays as a local fallback
 RUN mkdir -p public/uploads
