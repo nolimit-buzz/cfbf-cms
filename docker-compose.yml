@@ -11,6 +11,12 @@ services:
       HOST: "${HOST:-0.0.0.0}"
       PORT: "${PORT:-1341}"
 
+      # Public origin + proxy awareness (see config/server.ts). PUBLIC_URL must be
+      # the real https:// domain Traefik serves, or the admin panel emits
+      # http://0.0.0.0:1341 links and admin cookies are scoped to the wrong host.
+      PUBLIC_URL: ${PUBLIC_URL}
+      IS_PROXIED: "${IS_PROXIED:-true}"
+
       # App Secrets
       APP_KEYS: ${APP_KEYS}
       API_TOKEN_SALT: ${API_TOKEN_SALT}
@@ -38,9 +44,30 @@ services:
     # Routing is managed by Dokploy's Domains tab, which injects Traefik
     # labels at deploy time. Do not add labels here.
 
+    restart: unless-stopped
+
+    # Strapi syncs its schema on boot against the remote Postgres, which measured
+    # ~107s cold locally — hence the generous start_period. wget/curl are absent
+    # from node:20-alpine, so the probe uses node itself.
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "node",
+          "-e",
+          "require('http').get('http://127.0.0.1:1341/_health',r=>process.exit(r.statusCode<400?0:1)).on('error',()=>process.exit(1))",
+        ]
+      interval: 30s
+      timeout: 5s
+      retries: 5
+      start_period: 180s
+
     networks:
       - dokploy-network
 
+    # The container always listens on 1341 (ENV PORT=1341 in the Dockerfile), so
+    # PORT only moves the host-side binding here — setting it in Dokploy will not
+    # relocate the listener.
     ports:
       - "${PORT:-1341}:1341"
 

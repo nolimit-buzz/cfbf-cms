@@ -4,6 +4,12 @@ on:
   push:
     branches:
       - main
+  # Lets the image be rebuilt/redeployed by hand from the Actions tab without
+  # having to push an empty commit to main.
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
 
 jobs:
   docker:
@@ -34,10 +40,6 @@ jobs:
           tags: |
             syntaxdesigner/cfbf-strapi:latest
             syntaxdesigner/cfbf-strapi:${{ github.sha }}
-
-      - name: Wait for Docker Hub Sync
-        if: success()
-        run: sleep 20
 
       - name: Trigger Dokploy Deployment
         if: success()

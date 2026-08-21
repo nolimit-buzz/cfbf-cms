@@ -43,20 +43,34 @@ ENV HOST=0.0.0.0
 ENV PORT=1341
 ENV STRAPI_TELEMETRY_DISABLED=true
 
+RUN addgroup -S strapi && \
+    adduser -S strapi -G strapi
+
 # Only the compiled output and runtime deps are needed — src/, config/, types/,
 # scripts/ etc. are TS/tooling already baked into dist/ by `strapi build`.
-# Copying just these keeps the pushed image (and the VPS pull) smaller.
-COPY --from=build /app/dist ./dist
-COPY --from=build /app/node_modules ./node_modules
-COPY --from=build /app/package.json /app/package-lock.json ./
-COPY --from=build /app/public ./public
+# --chown sets ownership during the copy itself, avoiding a slow recursive
+# `chown -R` pass over the whole (large) node_modules tree afterward.
+COPY --from=build --chown=strapi:strapi /app/dist ./dist
+COPY --from=build --chown=strapi:strapi /app/node_modules ./node_modules
+COPY --from=build --chown=strapi:strapi /app/package.json /app/package-lock.json ./
+COPY --from=build --chown=strapi:strapi /app/public ./public
+
+# REQUIRED, not tooling: Strapi detects a TypeScript project by the presence of
+# tsconfig.json and only then resolves its distDir to ./dist. Without this file it
+# assumes a plain JS project, looks for ./config and ./src at the root, finds
+# neither, and dies with "Cannot destructure property 'client' of
+# 'db.config.connection'". Do not drop it to save space.
+COPY --from=build --chown=strapi:strapi /app/tsconfig.json ./
+
+# strapi::favicon resolves favicon.png from the project root
+COPY --from=build --chown=strapi:strapi /app/favicon.png ./
+
+# @strapi/database mkdir's this at boot for user migrations. /app is root-owned,
+# so it must exist and belong to strapi before the process drops privileges.
+RUN mkdir -p database/migrations && chown -R strapi:strapi database
 
 # Uploads go to Cloudinary (config/plugins.ts); this stays as a local fallback
-RUN mkdir -p public/uploads
-
-RUN addgroup -S strapi && \
-    adduser -S strapi -G strapi && \
-    chown -R strapi:strapi /app
+RUN mkdir -p public/uploads && chown strapi:strapi public/uploads
 
 USER strapi
 
