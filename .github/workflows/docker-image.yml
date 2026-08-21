@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main
-  # Lets the image be rebuilt/redeployed by hand from the Actions tab without
-  # having to push an empty commit to main.
   workflow_dispatch: {}
 
 permissions:
