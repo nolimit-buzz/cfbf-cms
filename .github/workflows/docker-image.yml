@@ -38,8 +38,8 @@ jobs:
           cache-from: type=gha
           cache-to: type=gha,mode=max
           tags: |
-            syntaxdesigner/cfbf-strapi:latest
-            syntaxdesigner/cfbf-strapi:${{ github.sha }}
+            syntaxdesigner/cfbf-cms:latest
+            syntaxdesigner/cfbf-cms:${{ github.sha }}
 
       - name: Trigger Dokploy Deployment
         if: success()

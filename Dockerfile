@@ -40,7 +40,7 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 ENV HOST=0.0.0.0
-ENV PORT=1341
+ENV PORT=1345
 ENV STRAPI_TELEMETRY_DISABLED=true
 
 RUN addgroup -S strapi && \
@@ -74,6 +74,6 @@ RUN mkdir -p public/uploads && chown strapi:strapi public/uploads
 
 USER strapi
 
-EXPOSE 1341
+EXPOSE 1345
 
 CMD ["npm", "run", "start"]
