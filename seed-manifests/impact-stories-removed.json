@@ -1,0 +1,41 @@
+[
+  {
+    "id": 4,
+    "title": "Mesh Grid Networks Powering Agriculture - First Electric",
+    "role": "Developer",
+    "location": "Gombe & Nasarawa States",
+    "type": "Video Case Study",
+    "badge": "Infrastructure",
+    "excerpt": "Mesh grid networks connect rural households and small agricultural processors in Gombe State, facilitating cold storage and local commerce.",
+    "duration": "3:45 mins",
+    "image": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838103/climate%20facility/impact-page/stories-story-4-image.jpg",
+    "image_alt_text": "Mesh Grid Networks Powering Agriculture - First Electric",
+    "youtubeUrl": null
+  },
+  {
+    "id": 5,
+    "title": "Unlocking Local Capital for Off-Grid Power - CEESOLAR",
+    "role": "Project Lead",
+    "location": "Cross River State",
+    "type": "Project Update",
+    "badge": "Clean Finance",
+    "excerpt": "CEESOLAR Energy utilizes concessional funding to build high-capacity solar-hybrid grids, powering rural communities in the Niger Delta region.",
+    "duration": "4:15 mins",
+    "image": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838103/climate%20facility/impact-page/stories-story-5-image.jpg",
+    "image_alt_text": "Unlocking Local Capital for Off-Grid Power - CEESOLAR",
+    "youtubeUrl": null
+  },
+  {
+    "id": 6,
+    "title": "Solarizing Rural Telecom Infrastructure - Hotspot Network",
+    "role": "Community Partner",
+    "location": "Kano & Kaduna States",
+    "type": "Field Documentary",
+    "badge": "Digital Impact",
+    "excerpt": "Replacing diesel generators with high-efficiency solar hybrid arrays across 120 base stations, bringing continuous clean connectivity to rural Nigeria.",
+    "duration": "5:10 mins",
+    "image": "https://res.cloudinary.com/diqfojkri/image/upload/v1785838104/climate%20facility/impact-page/stories-story-6-image.jpg",
+    "image_alt_text": "Solarizing Rural Telecom Infrastructure - Hotspot Network",
+    "youtubeUrl": null
+  }
+]
