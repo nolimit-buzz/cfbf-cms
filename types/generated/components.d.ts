@@ -2068,7 +2068,7 @@ export interface ImpactPageStoryItem extends Struct.ComponentSchema {
     role: Schema.Attribute.String;
     title: Schema.Attribute.String;
     type: Schema.Attribute.String;
-    video: Schema.Attribute.String;
+    youtubeUrl: Schema.Attribute.String;
   };
 }
 
