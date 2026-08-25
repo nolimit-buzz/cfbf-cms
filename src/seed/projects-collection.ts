@@ -15,7 +15,17 @@
  * Fields the old interface declared but never rendered (testimonial,
  * percentages, impactCard, intro.col1Text/col2Image/col3Image) are deliberately
  * not modelled — see the project schema.
+ *
+ * `structureVideoUrl` used to be a single hardcoded <video src> shared by
+ * every project's "Illustrative transaction structure" section in
+ * ProjectDetailClient.tsx, pointed at InfraCredit's WordPress upload. Now a
+ * real editable field — seeded the same for all six records (the Cloudinary
+ * copy of that same video) so nothing changes visually yet, but it no longer
+ * requires a code change to update per project.
  */
+
+const STRUCTURE_VIDEO_URL =
+  'https://res.cloudinary.com/diqfojkri/video/upload/v1787668726/climate%20facility/projects/structure-diagram.mp4';
 
 export type ProjectRecordSeed = {
   projectId: string;
@@ -41,6 +51,7 @@ export type ProjectRecordSeed = {
   introTitle: string;
   sdgs: string;
   states: string;
+  structureVideoUrl: string;
   gallery: { image: string; image_alt_text: string; caption: string }[];
   videos: { videoId: string; title: string; category: string; youtubeId: string }[];
 };
@@ -76,6 +87,7 @@ export const projectRecords: ProjectRecordSeed[] = [
     introTitle: 'Advancing Clean Energy Infrastructure Across Underserved States',
     sdgs: '7, 13',
     states: 'gombe, nasarawa, ondo',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
     gallery: [
       {
         image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600',
@@ -137,6 +149,7 @@ export const projectRecords: ProjectRecordSeed[] = [
     introTitle: 'De-risking Cocoa Farming Value Chains in Cross River',
     sdgs: '7, 13',
     states: 'cross-river',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
     gallery: [
       {
         image: 'https://images.unsplash.com/photo-1621905251189-08b45d6a269e?q=80&w=600',
@@ -198,6 +211,7 @@ export const projectRecords: ProjectRecordSeed[] = [
     introTitle: 'Securing Agricultural Value Chains & Reducing Post-Harvest Loss',
     sdgs: '7, 8, 9',
     states: 'akwa-ibom, benue',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
     gallery: [
       {
         image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600',
@@ -266,6 +280,7 @@ export const projectRecords: ProjectRecordSeed[] = [
     sdgs: '9, 13',
     states:
       'kano, fct, lagos, rivers, bauchi, kaduna, cross-river, ondo, gombe, nasarawa, edo, akwa-ibom, benue, abia, katsina, jigawa, sokoto, zamfara, kebbi, kogi, kwara, taraba, adamawa, borno, yobe, plateau, niger, ekiti, osun, ogun',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
     gallery: [
       {
         image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=600',
@@ -333,6 +348,7 @@ export const projectRecords: ProjectRecordSeed[] = [
     introTitle: 'Pioneering Green Blended Local Currency Bonds for Mini-Grids',
     sdgs: '7, 13',
     states: 'rivers, abia',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
     gallery: [
       {
         image: 'https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=600',
@@ -412,6 +428,7 @@ export const projectRecords: ProjectRecordSeed[] = [
     introTitle: 'Lighting Up Agricultural Villages & Securing Cocoa Centers',
     sdgs: '7, 8, 13',
     states: 'edo, ondo',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
     gallery: [
       {
         image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=600',

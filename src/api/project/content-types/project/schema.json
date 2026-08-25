@@ -36,6 +36,7 @@
     "introTitle": { "type": "string" },
     "sdgs": { "type": "string" },
     "states": { "type": "string" },
+    "structureVideoUrl": { "type": "string" },
     "gallery": {
       "type": "component",
       "repeatable": true,
