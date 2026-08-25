@@ -933,7 +933,6 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     solution: Schema.Attribute.Text;
     states: Schema.Attribute.String;
     status: Schema.Attribute.String;
-    structureVideoUrl: Schema.Attribute.String;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
