@@ -8,6 +8,8 @@
   "attributes": {
     "name": { "type": "string" },
     "logo": { "type": "string" },
-    "logo_alt_text": { "type": "string" }
+    "logo_alt_text": { "type": "string" },
+    "logoColour": { "type": "string" },
+    "logoColour_alt_text": { "type": "string" }
   }
 }

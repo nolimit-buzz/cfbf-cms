@@ -24,6 +24,24 @@ import { nigeriaMapSvg } from './about-map-svg';
 const META_DESCRIPTION =
   'Capitalised with USD 21.3M concessional funding by FCDO & BII to de-risk green investments and mobilise private capital in Nigeria.';
 
+/**
+ * Partner artwork for the partners-section grid: a white knockout shown by
+ * default, the full-colour version crossfaded in on hover. Both variants live
+ * in frontend/public/partners and are uploaded to this Cloudinary folder by
+ * scripts/upload-partner-logos.mjs. URLs are versionless on purpose — those
+ * uploads overwrite a stable public_id, so redrawn artwork propagates instead
+ * of staying pinned to an old version.
+ */
+const PARTNERS_CLOUDINARY =
+  'https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners';
+
+const partnerArtwork = (slug: string, altText: string) => ({
+  logo: `${PARTNERS_CLOUDINARY}/partner-${slug}-white.svg`,
+  logo_alt_text: altText,
+  logoColour: `${PARTNERS_CLOUDINARY}/partner-${slug}-colour.svg`,
+  logoColour_alt_text: altText,
+});
+
 export const aboutSections = [
   {
     __component: 'about-page.structured-data-section' as const,
@@ -356,16 +374,11 @@ export const aboutSections = [
             name: 'Foreign, Commonwealth & Development Office',
             role: 'UK FCDO — Anchor Funder (USD 21.3M)',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804895/climate%20facility/about-page/partners-group-1-partner-1-logo.png',
-            logo_alt_text: 'UK International Development',
+            ...partnerArtwork('uk-fcdo', 'UK International Development'),
           },
-          {
-            name: 'British International Investment',
-            role: 'BII — Co-Investment Partner',
-            logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804896/climate%20facility/about-page/partners-group-1-partner-2-logo.png',
-            logo_alt_text: 'British International Investment',
-          },
+          // British International Investment used to sit here. It has no
+          // artwork in frontend/public/partners, so it moved to the footer
+          // marquee (cms/src/seed/footer-copy.ts) on its legacy white PNG.
         ],
       },
       {
@@ -376,22 +389,19 @@ export const aboutSections = [
             name: 'FSD Africa',
             role: 'Technical Assistance Partner',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804897/climate%20facility/about-page/partners-group-2-partner-1-logo.png',
-            logo_alt_text: 'FSD Africa',
+            ...partnerArtwork('fsd-africa', 'FSD Africa'),
           },
           {
             name: 'Shell Foundation',
             role: 'Capacity Support & Advisory',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804898/climate%20facility/about-page/partners-group-2-partner-2-logo.png',
-            logo_alt_text: 'Shell Foundation',
+            ...partnerArtwork('shell-foundation', 'Shell Foundation'),
           },
           {
             name: 'KfW',
             role: 'Technical Assistance Partner',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1787232940/climate%20facility/about-page/partners-group-2-partner-3-logo.png',
-            logo_alt_text: 'KfW',
+            ...partnerArtwork('kfw', 'KfW'),
           },
         ],
       },
@@ -403,12 +413,7 @@ export const aboutSections = [
             name: 'InfraCredit',
             role: 'Facility Administrator & AAA Guarantor',
             logoText: '',
-            // White PNG by default, coloured SVG swapped in on hover.
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1785804899/climate%20facility/about-page/partners-group-3-partner-1-logo.png',
-            logo_alt_text: 'InfraCredit',
-            logoColour:
-              'https://res.cloudinary.com/diqfojkri/image/upload/v1785804900/climate%20facility/about-page/partners-group-3-partner-1-logo-colour.svg',
-            logoColour_alt_text: 'InfraCredit',
+            ...partnerArtwork('infracredit', 'InfraCredit'),
           },
         ],
       },
@@ -420,50 +425,43 @@ export const aboutSections = [
             name: 'AIICO Insurance PLC',
             role: 'Domestic PFA Co-financier',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1786962991/climate%20facility/about-page/partners-group-3-partner-2-logo.png',
-            logo_alt_text: 'AIICO Insurance PLC',
+            ...partnerArtwork('aiico', 'AIICO Insurance PLC'),
           },
           {
             name: 'NEM Insurance PLC',
             role: 'Domestic PFA Co-financier',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1786962992/climate%20facility/about-page/partners-group-3-partner-3-logo.jpg',
-            logo_alt_text: 'NEM Insurance PLC',
+            ...partnerArtwork('nem', 'NEM Insurance PLC'),
           },
           {
             name: 'Linkage Insurance PLC',
             role: 'Domestic PFA Co-financier',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1786962993/climate%20facility/about-page/partners-group-3-partner-4-logo.png',
-            logo_alt_text: 'Linkage Insurance PLC',
+            ...partnerArtwork('linkage', 'Linkage Assurance PLC'),
           },
           {
             name: 'Leadway Insurance',
             role: 'Domestic PFA Co-financier',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1786962994/climate%20facility/about-page/partners-group-3-partner-5-logo.webp',
-            logo_alt_text: 'Leadway Insurance',
+            ...partnerArtwork('leadway', 'Leadway Insurance'),
           },
           {
             name: 'Tangerine Life',
             role: 'Domestic PFA Co-financier',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1786962995/climate%20facility/about-page/partners-group-3-partner-6-logo.svg',
-            logo_alt_text: 'Tangerine Life',
+            ...partnerArtwork('tangerine', 'Tangerine Life'),
           },
           {
             name: 'Clean Energy Local Currency Fund',
             role: 'Domestic PFA Co-financier',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1786962998/climate%20facility/about-page/partners-group-3-partner-7-logo.png',
-            logo_alt_text: 'Clean Energy Local Currency Fund',
+            ...partnerArtwork('clean-energy-lcf', 'Clean Energy Local Currency Fund'),
           },
           {
             name: 'First Pension Custodian',
             role: 'Pension Asset Custodian',
             logoText: '',
-            logo: 'https://res.cloudinary.com/diqfojkri/image/upload/v1786962999/climate%20facility/about-page/partners-group-3-partner-8-logo.png',
-            logo_alt_text: 'First Pension Custodian',
+            ...partnerArtwork('first-pension-custodian', 'First Pension Custodian'),
           },
         ],
       },

@@ -1,0 +1,87 @@
+{
+  "uk-fcdo": {
+    "label": "UK International Development",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-uk-fcdo-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-uk-fcdo-colour.svg"
+  },
+  "fsd-africa": {
+    "label": "FSD Africa",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-fsd-africa-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-fsd-africa-colour.svg"
+  },
+  "shell-foundation": {
+    "label": "Shell Foundation",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-shell-foundation-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-shell-foundation-colour.svg"
+  },
+  "kfw": {
+    "label": "KfW",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-kfw-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-kfw-colour.svg"
+  },
+  "infracredit": {
+    "label": "InfraCredit",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-infracredit-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-infracredit-colour.svg"
+  },
+  "aiico": {
+    "label": "AIICO Insurance PLC",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-aiico-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-aiico-colour.svg"
+  },
+  "nem": {
+    "label": "NEM Insurance PLC",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-nem-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-nem-colour.svg"
+  },
+  "linkage": {
+    "label": "Linkage Assurance PLC",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-linkage-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-linkage-colour.svg"
+  },
+  "leadway": {
+    "label": "Leadway Insurance",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-leadway-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-leadway-colour.svg"
+  },
+  "tangerine": {
+    "label": "Tangerine Life",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-tangerine-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-tangerine-colour.svg"
+  },
+  "clean-energy-lcf": {
+    "label": "Clean Energy Local Currency Fund",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-clean-energy-lcf-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-clean-energy-lcf-colour.svg"
+  },
+  "first-pension-custodian": {
+    "label": "First Pension Custodian",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-first-pension-custodian-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-first-pension-custodian-colour.svg"
+  },
+  "united-capital": {
+    "label": "United Capital Plc",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-united-capital-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-united-capital-colour.svg"
+  },
+  "meristem": {
+    "label": "Meristem",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-meristem-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-meristem-colour.svg"
+  },
+  "afdb": {
+    "label": "African Development Bank",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-afdb-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-afdb-colour.svg"
+  },
+  "usaid": {
+    "label": "USAID",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-usaid-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-usaid-colour.svg"
+  },
+  "power-africa": {
+    "label": "Power Africa",
+    "white": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-power-africa-white.svg",
+    "colour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-power-africa-colour.svg"
+  }
+}
