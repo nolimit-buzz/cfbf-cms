@@ -1,0 +1,64 @@
+{
+  "kind": "collectionType",
+  "collectionName": "email_logs",
+  "info": {
+    "singularName": "email-log",
+    "pluralName": "email-logs",
+    "displayName": "Email Log",
+    "description": "Archive of every email sent by the website"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "ref": {
+      "type": "string",
+      "maxLength": 8,
+      "unique": true
+    },
+    "type": {
+      "type": "string",
+      "required": true
+    },
+    "to": {
+      "type": "string",
+      "required": true
+    },
+    "from": {
+      "type": "string",
+      "required": true
+    },
+    "replyTo": {
+      "type": "string"
+    },
+    "subject": {
+      "type": "string",
+      "required": true
+    },
+    "body": {
+      "type": "text",
+      "required": true
+    },
+    "payload": {
+      "type": "json"
+    },
+    "status": {
+      "type": "string",
+      "required": true
+    },
+    "error": {
+      "type": "text"
+    },
+    "messageId": {
+      "type": "string"
+    },
+    "smtpResponse": {
+      "type": "text"
+    },
+    "sentAt": {
+      "type": "datetime",
+      "required": true
+    }
+  }
+}

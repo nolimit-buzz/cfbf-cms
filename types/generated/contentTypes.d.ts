@@ -671,6 +671,51 @@ export interface ApiEligibilityEligibility extends Struct.SingleTypeSchema {
   };
 }
 
+export interface ApiEmailLogEmailLog extends Struct.CollectionTypeSchema {
+  collectionName: 'email_logs';
+  info: {
+    description: 'Archive of every email sent by the website';
+    displayName: 'Email Log';
+    pluralName: 'email-logs';
+    singularName: 'email-log';
+  };
+  options: {
+    draftAndPublish: false;
+  };
+  attributes: {
+    body: Schema.Attribute.Text & Schema.Attribute.Required;
+    createdAt: Schema.Attribute.DateTime;
+    createdBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+    error: Schema.Attribute.Text;
+    from: Schema.Attribute.String & Schema.Attribute.Required;
+    locale: Schema.Attribute.String & Schema.Attribute.Private;
+    localizations: Schema.Attribute.Relation<
+      'oneToMany',
+      'api::email-log.email-log'
+    > &
+      Schema.Attribute.Private;
+    messageId: Schema.Attribute.String;
+    payload: Schema.Attribute.JSON;
+    publishedAt: Schema.Attribute.DateTime;
+    ref: Schema.Attribute.String &
+      Schema.Attribute.Unique &
+      Schema.Attribute.SetMinMaxLength<{
+        maxLength: 8;
+      }>;
+    replyTo: Schema.Attribute.String;
+    sentAt: Schema.Attribute.DateTime & Schema.Attribute.Required;
+    smtpResponse: Schema.Attribute.Text;
+    status: Schema.Attribute.String & Schema.Attribute.Required;
+    subject: Schema.Attribute.String & Schema.Attribute.Required;
+    to: Schema.Attribute.String & Schema.Attribute.Required;
+    type: Schema.Attribute.String & Schema.Attribute.Required;
+    updatedAt: Schema.Attribute.DateTime;
+    updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
+      Schema.Attribute.Private;
+  };
+}
+
 export interface ApiFooterFooter extends Struct.SingleTypeSchema {
   collectionName: 'footers';
   info: {
@@ -933,6 +978,7 @@ export interface ApiProjectProject extends Struct.CollectionTypeSchema {
     solution: Schema.Attribute.Text;
     states: Schema.Attribute.String;
     status: Schema.Attribute.String;
+    structureVideoUrl: Schema.Attribute.String;
     title: Schema.Attribute.String;
     updatedAt: Schema.Attribute.DateTime;
     updatedBy: Schema.Attribute.Relation<'oneToOne', 'admin::user'> &
@@ -1501,6 +1547,7 @@ declare module '@strapi/strapi' {
       'api::category.category': ApiCategoryCategory;
       'api::contact.contact': ApiContactContact;
       'api::eligibility.eligibility': ApiEligibilityEligibility;
+      'api::email-log.email-log': ApiEmailLogEmailLog;
       'api::footer.footer': ApiFooterFooter;
       'api::global.global': ApiGlobalGlobal;
       'api::home.home': ApiHomeHome;
