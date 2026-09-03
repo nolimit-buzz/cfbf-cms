@@ -1134,6 +1134,8 @@ export interface FooterPartnerLogo extends Struct.ComponentSchema {
   attributes: {
     logo: Schema.Attribute.String;
     logo_alt_text: Schema.Attribute.String;
+    logoColour: Schema.Attribute.String;
+    logoColour_alt_text: Schema.Attribute.String;
     name: Schema.Attribute.String;
   };
 }
