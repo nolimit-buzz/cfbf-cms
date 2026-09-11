@@ -4,9 +4,9 @@
  *
  * Every brand ships two variants: a white knockout (shown by default against
  * the dark sections) and a full-colour version (crossfaded in on hover). The
- * local filenames are inconsistent — spaces, a trailing " w" for white, and
- * USAID's white variant named `usaid-1.svg` — so this table maps each brand to
- * a stable slug that becomes the Cloudinary public_id.
+ * local filenames are inconsistent — spaces and a trailing " w" for white — so
+ * this table maps each brand to a stable slug that becomes the Cloudinary
+ * public_id.
  *
  * Consumed by:
  *   scripts/upload-partner-logos.mjs      — uploads and records secure_urls
@@ -145,11 +145,9 @@ export const partnerLogos = [
     footerName: 'AfDB',
   },
   {
-    // The white variant is `usaid-1.svg`, not `usaid w.svg` — confirmed by its
-    // fills being uniformly `white` where `usaid.svg` uses the brand navy/red.
     slug: 'usaid',
     label: 'USAID',
-    white: 'usaid-1.svg',
+    white: 'usaid w.svg',
     colour: 'usaid.svg',
     aboutName: null,
     footerName: 'USAID',
