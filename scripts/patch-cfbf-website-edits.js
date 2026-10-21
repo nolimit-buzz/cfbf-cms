@@ -62,7 +62,7 @@ function isFullyPopulated(strapi, entry) {
 }
 
 /** Patches the About singleton: hero stat, mandate numbers, and Critical Q&A. */
-function patchAboutSections(sections) {
+function patchAboutSections(strapi, sections) {
   let changed = false;
 
   for (const section of sections) {
@@ -111,8 +111,71 @@ function patchAboutSections(sections) {
   return changed;
 }
 
-/** Patches the Projects listing singleton: hero stats and analysis-tab stat boxes. */
-function patchProjectsSections(sections) {
+/** New case-study entries added to `projects-page.pipeline-tab-section.projects` — kept in sync with `src/seed/projects-page-copy.ts`. */
+const NEW_PIPELINE_PROJECTS = [
+  {
+    projectId: '07',
+    title: 'Electrify Microgrid Limited',
+    location: 'Jigawa State',
+    year: '2026',
+    capital: '₦3.60b',
+    capacity: '609kW',
+    category: 'Solar Grid',
+    connections: '4,557',
+    jobs: '305',
+    ghg: '1,500 Tonnes',
+    status: 'Under Construction',
+    image_alt_text: 'Electrify Microgrid Limited',
+    desc: 'Nine solar mini-grids providing productive-use power across Jigawa State.',
+    problem:
+      'Nine rural communities in Jigawa State lacked grid access, leaving residents and businesses without reliable power.',
+    solution:
+      '609kWp of solar mini-grids backed by battery storage, connecting 4,557 households and businesses.',
+    impact: 'Electrifying over 20,000 people and 400 businesses, creating up to 305 jobs across Jigawa State.',
+    sdgs: '3, 7, 8, 13',
+  },
+  {
+    projectId: '08',
+    title: 'Magnificent Catalytic Inclusions Limited',
+    location: 'Benue & Kogi States',
+    year: '2026',
+    capital: '₦2.00b',
+    capacity: '710kW',
+    category: 'Solar Grid',
+    connections: '7,032',
+    jobs: '1,095',
+    ghg: '2,000 Tonnes',
+    status: 'Under Construction',
+    image_alt_text: 'Magnificent Catalytic Inclusions Limited',
+    desc: 'Solar-hybrid mini-grids for off-grid communities in Benue and Kogi states.',
+    problem: 'Four communities across Benue and Kogi states had no grid access for households and small businesses.',
+    solution: '710kWp of solar-hybrid mini-grid capacity connecting 7,032 households and small businesses.',
+    impact: 'Electrifying up to 7,032 unserved households, creating up to 1,095 temporary and permanent jobs.',
+    sdgs: '7, 8, 9, 11, 13, 17',
+  },
+  {
+    projectId: '09',
+    title: 'Ashipa Electric Limited',
+    location: 'Kogi State',
+    year: '2025',
+    capital: '₦1.70b',
+    capacity: '750kW',
+    category: 'Solar Grid',
+    connections: '2,671',
+    jobs: '350',
+    ghg: '699 Tonnes',
+    status: 'Under Construction',
+    image_alt_text: 'Ashipa Electric Limited',
+    desc: 'Solar-hybrid mini-grids for off-grid rural electrification in Kogi state.',
+    problem: 'Five communities in Kogi state lacked grid access for households and small businesses.',
+    solution: '750kWp of solar-hybrid mini-grid capacity connecting 2,671 households and small businesses.',
+    impact: 'Electrifying up to 2,671 unserved households, creating up to 350 temporary and permanent jobs.',
+    sdgs: '7, 8, 9, 11, 13, 17',
+  },
+];
+
+/** Patches the Projects listing singleton: hero stats, analysis-tab stat boxes, and the pipeline project list. */
+function patchProjectsSections(strapi, sections) {
   let changed = false;
   const fixes = [
     { label: 'Capacity installed', value: '5.88' },
@@ -122,18 +185,30 @@ function patchProjectsSections(sections) {
 
   for (const section of sections) {
     if (
-      section.__component !== 'projects-page.hero-section' &&
-      section.__component !== 'projects-page.analysis-tab-section'
+      section.__component === 'projects-page.hero-section' ||
+      section.__component === 'projects-page.analysis-tab-section'
     ) {
-      continue;
+      const list = section.stats ?? section.statBoxes ?? [];
+      for (const fix of fixes) {
+        const stat = list.find((s) => s.label === fix.label);
+        if (stat && stat.value !== fix.value) {
+          stat.value = fix.value;
+          changed = true;
+        }
+      }
     }
 
-    const list = section.stats ?? section.statBoxes ?? [];
-    for (const fix of fixes) {
-      const stat = list.find((s) => s.label === fix.label);
-      if (stat && stat.value !== fix.value) {
-        stat.value = fix.value;
-        changed = true;
+    if (section.__component === 'projects-page.pipeline-tab-section') {
+      const existingIds = new Set((section.projects ?? []).map((p) => p.projectId));
+      for (const entry of NEW_PIPELINE_PROJECTS) {
+        if (!existingIds.has(entry.projectId)) {
+          // Reuse the image already seeded on an existing Solar Grid entry rather than
+          // hardcoding a Cloudinary/Unsplash URL here — keeps this patch schema-light.
+          const fallbackImage = (section.projects ?? []).find((p) => p.category === 'Solar Grid')?.image ?? '';
+          section.projects = section.projects ?? [];
+          section.projects.push({ ...entry, image: fallbackImage });
+          changed = true;
+        }
       }
     }
   }
@@ -161,7 +236,7 @@ async function patchSingleType(strapi, uid, label, patchFn) {
     return;
   }
 
-  const changed = patchFn(draft.sections);
+  const changed = patchFn(strapi, draft.sections);
   if (!changed) {
     strapi.log.info(`[patch-cfbf-edits] ${label}: already up to date, nothing to patch.`);
     return;
