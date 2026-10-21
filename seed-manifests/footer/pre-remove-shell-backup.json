@@ -1,0 +1,106 @@
+[
+  {
+    "id": 1,
+    "name": "AIICO Insurance",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-aiico-white.svg",
+    "logo_alt_text": "AIICO Insurance PLC",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-aiico-colour.svg",
+    "logoColour_alt_text": "AIICO Insurance PLC"
+  },
+  {
+    "id": 2,
+    "name": "Linkage Assurance",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-linkage-white.svg",
+    "logo_alt_text": "Linkage Assurance PLC",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-linkage-colour.svg",
+    "logoColour_alt_text": "Linkage Assurance PLC"
+  },
+  {
+    "id": 3,
+    "name": "LEADWAY",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-leadway-white.svg",
+    "logo_alt_text": "Leadway Insurance",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-leadway-colour.svg",
+    "logoColour_alt_text": "Leadway Insurance"
+  },
+  {
+    "id": 4,
+    "name": "Pension Custodian",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-first-pension-custodian-white.svg",
+    "logo_alt_text": "First Pension Custodian",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-first-pension-custodian-colour.svg",
+    "logoColour_alt_text": "First Pension Custodian"
+  },
+  {
+    "id": 5,
+    "name": "United Capital",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-united-capital-white.svg",
+    "logo_alt_text": "United Capital Plc",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-united-capital-colour.svg",
+    "logoColour_alt_text": "United Capital Plc"
+  },
+  {
+    "id": 6,
+    "name": "MERISTEM",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-meristem-white.svg",
+    "logo_alt_text": "Meristem",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-meristem-colour.svg",
+    "logoColour_alt_text": "Meristem"
+  },
+  {
+    "id": 7,
+    "name": "InfraCredit",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-infracredit-white.svg",
+    "logo_alt_text": "InfraCredit",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-infracredit-colour.svg",
+    "logoColour_alt_text": "InfraCredit"
+  },
+  {
+    "id": 8,
+    "name": "FCDO",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-uk-fcdo-white.svg",
+    "logo_alt_text": "UK International Development",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-uk-fcdo-colour.svg",
+    "logoColour_alt_text": "UK International Development"
+  },
+  {
+    "id": 9,
+    "name": "AfDB",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-afdb-white.svg",
+    "logo_alt_text": "African Development Bank",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-afdb-colour.svg",
+    "logoColour_alt_text": "African Development Bank"
+  },
+  {
+    "id": 10,
+    "name": "USAID",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-usaid-white.svg",
+    "logo_alt_text": "USAID",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-usaid-colour.svg",
+    "logoColour_alt_text": "USAID"
+  },
+  {
+    "id": 11,
+    "name": "Power Africa",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-power-africa-white.svg",
+    "logo_alt_text": "Power Africa",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-power-africa-colour.svg",
+    "logoColour_alt_text": "Power Africa"
+  },
+  {
+    "id": 12,
+    "name": "Shell Foundation",
+    "logo": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-shell-foundation-white.svg",
+    "logo_alt_text": "Shell Foundation",
+    "logoColour": "https://res.cloudinary.com/diqfojkri/image/upload/climate%20facility/partners/partner-shell-foundation-colour.svg",
+    "logoColour_alt_text": "Shell Foundation"
+  },
+  {
+    "id": 13,
+    "name": "BII",
+    "logo": "https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/BII_Logo_All_white_RGB.png",
+    "logo_alt_text": "British International Investment",
+    "logoColour": null,
+    "logoColour_alt_text": null
+  }
+]

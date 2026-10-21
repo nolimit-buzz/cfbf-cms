@@ -9,6 +9,7 @@
     "deploy": "strapi deploy",
     "dev": "strapi develop",
     "develop": "strapi develop",
+    "patch:cfbf-edits": "node ./scripts/patch-cfbf-website-edits.js",
     "patch:qa-fixes": "node ./scripts/patch-qa-fixes.js",
     "seed:example": "node ./scripts/seed.js",
     "start": "strapi start",

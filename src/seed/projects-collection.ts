@@ -460,4 +460,169 @@ export const projectRecords: ProjectRecordSeed[] = [
       },
     ],
   },
+  {
+    projectId: '07',
+    title: 'Electrify Microgrid Limited',
+    location: 'Jigawa State',
+    year: 'Aug. 2026',
+    capital: '₦3.60 Billion',
+    capacity: '609kW',
+    category: 'Solar Grid',
+    connections: '4,557 Connections',
+    jobs: '305 Jobs',
+    ghg: '1,500 Tonnes GHG/yr',
+    status: 'Under Construction',
+    image:
+      'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=1200&auto=format&fit=crop',
+    image_alt_text: 'Solar mini-grid array powering rural Jigawa communities',
+    problem:
+      'Nine rural communities in Jigawa State lacked reliable grid access, leaving over 20,000 residents and 400 local businesses without power for productive use, lighting, and essential services.',
+    solution:
+      'CFBF co-financed Electrify Microgrid Limited (EML) to deploy nine solar mini-grids with a combined 609kWp generation capacity, backed by 2,685kWh of battery storage and 770kW of inverter capacity, connecting 4,557 residential, commercial and productive-use customers.',
+    impact:
+      'Delivers reliable electricity to over 20,000 people and 400 businesses, creates up to 305 jobs (35% for women), and avoids an estimated 1,200-1,500 tonnes of greenhouse gas emissions annually.',
+    desc: 'The project deploys nine mini-grids with a combined solar generation capacity of 609.0kWp across nine communities in Jigawa State, providing reliable electricity to approximately 4,557 residential, commercial and productive-use connections, reaching more than 20,000 people and 400 businesses. The solar PV systems are supported by battery storage and inverter systems with estimated capacities of 2,685.0kWh and 770.0kW respectively, to provide backup energy. In April 2025, EML entered into a Joint Developer Agreement with the Distributed Renewable Energy Enhancement Facility (DREEF) LLC to strengthen the bankability, technical robustness, and investment readiness of its mini-grid pipeline.',
+    financing:
+      'The project was financed through a blended instrument, with the UK-funded Climate Finance Blending Facility enabling a 7-year fixed rate local currency debt financing for the project by investing in the subordinated debt tranche. The transaction was further supported by InfraCredit’s Construction Finance Warehouse Facility (CFWF), a bridge financing instrument funded by the Nigeria Sovereign Investment Authority (NSIA), which enables developers to access short-term construction liquidity ahead of long-term refinancing through InfraCredit-guaranteed bonds.',
+    impact_desc:
+      'The project on completion will electrify over 20,000 people and 400 new businesses, create up to 305 jobs, including 35% for women, whilst enhancing access to renewable energy for productive uses, and avoid approximately 1,200-1,500 tCO2e of GHG emissions annually. The 9 solar mini-grids contribute directly to UN Sustainable Development Goals (SDGs) 3, 7, 8 and 13 as identified in the Green Bond Framework.',
+    financingInstrument: 'Co-financing / Bond',
+    introTitle: 'Powering Productive Use Across Nine Jigawa Communities',
+    sdgs: '3, 7, 8, 13',
+    states: 'jigawa',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
+    gallery: [
+      {
+        image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600',
+        image_alt_text: 'Solar panels installed in a Jigawa community',
+        caption: 'Solar mini-grid infrastructure installed across nine Jigawa communities.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=600',
+        image_alt_text: 'Rural household connected to clean power',
+        caption: 'Households gaining first-time access to reliable electricity.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600',
+        image_alt_text: 'Battery storage units supporting the mini-grid',
+        caption: 'Battery storage and inverter systems providing backup energy.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1473341304170-971dccb5ac1e?q=80&w=600',
+        image_alt_text: 'Local business operating with productive-use power',
+        caption: 'Local businesses benefiting from productive-use energy connections.',
+      },
+    ],
+    videos: [],
+  },
+  {
+    projectId: '08',
+    title: 'Magnificent Catalytic Inclusions Limited',
+    location: 'Benue & Kogi States',
+    year: 'Apr. 2026',
+    capital: '₦2.00 Billion',
+    capacity: '710kW',
+    category: 'Solar Grid',
+    connections: '7,032 Connections',
+    jobs: '1,095 Jobs',
+    ghg: '2,000 Tonnes GHG/yr',
+    status: 'Under Construction',
+    image:
+      'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=1200&auto=format&fit=crop',
+    image_alt_text: 'Solar-hybrid mini-grid serving off-grid communities in Benue and Kogi',
+    problem:
+      'Four communities across Benue and Kogi states had no grid access, forcing households and small businesses to rely on costly, polluting alternatives for power.',
+    solution:
+      'CFBF co-financed Magnificent Catalytic Inclusions Limited to construct 710kWp of solar-hybrid mini-grid capacity across four communities, connecting 7,032 households and small businesses. The company already operates three mini-grids with a combined 97kWp capacity across Kogi and Enugu states.',
+    impact:
+      'Electrifies up to 7,032 unserved households and small businesses, creates up to 1,095 temporary and permanent jobs, and avoids an estimated 2,000 tonnes of greenhouse gas emissions annually.',
+    desc: 'The project will construct 710kWp total capacity of solar-hybrid mini-grid in four communities without grid access within Benue and Kogi states, connecting 7,032 households and small businesses. Construction is planned to commence in 2026 with commercial operations beginning in 2027. Magnificent Catalytic Inclusions Limited delivers decentralised clean energy across Nigeria, and to date has constructed and operates three mini-grids with a combined PV capacity of 97kWp, providing electricity to approximately 270 connections across Kogi and Enugu states.',
+    financing:
+      "The project was financed through a blended instrument, with the UK-funded Climate Finance Blending Facility enabling a 7-year fixed rate local currency debt financing for the project by investing in the subordinated debt tranche. The transaction was further supported by InfraCredit's Clean Energy Co-Financing Partners, Clean Energy Fund (CeF), which is authorised and registered by the Securities & Exchange Commission and certified by the Climate Bonds Initiative to provide local currency funding from domestic institutional investors to small and medium sized climate-aligned clean energy infrastructure.",
+    impact_desc:
+      'The project on completion will electrify up to 7,032 unserved households and small businesses, create up to 1,095 temporary and permanent jobs whilst enhancing access to renewable energy for productive uses, and avoid 2,000 tCO2e of GHG emissions. The 4 hybrid-solar mini-grids contribute directly to UN Sustainable Development Goals (SDGs) 7, 8, 9, 11, 13 and 17 as identified in the Green Bond Framework.',
+    financingInstrument: 'Co-financing / Bond',
+    introTitle: 'Scaling Decentralised Clean Energy Across Benue and Kogi',
+    sdgs: '7, 8, 9, 11, 13, 17',
+    states: 'benue, kogi',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
+    gallery: [
+      {
+        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600',
+        image_alt_text: 'Solar-hybrid mini-grid under construction',
+        caption: 'Solar-hybrid mini-grid infrastructure under construction in Kogi state.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600',
+        image_alt_text: 'Community members near new solar installation',
+        caption: 'Community members near the newly installed solar mini-grid.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=600',
+        image_alt_text: 'Small business powered by the mini-grid',
+        caption: 'Small businesses in Benue state gaining reliable power access.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=600',
+        image_alt_text: 'Household connected to clean electricity',
+        caption: 'A local household connected to clean electricity for the first time.',
+      },
+    ],
+    videos: [],
+  },
+  {
+    projectId: '09',
+    title: 'Ashipa Electric Limited',
+    location: 'Kogi State',
+    year: 'Dec. 2025',
+    capital: '₦1.70 Billion',
+    capacity: '750kW',
+    category: 'Solar Grid',
+    connections: '2,671 Connections',
+    jobs: '350 Jobs',
+    ghg: '699 Tonnes GHG/yr',
+    status: 'Under Construction',
+    image:
+      'https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=1200&auto=format&fit=crop',
+    image_alt_text: 'Solar-hybrid mini-grid array in a Kogi community',
+    problem:
+      'Five communities in Kogi state lacked grid access, leaving 2,671 households and small businesses without a reliable source of power.',
+    solution:
+      'CFBF co-financed Ashipa Electric Limited to construct 750kWp of solar-hybrid mini-grid capacity across five communities, connecting 2,671 households and small businesses. Ashipa Electric has delivered decentralised clean energy across Nigeria since 2019, with 513.1kWp installed and over 645 connections served across Lagos, Ogun, Bayelsa states and the FCT.',
+    impact:
+      'Electrifies up to 2,671 unserved households and small businesses, creates up to 350 temporary and permanent jobs, and avoids an estimated 699 tonnes of greenhouse gas emissions annually.',
+    desc: 'The project will construct 750kWp total capacity of solar-hybrid mini-grid in five communities without grid access within Kogi state, connecting 2,671 households and small businesses. Construction is planned to commence in 2026 with commercial operations in the same year. Ashipa Electric Limited delivers decentralised clean energy across Nigeria, with 513.1kWp installed since 2019. Its mini-grids and stand-alone solar systems now serve over 645 connections across Lagos, Ogun, Bayelsa states, and the Federal Capital Territory (FCT).',
+    financing:
+      "The project was financed through a blended instrument, with the UK-funded Climate Finance Blending Facility enabling a 7-year fixed rate local currency debt financing for the project by investing in the subordinated debt tranche. The transaction was further supported by InfraCredit's Construction Finance Warehouse Facility (CFWF) — a bridge financing instrument funded by the Nigeria Sovereign Investment Authority (NSIA) which enables developers to access short-term construction liquidity ahead of long-term refinancing through InfraCredit-guaranteed bonds.",
+    impact_desc:
+      'The project on completion will electrify up to 2,671 unserved households and small businesses, create up to 350 temporary and permanent jobs whilst enhancing access to renewable energy for productive uses, and avoid 699 tCO2e of GHG emissions. The 5 hybrid-solar mini-grids contribute directly to UN Sustainable Development Goals (SDGs) 7, 8, 9, 11, 13 and 17 as identified in the Green Bond Framework.',
+    financingInstrument: 'Co-financing / Bond',
+    introTitle: 'Expanding Off-Grid Electrification Across Kogi State',
+    sdgs: '7, 8, 9, 11, 13, 17',
+    states: 'kogi',
+    structureVideoUrl: STRUCTURE_VIDEO_URL,
+    gallery: [
+      {
+        image: 'https://images.unsplash.com/photo-1544531586-fde5298cdd40?q=80&w=600',
+        image_alt_text: 'Solar-hybrid mini-grid in a Kogi community',
+        caption: 'Solar-hybrid mini-grid infrastructure serving five Kogi communities.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1509391366360-2e959784a276?q=80&w=600',
+        image_alt_text: 'Battery storage system on site',
+        caption: 'Battery storage system supporting continuous power supply.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?q=80&w=600',
+        image_alt_text: 'Local household with new electricity connection',
+        caption: 'A local household connected to the new mini-grid for the first time.',
+      },
+      {
+        image: 'https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600',
+        image_alt_text: 'Small business operating on clean power',
+        caption: 'Small businesses operating reliably on clean, local currency financed power.',
+      },
+    ],
+    videos: [],
+  },
 ];

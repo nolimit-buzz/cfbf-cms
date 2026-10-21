@@ -36,7 +36,6 @@ export const footerPartnerLogos = [
   partner('AfDB', 'afdb', 'African Development Bank'),
   partner('USAID', 'usaid', 'USAID'),
   partner('Power Africa', 'power-africa', 'Power Africa'),
-  partner('Shell Foundation', 'shell-foundation', 'Shell Foundation'),
   {
     name: 'BII',
     logo: 'https://infracredit.ng/climate-facility/wp-content/uploads/2022/10/BII_Logo_All_white_RGB.png',

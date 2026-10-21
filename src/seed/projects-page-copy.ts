@@ -121,7 +121,7 @@ export const projectsSections = [
     stats: [
       {
         label: 'Capacity installed',
-        value: '4.02',
+        value: '5.88',
         unit: 'MW',
         description:
           'installed green capacity de-risked by first-loss co-financing.',
@@ -144,7 +144,7 @@ export const projectsSections = [
       },
       {
         label: 'Connections powered',
-        value: '39,438',
+        value: '51,666',
         unit: '',
         description:
           'projected household and SME connections powered across Nigeria.',
@@ -152,7 +152,7 @@ export const projectsSections = [
       },
       {
         label: 'Capital deployed',
-        value: '₦7.86B+',
+        value: '₦11.65B',
         unit: '',
         description:
           'mobilized from institutional investors and pension funds into the real economy.',
@@ -188,7 +188,7 @@ export const projectsSections = [
     statBoxes: [
       {
         label: 'Capacity installed',
-        value: '4.02',
+        value: '5.88',
         unit: 'MW',
         description: 'installed clean generating capacity co-financed.',
       },
@@ -206,7 +206,7 @@ export const projectsSections = [
       },
       {
         label: 'Connections powered',
-        value: '39,438',
+        value: '51,666',
         unit: '',
         description: 'projected household and SME connections powered.',
       },
